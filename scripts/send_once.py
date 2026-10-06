@@ -52,6 +52,7 @@ def main() -> int:
     ap.add_argument("out_dir", type=Path)
     ap.add_argument("--model")
     ap.add_argument("--drop-temperature", action="store_true")
+    ap.add_argument("--max-tokens", type=int)
     ap.add_argument("--key-file", type=Path)
     ap.add_argument("--api-url", default=API)
     args = ap.parse_args()
@@ -60,6 +61,8 @@ def main() -> int:
     body = archived["prompt"]
     if args.model:
         body["model"] = args.model
+    if args.max_tokens:
+        body["max_tokens"] = args.max_tokens
     if args.drop_temperature:
         body.pop("temperature", None)
     restore_property_order(body)
@@ -89,6 +92,7 @@ def main() -> int:
         "model": body["model"],
         "api_url": args.api_url,
         "temperature": body.get("temperature"),
+        "max_tokens": body.get("max_tokens"),
         "http_status": resp.status_code,
         "request_id": resp.headers.get("request-id"),
         "response_sha256": hashlib.sha256(resp.content).hexdigest(),
