@@ -24,6 +24,28 @@ import httpx
 API = "https://api.anthropic.com/v1/messages"
 
 
+def restore_property_order(node) -> None:
+    """Put every schema's `properties` back in declaration order.
+
+    Agora's archive stores prompts as Postgres jsonb, which does not keep
+    object key order. `required` is an array, so it does, and it lists the
+    fields in the order they were declared. Under strict tool use that order
+    is the order the model writes the fields in (rationale before decision),
+    so it must survive the round trip.
+    """
+    if isinstance(node, dict):
+        props, req = node.get("properties"), node.get("required")
+        if isinstance(props, dict) and isinstance(req, list):
+            ordered = {k: props[k] for k in req if k in props}
+            ordered.update({k: v for k, v in props.items() if k not in ordered})
+            node["properties"] = ordered
+        for v in node.values():
+            restore_property_order(v)
+    elif isinstance(node, list):
+        for v in node:
+            restore_property_order(v)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("request", type=Path)
@@ -40,8 +62,11 @@ def main() -> int:
         body["model"] = args.model
     if args.drop_temperature:
         body.pop("temperature", None)
-    # Canonical form: sorted keys, compact. The bytes hashed are the bytes sent.
-    payload = json.dumps(body, sort_keys=True, separators=(",", ":")).encode()
+    restore_property_order(body)
+    # Compact; the bytes hashed are the bytes sent. Keys are NOT sorted: under
+    # strict tool use a decoder emits fields in `properties` order, so sorting
+    # would put the decision before the rationale.
+    payload = json.dumps(body, separators=(",", ":")).encode()
 
     headers = {"anthropic-version": "2023-06-01", "content-type": "application/json"}
     if args.key_file:

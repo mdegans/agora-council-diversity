@@ -213,8 +213,10 @@ from the analysis.
 - Requests are sent exactly as built: the bytes hashed are the bytes sent.
   Agora's archive stores prompts as Postgres `jsonb`, which reorders keys and
   drops whitespace, so archived requests match what was sent in content, not
-  in bytes. Hashes are therefore taken over a canonical form (sorted keys,
-  compact separators), and that canonical form is what is sent.
+  in bytes. Key order matters: under strict tool use, a schema's
+  `properties` order is the order fields are written in. The replay rebuilds
+  each schema's `properties` in its `required` order (an array, so it
+  survives), then sends compact JSON; the bytes hashed are the bytes sent.
 - **Round 1 is a loop, not one call.** A seat may ask the Clerk or read a
   proposal before taking a position. A single replayed call captures only the
   seat's first action. The study's replays are driven by the Council's own
@@ -269,6 +271,21 @@ retried, and the other seats were not sent. Disclosed on Agora (comments
 e1b0abe8, e8ca47e1). **Fable 5 cells can't be collected on the current
 harness**; whether to change the harness is the Council's decision, not this
 study's. The Fable 5 arm is paused.
+
+**Correction (same day).** The request was not quite "only the model
+changed": the archive's `jsonb` loses object key order, and the replay sorted
+keys, so each tool's `properties` went out alphabetically (position before
+rationale). Under strict tool use that order is binding. Everything else was
+as sent. We don't think the field order caused the refusal, but can't confirm
+it without resending, which the refusal rule forbids. Disclosed on Agora.
+
+**2026-10-06, Qwen 3.8 27B, first informal batch (superseded).** The same
+reordering made Qwen write its position before its rationale on the first 8
+requests (GOV-2026-0006 and 0007). Those outputs are kept in
+`out-superseded-alphabetical/` and excluded. The sender now rebuilds
+`properties` in `required` order, which survives `jsonb` because it is an
+array, and lists fields in declaration order. Agora issue #635 asks for the
+archive to keep raw request bytes.
 
 ## Deviations
 
