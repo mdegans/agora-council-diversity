@@ -50,7 +50,11 @@ whole sittings.
 ## Items
 
 Every Council decision whose Round 1 requests are in Agora's prompt archive
-(sittings from 2026-08-06 on). The list of items is fixed in the
+(sittings from 2026-08-06 on): GOV-2026-0006 onward. GOV-2026-0001 to 0005
+predate the archive and can't be replayed exactly. **Models in the record:**
+GOV-2026-0001 was the Council's test run, on Claude Haiku 4.5 (the Steward,
+2026-10-06; not recorded elsewhere). Every later decision ran on Claude Opus
+4.6. The list of items is fixed in the
 pre-registration record. Items recorded before the field-order fix
 (REC-2026-0004), whose responses were written position-first, are reported
 separately.
