@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# Inputs are fetched from Agora's governance log and never committed:
+# git history can't be redacted, the governance log can.
+inputs/
