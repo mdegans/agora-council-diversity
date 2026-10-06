@@ -159,6 +159,24 @@ Ollama-hosted model; name and digest recorded). A second, different
 embedding model repeats the analysis as a robustness check. A result that
 holds on only one is reported as such.
 
+### Themes (counted, not judged)
+
+Some differences are suspected from reading a few responses, not measured.
+These are counted per response for every model on the same items, by
+embedding match against a short published list of seed phrases per theme,
+with the matches published so anyone can audit them:
+
+- **Untrusted input:** does the seat raise prompt injection, manipulation,
+  or treating submitted text as untrusted? (Observed informally in Qwen 3.8,
+  2026-10-06.)
+- **Transparency and central control:** does the seat favour more or less
+  transparency, and more or less discretion for the Steward or the Council,
+  than the incumbent on the same item? (Raised by the Steward as a question
+  about a model trained elsewhere.)
+
+A theme counts as different between models only if the gap holds on both
+embedding models.
+
 ### Live measures (question 4), from the Council's records
 
 - each seat's Round 1 vote divergence from the majority of the other three;
