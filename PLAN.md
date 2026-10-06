@@ -169,6 +169,19 @@ holds on only one is reported as such.
 The baseline is every Council decision from GOV-2026-0003 on, computed
 before the changed seat's first vote.
 
+## Later, when the budget allows: a mixed rehearsal
+
+Round 1 replays show whether a different model disagrees. They can't show
+whether its disagreement moves anyone, because in Round 1 every seat is
+alone. A mixed rehearsal runs whole sittings on already-decided items with
+the new model in one seat and the incumbent in the other three, through all
+rounds, and measures movement: do the other seats change their votes after
+reading the dissent, and in which direction? This tests the idea behind the
+upstream jester experiment, where a single prompted dissent regularly flips a
+unanimous wrong answer, with dissent that comes from a different model rather
+than from a prompt. The Steward wants it (2026-10-06); it costs incumbent
+calls for Rounds 2 and later, far fewer than repeat samples.
+
 ## Analysis
 
 - Per-item tables first, then summaries.
