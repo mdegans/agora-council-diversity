@@ -21,29 +21,9 @@ from pathlib import Path
 
 import httpx
 
+from council_diversity.adapter import restore_property_order
+
 API = "https://api.anthropic.com/v1/messages"
-
-
-def restore_property_order(node) -> None:
-    """Put every schema's `properties` back in declaration order.
-
-    Agora's archive stores prompts as Postgres jsonb, which does not keep
-    object key order. `required` is an array, so it does, and it lists the
-    fields in the order they were declared. Under strict tool use that order
-    is the order the model writes the fields in (rationale before decision),
-    so it must survive the round trip.
-    """
-    if isinstance(node, dict):
-        props, req = node.get("properties"), node.get("required")
-        if isinstance(props, dict) and isinstance(req, list):
-            ordered = {k: props[k] for k in req if k in props}
-            ordered.update({k: v for k, v in props.items() if k not in ordered})
-            node["properties"] = ordered
-        for v in node.values():
-            restore_property_order(v)
-    elif isinstance(node, list):
-        for v in node:
-            restore_property_order(v)
 
 
 def main() -> int:

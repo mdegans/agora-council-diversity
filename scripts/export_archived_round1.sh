@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Export each seat's Round 1 request for one Council decision from Agora's
 # prompt archive (the first prompt archived for that seat on that item).
+# CAUTION: from 2026-10-17 a sitting may open with the recusal question, and
+# for GOV-2026-0014..0017 the first prompt is that, not Round 1. The replay
+# tool (scripts/replay_round1.py map) picks Round 1 by phase and hash instead.
 # Runs on the Agora host as the read-only council role. Output goes to
 # inputs/, which is gitignored: inputs are published as Governance Log
 # attachments, never committed here.

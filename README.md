@@ -43,7 +43,17 @@ uv sync
 uv run pytest
 ```
 
-The harness isn't written yet.
+Round 1 replays (first action only, through the Message Batches API):
+
+```sh
+scripts/export_archive_index.sh                     # metadata only, on the Agora host
+uv run scripts/replay_round1.py map                 # -> data/round1-sources.json
+uv run scripts/replay_round1.py run --plan haiku55 --dry-run
+```
+
+`--dry-run` builds and writes every request (with a structural diff against
+the original) under `out/`, which is gitignored, and prints sizes, hashes and
+an estimated cost. Nothing is sent without `--send`.
 
 ## Licence
 
