@@ -183,3 +183,44 @@ def test_rerun_send_keeps_originals_and_records_change(rr, tmp_path, monkeypatch
         items,
     )
     assert "requests" not in sent
+
+
+def test_vote_is_extracted_only_as_an_enum_word():
+    tool = {
+        "content": [
+            {
+                "type": "tool_use",
+                "name": "position",
+                "input": {"position": "p", "questions": [], "vote": "no"},
+            }
+        ],
+        "stop_reason": "tool_use",
+    }
+    assert classify_first_action(tool)["vote"] == "no"
+    fmt = {
+        "content": [
+            {
+                "type": "text",
+                "text": json.dumps({"submission": "position", "position": "p", "vote": "yes"}),
+            }
+        ],
+        "stop_reason": "end_turn",
+    }
+    assert classify_first_action(fmt)["vote"] == "yes"
+    odd = {
+        "content": [{"type": "tool_use", "name": "position", "input": {"vote": "free text"}}],
+        "stop_reason": "tool_use",
+    }
+    assert classify_first_action(odd)["vote"] is None
+    read = {
+        "content": [{"type": "tool_use", "name": "get_content", "input": {"id": "x"}}],
+        "stop_reason": "tool_use",
+    }
+    assert classify_first_action(read)["vote"] is None
+
+
+def test_adapted_plan_has_its_own_dir_and_ids(rr):
+    p = rr.PLANS["opus46-adapted"]
+    assert rr.plan_dir(p).name == "replay-claude-opus-4-6-adapted"
+    assert rr.plan_prefix(p) == "opus46a" and rr.plan_prefix(rr.PLANS["haiku55"]) == "haiku55"
+    assert len(p["decisions"]) == 7 and p["samples"] == 3

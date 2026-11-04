@@ -26,6 +26,7 @@ API_VERSION = "2023-06-01"  # what the Council's client (misanthropic) sends
 POSITION_TOOLS = {"position", "respond", "vote", "rank"}
 READ_TOOLS = {"get_content", "read_proposal", "ask_clerk", "witness_brief"}
 POSITION_SUBMISSIONS = {"position", "respond", "vote"}
+VOTES = {"yes", "no", "abstain", "defer"}
 
 
 def classify_first_action(message: dict) -> dict:
@@ -36,6 +37,7 @@ def classify_first_action(message: dict) -> dict:
     tools = [b.get("name") for b in blocks if b.get("type") == "tool_use"]
     stop = message.get("stop_reason")
     submission = None
+    parsed = None
     if stop == "refusal":
         action = "refusal"
     elif stop == "max_tokens":
@@ -57,10 +59,21 @@ def classify_first_action(message: dict) -> dict:
             action = "position"
         else:
             action = "other"
+    # The vote is a closed enum, so it is the one value safe to extract.
+    vote = None
+    if action == "position":
+        if tools:
+            inp = next(b for b in blocks if b.get("type") == "tool_use").get("input") or {}
+            vote = inp.get("vote")
+        elif isinstance(parsed, dict):
+            vote = parsed.get("vote")
+        if vote not in VOTES:
+            vote = None
     return {
         "first_action": action,
         "tool": tools[0] if tools else None,
         "submission": submission,
+        "vote": vote,
         "block_types": types,
     }
 

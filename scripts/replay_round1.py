@@ -57,8 +57,26 @@ PLANS = {
         "max_usd": 3.0,
     },
     "haiku55": {"model": "claude-haiku-5-5", "decisions": None, "samples": 3, "max_usd": 10.0},
+    # Opus 4.6 on the same adapted old-format requests as haiku55, to separate
+    # the model from the format change (Steward, 2026-11-04).
+    "opus46-adapted": {
+        "model": "claude-opus-4-6",
+        "decisions": [f"GOV-2026-{n:04d}" for n in range(6, 13)],
+        "samples": 3,
+        "max_usd": 12.0,
+        "dir": "replay-claude-opus-4-6-adapted",
+        "prefix": "opus46a",
+    },
 }
 SHORT = {"claude-opus-4-6": "opus46", "claude-haiku-5-5": "haiku55"}
+
+
+def plan_dir(plan: dict) -> Path:
+    return OUT / plan.get("dir", f"replay-{plan['model']}")
+
+
+def plan_prefix(plan: dict) -> str:
+    return plan.get("prefix", SHORT[plan["model"]])
 
 
 def git_commit() -> str:
@@ -109,7 +127,7 @@ def build(plan: dict, dumps: Path) -> tuple[Path, list[dict]]:
     sources = [Source(**s) for s in json.loads(SOURCES.read_text())["sources"]]
     if plan["decisions"]:
         sources = [s for s in sources if s.decision in plan["decisions"]]
-    run_dir = OUT / f"replay-{model}"
+    run_dir = plan_dir(plan)
     items = []
     for s in sources:
         original = load_request(s, INPUTS, dumps)
@@ -143,8 +161,8 @@ def build(plan: dict, dumps: Path) -> tuple[Path, list[dict]]:
     return run_dir, items
 
 
-def custom_id(model: str, decision: str, seat: str, n: int) -> str:
-    return f"{SHORT[model]}-{decision}-{seat}-s{n:02d}"
+def custom_id(prefix: str, decision: str, seat: str, n: int) -> str:
+    return f"{prefix}-{decision}-{seat}-s{n:02d}"
 
 
 def load_manifest(run_dir: Path) -> dict:
@@ -249,7 +267,7 @@ def cmd_rerun(args: argparse.Namespace, plan: dict, run_dir: Path, items: list[d
     reqs, extra, est = [], {}, 0.0
     for cid in chosen:
         orig = manifest["samples"][cid]
-        stem = cid.removeprefix(f"{SHORT[model]}-")
+        stem = cid.removeprefix(f"{plan_prefix(plan)}-")
         decision, rest = stem[:13], stem[14:]
         seat, n = rest.rsplit("-s", 1)
         it = by_item[(decision, seat)]
@@ -320,7 +338,7 @@ def cmd_rerun(args: argparse.Namespace, plan: dict, run_dir: Path, items: list[d
 def cmd_reclassify(args: argparse.Namespace) -> int:
     """Recompute first_action for every saved response (files untouched).
     A changed classification keeps its previous value under first_action_prev."""
-    run_dir = OUT / f"replay-{PLANS[args.plan]['model']}"
+    run_dir = plan_dir(PLANS[args.plan])
     manifest = load_manifest(run_dir)
     changed = 0
     for cid, meta in manifest["samples"].items():
@@ -402,7 +420,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         out = []
         for it in items:
             for n in samples:
-                cid = custom_id(model, it["decision"], it["seat"], n)
+                cid = custom_id(plan_prefix(plan), it["decision"], it["seat"], n)
                 path = run_dir / it["decision"] / it["seat"] / f"sample-{n:02d}.response.json"
                 if path.exists() or cid in manifest["samples"]:
                     continue
