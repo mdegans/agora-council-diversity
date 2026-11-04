@@ -38,6 +38,11 @@ def classify_first_action(message: dict) -> dict:
     submission = None
     if stop == "refusal":
         action = "refusal"
+    elif stop == "max_tokens":
+        # Cut off: a tool call or submission begun here may be incomplete
+        # (an empty position input was seen on 2026-11-04), so it is never
+        # counted as an action.
+        action = "truncated"
     elif tools:
         name = tools[0]
         action = "position" if name in POSITION_TOOLS else "read" if name in READ_TOOLS else "other"
@@ -50,8 +55,6 @@ def classify_first_action(message: dict) -> dict:
         submission = parsed.get("submission") if isinstance(parsed, dict) else None
         if submission in POSITION_SUBMISSIONS:
             action = "position"
-        elif stop == "max_tokens":
-            action = "truncated"
         else:
             action = "other"
     return {
@@ -60,6 +63,27 @@ def classify_first_action(message: dict) -> dict:
         "submission": submission,
         "block_types": types,
     }
+
+
+def usage_cost(model: str, usage: dict, batch: bool = True) -> float:
+    """Actual USD for one response, from its usage block and the price card."""
+    from .pricing import BATCH_DISCOUNT, card
+
+    inp = usage.get("input_tokens", 0)
+    read = usage.get("cache_read_input_tokens", 0)
+    write = usage.get("cache_creation_input_tokens", 0)
+    split = usage.get("cache_creation") or {}
+    w1h = split.get("ephemeral_1h_input_tokens", write if not split else 0)
+    w5m = split.get("ephemeral_5m_input_tokens", 0)
+    c = card(model, inp + read + write)
+    usd = (
+        inp * c["input"]
+        + read * c["read"]
+        + w1h * c["write_1h"]
+        + w5m * c["input"] * 1.25
+        + usage.get("output_tokens", 0) * c["output"]
+    ) / 1e6
+    return usd * (BATCH_DISCOUNT if batch else 1.0)
 
 
 class BatchClient:

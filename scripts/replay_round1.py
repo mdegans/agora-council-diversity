@@ -31,7 +31,13 @@ from council_diversity.adapter import (
     sha256,
     structural_diff,
 )
-from council_diversity.batch import BatchClient, read_key, record_result
+from council_diversity.batch import (
+    BatchClient,
+    classify_first_action,
+    read_key,
+    record_result,
+    usage_cost,
+)
 from council_diversity.pricing import OUTPUT_TOKENS_PER_ANSWER, estimate_item
 from council_diversity.sources import Source, load_index, load_request, resolve
 
@@ -151,7 +157,12 @@ def save_manifest(run_dir: Path, m: dict) -> None:
 
 
 def run_batch(
-    client: BatchClient, run_dir: Path, manifest: dict, phase: str, reqs: list[tuple]
+    client: BatchClient,
+    run_dir: Path,
+    manifest: dict,
+    phase: str,
+    reqs: list[tuple],
+    extra: dict[str, dict] | None = None,
 ) -> list[dict]:
     """Submit (or resume) one batch and record its results."""
     pending = [b for b in manifest["batches"] if b["phase"] == phase and not b.get("fetched")]
@@ -177,6 +188,9 @@ def run_batch(
     for line in client.results(ended["results_url"]):
         cid = json.loads(line)["custom_id"]
         meta = record_result(line, paths[cid]) | {"batch_id": batch["id"], "phase": phase}
+        meta |= (extra or {}).get(cid, {})
+        if meta.get("usage"):
+            meta["usd_actual"] = round(usage_cost(meta["model"], meta["usage"]), 6)
         manifest["samples"][cid] = meta
         metas.append(meta)
         print(
@@ -202,12 +216,139 @@ def run_batch(
     return metas
 
 
+def select_samples(manifest: dict, filters: list[str], ids: list[str]) -> list[str]:
+    """Original (non-rerun) samples matching every KEY=VALUE filter, and in
+    `ids` when given."""
+    out = []
+    for cid, meta in manifest["samples"].items():
+        if meta.get("rerun_of"):
+            continue
+        if ids and cid not in ids:
+            continue
+        if all(str(meta.get(k)) == v for k, v in (f.split("=", 1) for f in filters)):
+            out.append(cid)
+    missing = [i for i in ids if i not in out]
+    if missing:
+        raise SystemExit(f"--ids not matching the filters or not in the manifest: {missing}")
+    return sorted(out)
+
+
+def cmd_rerun(args: argparse.Namespace, plan: dict, run_dir: Path, items: list[dict]) -> int:
+    """Re-send chosen samples with one change (max_tokens), under a new name.
+
+    The originals are kept: the re-run request is written beside the original
+    as request.<tag>.json with its own structural diff, its responses go to
+    sample-NN.<tag>.response.json, and the manifest records what changed.
+    """
+    model = plan["model"]
+    tag = args.tag or f"rerun-{args.max_tokens // 1024}k"
+    manifest = load_manifest(run_dir)
+    ids = [i for i in (args.ids or "").split(",") if i]
+    chosen = select_samples(manifest, args.rerun or [], ids)
+    by_item = {(it["decision"], it["seat"]): it for it in items}
+    reqs, extra, est = [], {}, 0.0
+    for cid in chosen:
+        orig = manifest["samples"][cid]
+        stem = cid.removeprefix(f"{SHORT[model]}-")
+        decision, rest = stem[:13], stem[14:]
+        seat, n = rest.rsplit("-s", 1)
+        it = by_item[(decision, seat)]
+        item_dir = run_dir / decision / seat
+        base = json.loads((ROOT / it["request_file"]).read_bytes())
+        assert sha256(canonical_bytes(base)) == it["request_sha256"]
+        body = dict(base)
+        body["max_tokens"] = args.max_tokens
+        payload = canonical_bytes(body)
+        diff = structural_diff(base, body)
+        assert [d["path"] for d in diff] == ["/max_tokens"], diff
+        _write_once(item_dir / f"request.{tag}.json", payload)
+        _write_once(
+            item_dir / f"request.{tag}.diff.json", (json.dumps(diff, indent=1) + "\n").encode()
+        )
+        new_cid = f"{cid}-{tag.replace('rerun-', 'rr')}"
+        path = item_dir / f"sample-{int(n):02d}.{tag}.response.json"
+        if path.exists() or new_cid in manifest["samples"]:
+            continue
+        reqs.append((new_cid, json.loads(payload), path))
+        extra[new_cid] = {
+            "rerun_of": cid,
+            "rerun_tag": tag,
+            "change": {"max_tokens": [base["max_tokens"], args.max_tokens]},
+            "request_file": str((item_dir / f"request.{tag}.json").relative_to(ROOT)),
+            "request_sha256": sha256(payload),
+            "base_request_sha256": it["request_sha256"],
+        }
+        # Upper bound: same prompt usage as the original, full max_tokens out.
+        u = dict(orig["usage"])
+        u["output_tokens"] = args.max_tokens
+        est += usage_cost(model, u)
+        print(
+            f"{new_cid:<52} was {orig.get('stop_reason')}/{orig.get('first_action')} "
+            f"sha {sha256(payload)[:12]}"
+        )
+    print(
+        json.dumps(
+            {
+                "tag": tag,
+                "calls": len(reqs),
+                "max_tokens": args.max_tokens,
+                "estimated_usd_upper_bound": round(est, 4),
+            }
+        )
+    )
+    if args.dry_run or not reqs:
+        print("dry run: nothing sent" if args.dry_run else "nothing to send")
+        return 0
+    cap = args.max_usd if args.max_usd is not None else 1.0
+    if est > cap:
+        print(f"estimate ${est:.2f} is over the cap ${cap:.2f}; not sending")
+        return 4
+    client = BatchClient(read_key(args.key_file))
+    metas = run_batch(client, run_dir, manifest, tag, reqs, extra)
+    print(
+        json.dumps(
+            {
+                "tag": tag,
+                "results": len(metas),
+                "usd_actual": round(sum(m.get("usd_actual", 0) for m in metas), 4),
+            }
+        )
+    )
+    return 0
+
+
+def cmd_reclassify(args: argparse.Namespace) -> int:
+    """Recompute first_action for every saved response (files untouched).
+    A changed classification keeps its previous value under first_action_prev."""
+    run_dir = OUT / f"replay-{PLANS[args.plan]['model']}"
+    manifest = load_manifest(run_dir)
+    changed = 0
+    for cid, meta in manifest["samples"].items():
+        if meta.get("result_type") != "succeeded":
+            continue
+        line = Path(meta["response_file"]).read_bytes()
+        assert sha256(line) == meta["response_sha256"], cid
+        c = classify_first_action(json.loads(line)["result"]["message"])
+        if c["first_action"] != meta.get("first_action"):
+            print(f"{cid}: {meta.get('first_action')} -> {c['first_action']}")
+            meta["first_action_prev"] = meta.get("first_action")
+            changed += 1
+        meta |= c
+    save_manifest(run_dir, manifest)
+    print(f"{changed} reclassified")
+    return 0
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     plan = dict(PLANS[args.plan])
-    if args.max_usd is not None:
-        plan["max_usd"] = args.max_usd
     model = plan["model"]
     run_dir, items = build(plan, args.dumps)
+    if args.rerun or args.ids:
+        if not args.max_tokens:
+            raise SystemExit("a re-run needs --max-tokens (the one change it makes)")
+        return cmd_rerun(args, plan, run_dir, items)
+    if args.max_usd is not None:
+        plan["max_usd"] = args.max_usd
 
     total_usd = 0.0
     by_fmt: dict[str, int] = {}
@@ -295,6 +436,8 @@ def main() -> int:
     ap.add_argument("--dumps", type=Path, default=DUMPS)
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("map")
+    rc = sub.add_parser("reclassify")
+    rc.add_argument("--plan", choices=sorted(PLANS), required=True)
     r = sub.add_parser("run")
     r.add_argument("--plan", choices=sorted(PLANS), required=True)
     mode = r.add_mutually_exclusive_group(required=True)
@@ -307,8 +450,21 @@ def main() -> int:
         action="store_true",
         help="send phase 2 for the seat-items that were not refused",
     )
+    r.add_argument(
+        "--rerun",
+        action="append",
+        metavar="KEY=VALUE",
+        help="re-send samples whose manifest entry matches (e.g. stop_reason=max_tokens)",
+    )
+    r.add_argument("--ids", help="comma-separated custom_ids to restrict a re-run to")
+    r.add_argument("--max-tokens", type=int, help="the re-run's max_tokens")
+    r.add_argument("--tag", help="name for the re-run (default rerun-<N>k)")
     args = ap.parse_args()
-    return cmd_map(args) if args.cmd == "map" else cmd_run(args)
+    if args.cmd == "map":
+        return cmd_map(args)
+    if args.cmd == "reclassify":
+        return cmd_reclassify(args)
+    return cmd_run(args)
 
 
 if __name__ == "__main__":
