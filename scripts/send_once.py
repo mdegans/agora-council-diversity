@@ -10,6 +10,13 @@ Usage:
       [--drop-temperature] [--key-file <path>] [--api-url URL]
 
 With --api-url (e.g. a local blallama server) no key is needed.
+
+With --model on a Claude model, `thinking` is set explicitly to adaptive with
+`display: summarized` (a request without it runs adaptive thinking with the
+text hidden on the 5-generation models, which still shapes the answer), any
+sampling parameter is dropped (thinking rejects them), and a `reasoning`
+property is removed from every tool and response-format schema, as the
+adapter does (no field asks a model for its reasoning).
 """
 
 import argparse
@@ -21,9 +28,32 @@ from pathlib import Path
 
 import httpx
 
-from council_diversity.adapter import restore_property_order
+from council_diversity.adapter import (
+    SAMPLING_KEYS,
+    explicit_thinking,
+    restore_property_order,
+    strip_reasoning_properties,
+)
 
 API = "https://api.anthropic.com/v1/messages"
+
+
+def apply_model(body: dict, model: str, stripped: list[str]) -> None:
+    """Put `body` on `model`, with its thinking said rather than defaulted.
+
+    On a Claude model: `thinking` adaptive with the summary shown, sampling
+    parameters dropped, and `reasoning` removed from every schema (the names
+    of the schemas it was removed from are appended to `stripped`). A
+    non-Claude model (a local server) only has its name changed.
+    """
+    body["model"] = model
+    thinking = explicit_thinking(model)
+    if thinking is None:
+        return
+    body["thinking"] = thinking
+    for key in SAMPLING_KEYS:
+        body.pop(key, None)
+    stripped.extend(strip_reasoning_properties(body))
 
 
 def main() -> int:
@@ -39,8 +69,9 @@ def main() -> int:
 
     archived = json.loads(args.request.read_text())
     body = archived["prompt"]
+    stripped: list[str] = []
     if args.model:
-        body["model"] = args.model
+        apply_model(body, args.model, stripped)
     if args.max_tokens:
         body["max_tokens"] = args.max_tokens
     if args.drop_temperature:
@@ -72,6 +103,8 @@ def main() -> int:
         "model": body["model"],
         "api_url": args.api_url,
         "temperature": body.get("temperature"),
+        "thinking": body.get("thinking"),
+        "reasoning_stripped_from": stripped,
         "max_tokens": body.get("max_tokens"),
         "http_status": resp.status_code,
         "request_id": resp.headers.get("request-id"),

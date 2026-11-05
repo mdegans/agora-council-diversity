@@ -10,9 +10,12 @@ Two formats exist in the record:
   The adapter brings them to the current Council shape: `reasoning` removed,
   sampling defaults, `tool_choice` auto, adaptive thinking with a summarized
   display, effort `high`, `max_tokens` 16384.
-- **New** (GOV-2026-0013 on): only `model` changes, and for Claude Haiku 5.5
-  `thinking.display` is set to `summarized` (its default is `omitted`; Opus
-  4.6's default is already `summarized`).
+- **New** (GOV-2026-0013 on): only `model` changes, and on every model whose
+  default display is `omitted` (Opus 4.7 and later, Sonnet 5 and later,
+  Haiku 5.5, Fable, and any Claude this table does not know)
+  `thinking.display` is set to `summarized`. Hidden thinking still shapes
+  the answer; it just can't be read. Opus and Sonnet 4.6 already default to
+  `summarized`.
 
 Nothing here reads or returns prompt text. The structural diff reports paths
 and value shapes, not strings.
@@ -196,8 +199,78 @@ class Adapted:
         return canonical_bytes(self.body)
 
 
-def is_haiku_55(model: str) -> bool:
-    return model.startswith("claude-haiku-5-5")
+# Claude models that still return thinking text by default (display
+# `summarized`) and accept sampling parameters: Opus and Sonnet 4.6, and the
+# budgeted-thinking generation before them. Mirrors Agora's
+# `api_constraints::decision_thinking` / `accepts_sampling_params`
+# (crates/agora-common/src/api_constraints.rs).
+_SUMMARIZED_BY_DEFAULT = (
+    "opus-4-6",
+    "sonnet-4-6",
+    "haiku-4-5",
+    "sonnet-4-5",
+    "opus-4-5",
+    "haiku-3-5",
+    "opus-4-1",
+    "opus-4",
+    "sonnet-4",
+)
+_OMITTED_BY_DEFAULT = (
+    "opus-4-7",
+    "opus-4-8",
+    "opus-5",
+    "sonnet-5",
+    "haiku-5",
+    "haiku-5-5",
+    "fable-5",
+    "mythos-5",
+    "mythos-preview",
+)
+
+
+def display_omitted_by_default(model: str) -> bool:
+    """Whether `model` hides its thinking text unless `display: summarized`
+    is asked for. Longest substring match wins (`opus-4` is a prefix of
+    `opus-4-7`). An unknown Claude is assumed to hide it: every generation
+    since 4.7 has. A non-Claude model (a local one) is left alone.
+    """
+    if not model.startswith("claude-"):
+        return False
+
+    def longest(patterns: tuple[str, ...]) -> int:
+        return max((len(p) for p in patterns if p in model), default=0)
+
+    shown = longest(_SUMMARIZED_BY_DEFAULT)
+    return not (shown > 0 and shown > longest(_OMITTED_BY_DEFAULT))
+
+
+def strip_reasoning_properties(req: dict) -> list[str]:
+    """Remove a top-level `reasoning` property (and its `required` entry)
+    from every tool and response-format schema in `req`. Returns the schemas
+    it was removed from. Agora no longer asks any model for its reasoning in
+    a field (CLAUDE.md, rule 5); the model thinks instead.
+    """
+    removed = []
+    for name, schema in _schemas(req):
+        if not isinstance(schema, dict):
+            continue
+        props = schema.get("properties", {})
+        if "reasoning" in props:
+            del props["reasoning"]
+            removed.append(name)
+        if "reasoning" in schema.get("required", []):
+            schema["required"] = [r for r in schema["required"] if r != "reasoning"]
+    return removed
+
+
+def explicit_thinking(model: str) -> dict | None:
+    """The `thinking` a hand-sent replay on `model` carries: adaptive with
+    the summary shown, on any Claude, so nothing is left to a default that
+    hides it. `None` for a non-Claude model (a local server decides its own).
+    """
+    if not model.startswith("claude-"):
+        return None
+    return {"type": "adaptive", "display": "summarized"}
 
 
 def adapt(original: dict, model: str) -> Adapted:
@@ -212,13 +285,7 @@ def adapt(original: dict, model: str) -> Adapted:
     req.pop("stream", None)  # a transport flag; the Batches API takes none
 
     if fmt == "old":
-        for t in req.get("tools", []):
-            schema = t.get("input_schema") or {}
-            props = schema.get("properties", {})
-            if "reasoning" in props:
-                del props["reasoning"]
-            if "reasoning" in schema.get("required", []):
-                schema["required"] = [r for r in schema["required"] if r != "reasoning"]
+        strip_reasoning_properties(req)
         for k in SAMPLING_KEYS:
             req.pop(k, None)
         # disable_parallel_tool_use is documented to work with `auto` (at most
@@ -235,7 +302,7 @@ def adapt(original: dict, model: str) -> Adapted:
         notes.append("old format: reasoning removed, sampling defaults, auto, adaptive/high")
 
     req["model"] = model
-    if fmt == "new" and is_haiku_55(model):
+    if fmt == "new" and display_omitted_by_default(model):
         req["thinking"] = {**req["thinking"], "display": "summarized"}
 
     system = req.get("system")
@@ -258,11 +325,14 @@ def check(req: dict) -> None:
         problems.append(f"$ref/$defs in schema: {refs}")
     if (req.get("tool_choice") or {}).get("type") in ("any", "tool"):
         problems.append("forced tool_choice")
-    if is_haiku_55(req.get("model", "")):
+    model = req.get("model", "")
+    if display_omitted_by_default(model):
+        # The same generation rejects sampling parameters (Agora's
+        # `accepts_sampling_params`).
         if present := [k for k in SAMPLING_KEYS if k in req]:
-            problems.append(f"sampling parameters on Haiku 5.5: {present}")
+            problems.append(f"sampling parameters on {model}: {present}")
         if (req.get("thinking") or {}).get("display") != "summarized":
-            problems.append("Haiku 5.5 without thinking.display summarized")
+            problems.append(f"{model} without thinking.display summarized")
     if "stream" in req:
         problems.append("stream set")
     bps = cache_breakpoints(req)

@@ -10,10 +10,13 @@ from council_diversity.adapter import (
     canonical_bytes,
     check,
     detect_format,
+    display_omitted_by_default,
+    explicit_thinking,
     forbidden_properties,
     prefix_chars,
     ref_paths,
     restore_property_order,
+    strip_reasoning_properties,
     structural_diff,
 )
 
@@ -232,6 +235,79 @@ def test_new_format_haiku_changes_model_and_display_only():
     paths = sorted(d["path"] for d in structural_diff(orig, a.body))
     assert paths == ["/model", "/thinking/display"]
     assert a.body["thinking"] == {"type": "adaptive", "display": "summarized"}
+
+
+@pytest.mark.parametrize(
+    "model",
+    [
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "claude-sonnet-5",
+        "claude-fable-5-1",
+        "claude-opus-4-7",
+        "claude-something-7",
+    ],
+)
+def test_new_format_asks_for_the_summary_on_every_model_that_hides_it(model):
+    orig = new_request()
+    a = adapt(orig, model)
+    paths = sorted(d["path"] for d in structural_diff(orig, a.body))
+    assert paths == ["/model", "/thinking/display"]
+    assert a.body["thinking"]["display"] == "summarized"
+
+
+@pytest.mark.parametrize(
+    ("model", "omitted"),
+    [
+        ("claude-haiku-5-5", True),
+        ("claude-opus-5-5", True),
+        ("claude-sonnet-5-5", True),
+        ("claude-fable-5-1", True),
+        ("claude-opus-4-7", True),
+        ("claude-opus-4-8", True),
+        ("claude-something-7", True),
+        ("claude-opus-4-6", False),
+        ("claude-sonnet-4-6", False),
+        ("claude-haiku-4-5-20251001", False),
+        ("claude-opus-4", False),
+        ("qwen3.8-35b-a3b", False),
+    ],
+)
+def test_display_default_by_model(model, omitted):
+    assert display_omitted_by_default(model) is omitted
+
+
+def test_a_hidden_display_is_refused_on_any_model_that_hides_it():
+    req = new_request()
+    req["model"] = "claude-opus-5-5"
+    req["thinking"] = {"type": "adaptive"}
+    with pytest.raises(AdapterError, match="display summarized"):
+        check(req)
+
+
+def test_strip_reasoning_covers_tools_and_the_response_format():
+    req = old_request()
+    req["output_config"] = {
+        "format": {
+            "type": "json_schema",
+            "schema": {
+                "type": "object",
+                "properties": {"reasoning": {"type": "string"}, "vote": {"type": "string"}},
+                "required": ["reasoning", "vote"],
+            },
+        }
+    }
+    removed = strip_reasoning_properties(req)
+    assert "output_config.format" in removed
+    assert removed and all(name for name in removed)
+    assert forbidden_properties(req) == []
+    assert req["output_config"]["format"]["schema"]["required"] == ["vote"]
+
+
+def test_explicit_thinking_is_adaptive_and_shown_on_claude_only():
+    for model in ("claude-haiku-5-5", "claude-opus-4-6", "claude-opus-5-5"):
+        assert explicit_thinking(model) == {"type": "adaptive", "display": "summarized"}
+    assert explicit_thinking("qwen3.8-35b-a3b") is None
 
 
 def test_stream_flag_is_dropped():
