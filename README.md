@@ -55,6 +55,21 @@ uv run scripts/replay_round1.py run --plan haiku55 --dry-run
 the original) under `out/`, which is gitignored, and prints sizes, hashes and
 an estimated cost. Nothing is sent without `--send`.
 
+Concern-level divergence (the REC draft's step 5) and the vote table:
+
+```sh
+uv run scripts/divergence.py concerns   # split positions into concerns (text stays in out/)
+uv run scripts/divergence.py embed      # qwen3-embedding:8b through Ollama
+uv run scripts/divergence.py analyze    # noise floors, novelty, bootstrap -> data/divergence/
+uv run scripts/divergence.py votes      # yes/no/abstain/defer, deferring vs voting differently
+uv run scripts/stance_judge.py build    # blinded pairs for the stance judge, cost estimate
+uv run scripts/stance_judge.py send     # Batch API: one priming request, then the rest
+uv run scripts/stance_judge.py analyze  # labels vs embedding similarity -> data/judge/
+```
+
+The stance judge is Claude Haiku 5.5, the same family as both models it
+compares. A judge from another maker (Qwen) is planned for February 2027.
+
 ## Licence
 
 Code: MIT OR Apache-2.0, at your option. Data (`data/`): CC BY 4.0.
