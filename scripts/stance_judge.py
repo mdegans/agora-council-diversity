@@ -190,25 +190,34 @@ def _save_manifest(m: dict) -> None:
     (JOUT / "manifest.json").write_text(json.dumps(m, indent=1) + "\n")
 
 
-def _run(client: BatchClient, m: dict, phase: str, lines: list[dict]) -> None:
-    pending = [b for b in m["batches"] if b["phase"] == phase and not b.get("fetched")]
-    if pending:
-        batch = pending[0]
-    else:
-        created = client.create(lines)
-        batch = {
-            "phase": phase,
-            "id": created["id"],
-            "n": len(lines),
-            "fetched": False,
-            "created_at": created.get("created_at"),
-        }
-        m["batches"].append(batch)
-        _save_manifest(m)
-        print(f"submitted {phase} {batch['id']} n={len(lines)}")
+def _submit(client: BatchClient, m: dict, phase: str, lines: list[dict]) -> dict:
+    """Create a batch for `phase` unless one exists already (resume)."""
+    existing = [b for b in m["batches"] if b["phase"] == phase]
+    if existing:
+        return existing[0]
+    created = client.create(lines)
+    batch = {
+        "phase": phase,
+        "id": created["id"],
+        "n": len(lines),
+        "fetched": False,
+        "created_at": created.get("created_at"),
+    }
+    m["batches"].append(batch)
+    _save_manifest(m)
+    print(f"submitted {phase} {batch['id']} n={len(lines)}", flush=True)
+    return batch
+
+
+def _fetch(client: BatchClient, m: dict, batch: dict) -> None:
+    if batch.get("fetched"):
+        return
+    phase = batch["phase"]
     ended = client.wait(batch["id"])
     for line in client.results(ended["results_url"]):
         cid = json.loads(line)["custom_id"]
+        if cid in m["results"]:
+            continue
         meta = record_result(line, JOUT / "results" / f"{cid}.json")
         msg = json.loads(line)["result"].get("message") or {}
         meta["label"] = parse_label(msg) if msg else None
@@ -220,6 +229,16 @@ def _run(client: BatchClient, m: dict, phase: str, lines: list[dict]) -> None:
     batch["fetched"] = True
     batch["ended_at"] = ended.get("ended_at")
     _save_manifest(m)
+
+
+def _run(client: BatchClient, m: dict, phase: str, lines: list[dict]) -> None:
+    _fetch(client, m, _submit(client, m, phase, lines))
+
+
+# The batch API takes at most 256 MB per batch; every request carries the
+# two documents (~95 KB), so the rest goes out in chunks, all submitted
+# before any is awaited so that each reads the primed 1h cache.
+CHUNK = 900
 
 
 def cmd_send(args: argparse.Namespace) -> int:
@@ -254,8 +273,10 @@ def cmd_send(args: argparse.Namespace) -> int:
         print("projection over cap; stopping after the priming batch")
         return 4
     rest = [x for x in lines[1:] if x["custom_id"] not in m["results"]]
-    if rest:
-        _run(client, m, "rest", rest)
+    chunks = [rest[i : i + CHUNK] for i in range(0, len(rest), CHUNK)]
+    batches = [_submit(client, m, f"rest-{k + 1}", c) for k, c in enumerate(chunks)]
+    for b in batches:
+        _fetch(client, m, b)
     spent = sum(r.get("usd_actual", 0) for r in m["results"].values())
     print(
         json.dumps(
