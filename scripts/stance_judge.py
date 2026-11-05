@@ -36,7 +36,7 @@ from council_diversity.judge import (
     parse_label,
     prefix_blocks,
 )
-from council_diversity.novelty import RESAMPLES, SEED, auroc
+from council_diversity.novelty import RESAMPLES, SEED, auroc, bootstrap_diff
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "out" / "analysis"
@@ -386,6 +386,65 @@ def cmd_analyze(_: argparse.Namespace) -> int:
     groups = np.array([r["decision"] for r in labelled])
     lo, hi = _boot_auroc(sims, agree, groups)
     summary["all"] = {"auroc_sim_vs_agree": auroc(sims, agree), "lo95": lo, "hi95": hi}
+
+    # Judge-based divergence, per item: cross-model minus same-model shares,
+    # resampling answers (the `a` position) within the item.
+    def units(comp: str, g: str, pred) -> list[tuple[int, int]]:
+        u: dict[str, list[int]] = defaultdict(lambda: [0, 0])
+        for r in by.get(comp, []):
+            if r["decision"] == g:
+                u[r["a"]][0] += int(pred(r))
+                u[r["a"]][1] += 1
+        return [tuple(v) for v in u.values()]
+
+    preds = {
+        "contradict": lambda r: r["label"] == "contradict",
+        "not_agree": lambda r: r["label"] != "agree",
+    }
+    contrasts = []
+    for a, b in (
+        ("haiku55_vs_rec_same", "haiku55_vs_haiku55"),
+        ("opus46a_vs_rec_same", "opus46a_vs_opus46a"),
+    ):
+        for g in sorted({r["decision"] for r in labelled}):
+            for name, pred in preds.items():
+                ua, ub = units(a, g, pred), units(b, g, pred)
+                if not ua or not ub:
+                    continue
+                pt, lo, hi = bootstrap_diff(ua, ub)
+                contrasts.append(
+                    {
+                        "a": a,
+                        "b": b,
+                        "label": name,
+                        "decision": g,
+                        "diff": round(pt, 6),
+                        "lo95": round(lo, 6),
+                        "hi95": round(hi, 6),
+                        "above_spread": lo > 0,
+                        "below_spread": hi < 0,
+                    }
+                )
+    with (DATA / "judge-contrasts.csv").open("w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(contrasts[0]))
+        w.writeheader()
+        w.writerows(contrasts)
+    summary["contrasts_items"] = {
+        f"{a} - {b} [{n}]": {
+            "items": sum(1 for c in contrasts if (c["a"], c["b"], c["label"]) == (a, b, n)),
+            "above": sum(
+                1
+                for c in contrasts
+                if (c["a"], c["b"], c["label"]) == (a, b, n) and c["above_spread"]
+            ),
+            "below": sum(
+                1
+                for c in contrasts
+                if (c["a"], c["b"], c["label"]) == (a, b, n) and c["below_spread"]
+            ),
+        }
+        for a, b, n in sorted({(c["a"], c["b"], c["label"]) for c in contrasts})
+    }
     usage = Counter()
     for r in m["results"].values():
         for k, v in (r.get("usage") or {}).items():

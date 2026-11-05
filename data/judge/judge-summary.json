@@ -1,0 +1,165 @@
+{
+ "generated_at": "2026-11-05T10:19:56+00:00",
+ "disclaimer": "The stance judge is Claude Haiku 5.5, an Anthropic model of the same family as both models it compares (Claude Opus 4.6 and Claude Haiku 5.5); it may share their blind spots, and it is one of the compared models. A judge from another maker (Qwen, run locally) is planned for February 2027 to compare against. The judge saw each pair blinded (no model names, ids or seat names, formatting normalised, sides and order randomised) and returned labels only.",
+ "model": "claude-haiku-5-5",
+ "pairs": 2891,
+ "labelled": 2891,
+ "not_labelled": {},
+ "by_comparison": {
+  "haiku55_vs_haiku55": {
+   "n": 1026,
+   "labels": {
+    "unrelated_or_new": 414,
+    "agree": 573,
+    "contradict": 39
+   },
+   "shares": {
+    "agree": 0.5584795321637427,
+    "contradict": 0.038011695906432746,
+    "unrelated_or_new": 0.40350877192982454
+   },
+   "auroc_sim_vs_agree": 0.831364685305256,
+   "auroc_lo95_items": 0.8042142995169399,
+   "auroc_hi95_items": 0.8537429873690431,
+   "embedding_novel": 48,
+   "novel_and_not_agree": 44,
+   "not_novel_and_not_agree": 409,
+   "contradict_share_among_novel": 0.0,
+   "contradict_share_among_not_novel": 0.03987730061349693
+  },
+  "haiku55_vs_rec_same": {
+   "n": 1209,
+   "labels": {
+    "agree": 470,
+    "contradict": 113,
+    "unrelated_or_new": 626
+   },
+   "shares": {
+    "agree": 0.38875103391232424,
+    "contradict": 0.0934656741108354,
+    "unrelated_or_new": 0.5177832919768404
+   },
+   "auroc_sim_vs_agree": 0.7954423746868972,
+   "auroc_lo95_items": 0.7659933445532436,
+   "auroc_hi95_items": 0.8272541399380643,
+   "embedding_novel": 293,
+   "novel_and_not_agree": 266,
+   "not_novel_and_not_agree": 473,
+   "contradict_share_among_novel": 0.010238907849829351,
+   "contradict_share_among_not_novel": 0.12008733624454149
+  },
+  "opus46a_vs_opus46a": {
+   "n": 270,
+   "labels": {
+    "agree": 211,
+    "unrelated_or_new": 48,
+    "contradict": 11
+   },
+   "shares": {
+    "agree": 0.7814814814814814,
+    "contradict": 0.040740740740740744,
+    "unrelated_or_new": 0.17777777777777778
+   },
+   "auroc_sim_vs_agree": 0.8415937023054061,
+   "auroc_lo95_items": 0.8035985423625873,
+   "auroc_hi95_items": 0.8961734246094436,
+   "embedding_novel": 14,
+   "novel_and_not_agree": 10,
+   "not_novel_and_not_agree": 49,
+   "contradict_share_among_novel": 0.07142857142857142,
+   "contradict_share_among_not_novel": 0.0390625
+  },
+  "opus46a_vs_rec_same": {
+   "n": 386,
+   "labels": {
+    "agree": 286,
+    "unrelated_or_new": 80,
+    "contradict": 20
+   },
+   "shares": {
+    "agree": 0.7409326424870466,
+    "contradict": 0.05181347150259067,
+    "unrelated_or_new": 0.20725388601036268
+   },
+   "auroc_sim_vs_agree": 0.8067132867132867,
+   "auroc_lo95_items": 0.7148443134076549,
+   "auroc_hi95_items": 0.8735955056179775,
+   "embedding_novel": 18,
+   "novel_and_not_agree": 13,
+   "not_novel_and_not_agree": 87,
+   "contradict_share_among_novel": 0.0,
+   "contradict_share_among_not_novel": 0.05434782608695652
+  }
+ },
+ "all": {
+  "auroc_sim_vs_agree": 0.8284947657819605,
+  "lo95": 0.8039735487023434,
+  "hi95": 0.8524348020873128
+ },
+ "contrasts_items": {
+  "haiku55_vs_rec_same - haiku55_vs_haiku55 [contradict]": {
+   "items": 13,
+   "above": 4,
+   "below": 0
+  },
+  "haiku55_vs_rec_same - haiku55_vs_haiku55 [not_agree]": {
+   "items": 13,
+   "above": 7,
+   "below": 0
+  },
+  "opus46a_vs_rec_same - opus46a_vs_opus46a [contradict]": {
+   "items": 5,
+   "above": 0,
+   "below": 0
+  },
+  "opus46a_vs_rec_same - opus46a_vs_opus46a [not_agree]": {
+   "items": 5,
+   "above": 0,
+   "below": 0
+  }
+ },
+ "usage_totals": {
+  "input_tokens": 1106421,
+  "cache_creation_input_tokens": 31820,
+  "cache_read_input_tokens": 91959800,
+  "output_tokens": 124614
+ },
+ "usd_actual": 0.5495,
+ "batches": [
+  {
+   "phase": "prime",
+   "id": "msgbatch_017qRok8qfe4YVHgLssLcV7y",
+   "n": 1,
+   "created_at": "2026-11-05T10:02:42.408861+00:00",
+   "ended_at": "2026-11-05T10:05:13.813959+00:00"
+  },
+  {
+   "phase": "rest-1",
+   "id": "msgbatch_01A5LXhkoyPh45CXJrLscAAx",
+   "n": 900,
+   "created_at": "2026-11-05T10:08:10.965535+00:00",
+   "ended_at": "2026-11-05T10:15:47.099298+00:00"
+  },
+  {
+   "phase": "rest-2",
+   "id": "msgbatch_01AZnM95AHyYv836ViE3VQEW",
+   "n": 900,
+   "created_at": "2026-11-05T10:08:25.406474+00:00",
+   "ended_at": "2026-11-05T10:15:33.640180+00:00"
+  },
+  {
+   "phase": "rest-3",
+   "id": "msgbatch_013rM31gejs4ooaj48EZwZCj",
+   "n": 900,
+   "created_at": "2026-11-05T10:08:39.390332+00:00",
+   "ended_at": "2026-11-05T10:15:37.113690+00:00"
+  },
+  {
+   "phase": "rest-4",
+   "id": "msgbatch_016qr1asSzDpz462SUJzRYN1",
+   "n": 190,
+   "created_at": "2026-11-05T10:08:42.867581+00:00",
+   "ended_at": "2026-11-05T10:15:03.792387+00:00"
+  }
+ ]
+}
