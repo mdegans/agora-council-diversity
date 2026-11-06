@@ -1,0 +1,725 @@
+{
+ "generated_at": "2026-11-05T10:02:04+00:00",
+ "repo_commit": "87f5735d59a4e20fc341af1faa2e238490bd377b",
+ "embedding_manifest": {
+  "endpoint": "http://192.168.0.49:11434",
+  "ollama_version": "0.18.0",
+  "model": "qwen3-embedding:8b",
+  "model_digest": "64b933495768fbd3b87c20583d379728a07471e0c66733a9df87cd1901b3c44b",
+  "quantization": "Q4_K_M",
+  "parameter_size": "7.6B",
+  "num_ctx": 8192,
+  "truncate": false,
+  "instruction_prefix": null,
+  "normalised": "L2, after the call",
+  "started_at": "2026-11-05T09:58:35+00:00",
+  "finished_at": "2026-11-05T10:01:57+00:00",
+  "texts_embedded": 2611,
+  "texts_sha256_of_sorted_hashes": "5d89a4e8076d3901018dc66534aa99ace7d5a9021ccf94bc77d5f9c27a243f83"
+ },
+ "floor_percentile": 5.0,
+ "bootstrap": {
+  "resamples": 10000,
+  "seed": 20261105,
+  "interval": "95% percentile"
+ },
+ "variants": {
+  "para": {
+   "floors": {
+    "claude-haiku-5-5": {
+     "p05": 0.5542928397655487,
+     "n_matches": 1958,
+     "from": [
+      "haiku55_vs_haiku55"
+     ],
+     "p50": 0.7221605181694031
+    },
+    "claude-opus-4-6": {
+     "p05": 0.5999812394380569,
+     "n_matches": 560,
+     "from": [
+      "opus46a_vs_opus46a",
+      "opus46_vs_opus46"
+     ],
+     "p50": 0.7661053538322449
+    }
+   },
+   "t_cross": 0.5999812394380569,
+   "overall": [
+    {
+     "comparison": "haiku55_vs_haiku55",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1958,
+     "novel": 259,
+     "share": 0.13227783452502553,
+     "lo95_over_items": 0.0913714054538631,
+     "hi95_over_items": 0.17760299721431236
+    },
+    {
+     "comparison": "haiku55_vs_haiku55",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1958,
+     "novel": 98,
+     "share": 0.05005107252298264,
+     "lo95_over_items": 0.03125,
+     "hi95_over_items": 0.07072799585260509
+    },
+    {
+     "comparison": "haiku55_vs_opus46a_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 1240,
+     "novel": 266,
+     "share": 0.21451612903225806,
+     "lo95_over_items": 0.18476062036412677,
+     "hi95_over_items": 0.24613182703737943
+    },
+    {
+     "comparison": "haiku55_vs_opus46a_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 1240,
+     "novel": 266,
+     "share": 0.21451612903225806,
+     "lo95_over_items": 0.18476062036412677,
+     "hi95_over_items": 0.24613182703737943
+    },
+    {
+     "comparison": "haiku55_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1209,
+     "novel": 176,
+     "share": 0.14557485525227462,
+     "lo95_over_items": 0.1014611710482272,
+     "hi95_over_items": 0.18252647151260062
+    },
+    {
+     "comparison": "haiku55_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1209,
+     "novel": 176,
+     "share": 0.14557485525227462,
+     "lo95_over_items": 0.1014611710482272,
+     "hi95_over_items": 0.18252647151260062
+    },
+    {
+     "comparison": "haiku55_vs_rec_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1209,
+     "novel": 293,
+     "share": 0.24234904880066171,
+     "lo95_over_items": 0.1886950127588465,
+     "hi95_over_items": 0.28966650202442956
+    },
+    {
+     "comparison": "haiku55_vs_rec_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1209,
+     "novel": 293,
+     "share": 0.24234904880066171,
+     "lo95_over_items": 0.1886950127588465,
+     "hi95_over_items": 0.28966650202442956
+    },
+    {
+     "comparison": "opus46_vs_opus46",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 1,
+     "concerns": 22,
+     "novel": 0,
+     "share": 0.0,
+     "lo95_over_items": 0.0,
+     "hi95_over_items": 0.0
+    },
+    {
+     "comparison": "opus46_vs_opus46",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 1,
+     "concerns": 22,
+     "novel": 0,
+     "share": 0.0,
+     "lo95_over_items": 0.0,
+     "hi95_over_items": 0.0
+    },
+    {
+     "comparison": "opus46_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 4,
+     "share": 0.08,
+     "lo95_over_items": 0.061224489795918366,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 4,
+     "share": 0.08,
+     "lo95_over_items": 0.061224489795918366,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46_vs_rec_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 2,
+     "share": 0.04,
+     "lo95_over_items": 0.02040816326530612,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46_vs_rec_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 2,
+     "share": 0.04,
+     "lo95_over_items": 0.02040816326530612,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46a_vs_opus46a",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 5,
+     "concerns": 538,
+     "novel": 28,
+     "share": 0.05204460966542751,
+     "lo95_over_items": 0.015544041450777202,
+     "hi95_over_items": 0.0796812749003984
+    },
+    {
+     "comparison": "opus46a_vs_opus46a",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 5,
+     "concerns": 538,
+     "novel": 28,
+     "share": 0.05204460966542751,
+     "lo95_over_items": 0.015544041450777202,
+     "hi95_over_items": 0.0796812749003984
+    },
+    {
+     "comparison": "opus46a_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 386,
+     "novel": 11,
+     "share": 0.02849740932642487,
+     "lo95_over_items": 0.01587196884030657,
+     "hi95_over_items": 0.04245283018867924
+    },
+    {
+     "comparison": "opus46a_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 386,
+     "novel": 11,
+     "share": 0.02849740932642487,
+     "lo95_over_items": 0.01587196884030657,
+     "hi95_over_items": 0.04245283018867924
+    },
+    {
+     "comparison": "opus46a_vs_rec_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 386,
+     "novel": 18,
+     "share": 0.046632124352331605,
+     "lo95_over_items": 0.03225806451612903,
+     "hi95_over_items": 0.07241379310344828
+    },
+    {
+     "comparison": "opus46a_vs_rec_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 386,
+     "novel": 18,
+     "share": 0.046632124352331605,
+     "lo95_over_items": 0.03225806451612903,
+     "hi95_over_items": 0.07241379310344828
+    },
+    {
+     "comparison": "rec_vs_haiku55_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1279,
+     "novel": 225,
+     "share": 0.17591868647380765,
+     "lo95_over_items": 0.12932565479555305,
+     "hi95_over_items": 0.21910124668879064
+    },
+    {
+     "comparison": "rec_vs_haiku55_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1279,
+     "novel": 225,
+     "share": 0.17591868647380765,
+     "lo95_over_items": 0.12932565479555305,
+     "hi95_over_items": 0.21910124668879064
+    },
+    {
+     "comparison": "rec_vs_opus46_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 69,
+     "novel": 21,
+     "share": 0.30434782608695654,
+     "lo95_over_items": 0.02040816326530612,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "rec_vs_opus46_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 69,
+     "novel": 21,
+     "share": 0.30434782608695654,
+     "lo95_over_items": 0.02040816326530612,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "rec_vs_opus46a_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 341,
+     "novel": 18,
+     "share": 0.05278592375366569,
+     "lo95_over_items": 0.014084507042253521,
+     "hi95_over_items": 0.08490837909847203
+    },
+    {
+     "comparison": "rec_vs_opus46a_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 341,
+     "novel": 18,
+     "share": 0.05278592375366569,
+     "lo95_over_items": 0.014084507042253521,
+     "hi95_over_items": 0.08490837909847203
+    },
+    {
+     "comparison": "rec_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 536,
+     "novel": 9,
+     "share": 0.016791044776119403,
+     "lo95_over_items": 0.007677543186180422,
+     "hi95_over_items": 0.02758657295556043
+    },
+    {
+     "comparison": "rec_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 536,
+     "novel": 9,
+     "share": 0.016791044776119403,
+     "lo95_over_items": 0.007677543186180422,
+     "hi95_over_items": 0.02758657295556043
+    }
+   ],
+   "contrasts_items_above_spread": {
+    "haiku55_vs_rec_same - haiku55_vs_haiku55": 6,
+    "haiku55_vs_opus46a_same - haiku55_vs_haiku55": 5,
+    "haiku55_vs_opus46a_same - opus46a_vs_opus46a": 5,
+    "haiku55_vs_rec_others - rec_vs_rec_others": 10
+   },
+   "contrasts_items_below_spread": {
+    "haiku55_vs_rec_same - haiku55_vs_haiku55": 1,
+    "opus46a_vs_rec_same - opus46a_vs_opus46a": 1
+   },
+   "contrasts_items_total": {
+    "haiku55_vs_rec_same - haiku55_vs_haiku55": 13,
+    "haiku55_vs_opus46a_same - haiku55_vs_haiku55": 7,
+    "haiku55_vs_opus46a_same - opus46a_vs_opus46a": 5,
+    "haiku55_vs_rec_others - rec_vs_rec_others": 13,
+    "opus46a_vs_rec_same - opus46a_vs_opus46a": 5
+   }
+  },
+  "chunk": {
+   "floors": {
+    "claude-haiku-5-5": {
+     "p05": 0.5740007698535919,
+     "n_matches": 2410,
+     "from": [
+      "haiku55_vs_haiku55"
+     ],
+     "p50": 0.7225573062896729
+    },
+    "claude-opus-4-6": {
+     "p05": 0.6035429835319519,
+     "n_matches": 581,
+     "from": [
+      "opus46a_vs_opus46a",
+      "opus46_vs_opus46"
+     ],
+     "p50": 0.765950620174408
+    }
+   },
+   "t_cross": 0.6035429835319519,
+   "overall": [
+    {
+     "comparison": "haiku55_vs_haiku55",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 2410,
+     "novel": 255,
+     "share": 0.10580912863070539,
+     "lo95_over_items": 0.07830567731533548,
+     "hi95_over_items": 0.13292510931315094
+    },
+    {
+     "comparison": "haiku55_vs_haiku55",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 2410,
+     "novel": 121,
+     "share": 0.05020746887966805,
+     "lo95_over_items": 0.03276349969373195,
+     "hi95_over_items": 0.06843592211839937
+    },
+    {
+     "comparison": "haiku55_vs_opus46a_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 1333,
+     "novel": 302,
+     "share": 0.22655663915978994,
+     "lo95_over_items": 0.19952000523539123,
+     "hi95_over_items": 0.25705329153605017
+    },
+    {
+     "comparison": "haiku55_vs_opus46a_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 1333,
+     "novel": 302,
+     "share": 0.22655663915978994,
+     "lo95_over_items": 0.19952000523539123,
+     "hi95_over_items": 0.25705329153605017
+    },
+    {
+     "comparison": "haiku55_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1468,
+     "novel": 209,
+     "share": 0.14237057220708446,
+     "lo95_over_items": 0.10036603965429589,
+     "hi95_over_items": 0.179155464825208
+    },
+    {
+     "comparison": "haiku55_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1468,
+     "novel": 209,
+     "share": 0.14237057220708446,
+     "lo95_over_items": 0.10036603965429589,
+     "hi95_over_items": 0.179155464825208
+    },
+    {
+     "comparison": "haiku55_vs_rec_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1468,
+     "novel": 360,
+     "share": 0.2452316076294278,
+     "lo95_over_items": 0.18848850482469168,
+     "hi95_over_items": 0.29808455022642333
+    },
+    {
+     "comparison": "haiku55_vs_rec_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1468,
+     "novel": 360,
+     "share": 0.2452316076294278,
+     "lo95_over_items": 0.18848850482469168,
+     "hi95_over_items": 0.29808455022642333
+    },
+    {
+     "comparison": "opus46_vs_opus46",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 1,
+     "concerns": 22,
+     "novel": 0,
+     "share": 0.0,
+     "lo95_over_items": 0.0,
+     "hi95_over_items": 0.0
+    },
+    {
+     "comparison": "opus46_vs_opus46",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 1,
+     "concerns": 22,
+     "novel": 0,
+     "share": 0.0,
+     "lo95_over_items": 0.0,
+     "hi95_over_items": 0.0
+    },
+    {
+     "comparison": "opus46_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 4,
+     "share": 0.08,
+     "lo95_over_items": 0.061224489795918366,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 4,
+     "share": 0.08,
+     "lo95_over_items": 0.061224489795918366,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46_vs_rec_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 2,
+     "share": 0.04,
+     "lo95_over_items": 0.02040816326530612,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46_vs_rec_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 50,
+     "novel": 2,
+     "share": 0.04,
+     "lo95_over_items": 0.02040816326530612,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "opus46a_vs_opus46a",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 5,
+     "concerns": 559,
+     "novel": 28,
+     "share": 0.05008944543828265,
+     "lo95_over_items": 0.02,
+     "hi95_over_items": 0.07298474945533769
+    },
+    {
+     "comparison": "opus46a_vs_opus46a",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 5,
+     "concerns": 559,
+     "novel": 28,
+     "share": 0.05008944543828265,
+     "lo95_over_items": 0.02,
+     "hi95_over_items": 0.07298474945533769
+    },
+    {
+     "comparison": "opus46a_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 400,
+     "novel": 17,
+     "share": 0.0425,
+     "lo95_over_items": 0.015998936170212766,
+     "hi95_over_items": 0.07834101382488479
+    },
+    {
+     "comparison": "opus46a_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 400,
+     "novel": 17,
+     "share": 0.0425,
+     "lo95_over_items": 0.015998936170212766,
+     "hi95_over_items": 0.07834101382488479
+    },
+    {
+     "comparison": "opus46a_vs_rec_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 400,
+     "novel": 19,
+     "share": 0.0475,
+     "lo95_over_items": 0.033073929961089495,
+     "hi95_over_items": 0.07142857142857142
+    },
+    {
+     "comparison": "opus46a_vs_rec_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 400,
+     "novel": 19,
+     "share": 0.0475,
+     "lo95_over_items": 0.033073929961089495,
+     "hi95_over_items": 0.07142857142857142
+    },
+    {
+     "comparison": "rec_vs_haiku55_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1352,
+     "novel": 233,
+     "share": 0.17233727810650887,
+     "lo95_over_items": 0.11374386850932733,
+     "hi95_over_items": 0.2349075446519395
+    },
+    {
+     "comparison": "rec_vs_haiku55_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 1352,
+     "novel": 233,
+     "share": 0.17233727810650887,
+     "lo95_over_items": 0.11374386850932733,
+     "hi95_over_items": 0.2349075446519395
+    },
+    {
+     "comparison": "rec_vs_opus46_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 71,
+     "novel": 21,
+     "share": 0.29577464788732394,
+     "lo95_over_items": 0.0196078431372549,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "rec_vs_opus46_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 2,
+     "concerns": 71,
+     "novel": 21,
+     "share": 0.29577464788732394,
+     "lo95_over_items": 0.0196078431372549,
+     "hi95_over_items": 1.0
+    },
+    {
+     "comparison": "rec_vs_opus46a_same",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 341,
+     "novel": 19,
+     "share": 0.05571847507331378,
+     "lo95_over_items": 0.01702127659574468,
+     "hi95_over_items": 0.08874560019419832
+    },
+    {
+     "comparison": "rec_vs_opus46a_same",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 7,
+     "concerns": 341,
+     "novel": 19,
+     "share": 0.05571847507331378,
+     "lo95_over_items": 0.01702127659574468,
+     "hi95_over_items": 0.08874560019419832
+    },
+    {
+     "comparison": "rec_vs_rec_others",
+     "threshold": "novel_cross",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 564,
+     "novel": 10,
+     "share": 0.01773049645390071,
+     "lo95_over_items": 0.008213552361396304,
+     "hi95_over_items": 0.028169014084507043
+    },
+    {
+     "comparison": "rec_vs_rec_others",
+     "threshold": "novel_pair",
+     "items": "all",
+     "n_items": 13,
+     "concerns": 564,
+     "novel": 10,
+     "share": 0.01773049645390071,
+     "lo95_over_items": 0.008213552361396304,
+     "hi95_over_items": 0.028169014084507043
+    }
+   ],
+   "contrasts_items_above_spread": {
+    "haiku55_vs_rec_same - haiku55_vs_haiku55": 10,
+    "haiku55_vs_opus46a_same - haiku55_vs_haiku55": 5,
+    "haiku55_vs_opus46a_same - opus46a_vs_opus46a": 5,
+    "haiku55_vs_rec_others - rec_vs_rec_others": 10
+   },
+   "contrasts_items_below_spread": {
+    "haiku55_vs_rec_same - haiku55_vs_haiku55": 1
+   },
+   "contrasts_items_total": {
+    "haiku55_vs_rec_same - haiku55_vs_haiku55": 13,
+    "haiku55_vs_opus46a_same - haiku55_vs_haiku55": 7,
+    "haiku55_vs_opus46a_same - opus46a_vs_opus46a": 5,
+    "haiku55_vs_rec_others - rec_vs_rec_others": 13,
+    "opus46a_vs_rec_same - opus46a_vs_opus46a": 5
+   }
+  }
+ }
+}

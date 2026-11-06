@@ -1,0 +1,16 @@
+{
+ "endpoint": "http://192.168.0.49:11434",
+ "ollama_version": "0.18.0",
+ "model": "qwen3-embedding:8b",
+ "model_digest": "64b933495768fbd3b87c20583d379728a07471e0c66733a9df87cd1901b3c44b",
+ "quantization": "Q4_K_M",
+ "parameter_size": "7.6B",
+ "num_ctx": 8192,
+ "truncate": false,
+ "instruction_prefix": null,
+ "normalised": "L2, after the call",
+ "started_at": "2026-11-05T09:58:35+00:00",
+ "finished_at": "2026-11-05T10:01:57+00:00",
+ "texts_embedded": 2611,
+ "texts_sha256_of_sorted_hashes": "5d89a4e8076d3901018dc66534aa99ace7d5a9021ccf94bc77d5f9c27a243f83"
+}

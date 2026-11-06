@@ -1,0 +1,150 @@
+{
+ "note": "Round 1. The Round 1 `position` submission has no ready_to_vote field (only `respond`, from Round 2, does), so readiness exists for the recorded responses only; in the replays `defer` is the Round 1 way to say not ready. One row per sample, latest result (a re-run replaces the sample it re-ran).",
+ "all": {
+  "recorded": {
+   "samples": 52,
+   "positions": 52,
+   "votes": {
+    "no": 5,
+    "yes": 47
+   },
+   "not_ready_to_vote": 52,
+   "relation_to_record": {
+    "self": 52
+   }
+  },
+  "haiku55": {
+   "samples": 156,
+   "positions": 120,
+   "votes": {
+    "yes": 61,
+    "no": 27,
+    "defer": 32
+   },
+   "not_ready_to_vote": null,
+   "relation_to_record": {
+    "no position (read)": 36,
+    "divergent by voting differently": 19,
+    "same vote": 69,
+    "divergent by deferring": 32
+   }
+  },
+  "opus46a": {
+   "samples": 84,
+   "positions": 43,
+   "votes": {
+    "no": 6,
+    "yes": 36,
+    "defer": 1
+   },
+   "not_ready_to_vote": null,
+   "relation_to_record": {
+    "no position (read)": 41,
+    "same vote": 41,
+    "divergent by deferring": 1,
+    "divergent by voting differently": 1
+   }
+  },
+  "opus46": {
+   "samples": 16,
+   "positions": 5,
+   "votes": {
+    "yes": 5
+   },
+   "not_ready_to_vote": null,
+   "relation_to_record": {
+    "no position (read)": 10,
+    "no position (other)": 1,
+    "same vote": 5
+   }
+  }
+ },
+ "old_format_0006_0012": {
+  "recorded": {
+   "samples": 28,
+   "positions": 28,
+   "votes": {
+    "no": 5,
+    "yes": 23
+   },
+   "not_ready_to_vote": 28,
+   "relation_to_record": {
+    "self": 28
+   }
+  },
+  "haiku55": {
+   "samples": 84,
+   "positions": 57,
+   "votes": {
+    "yes": 9,
+    "no": 24,
+    "defer": 24
+   },
+   "not_ready_to_vote": null,
+   "relation_to_record": {
+    "no position (read)": 27,
+    "divergent by voting differently": 16,
+    "same vote": 17,
+    "divergent by deferring": 24
+   }
+  },
+  "opus46a": {
+   "samples": 84,
+   "positions": 43,
+   "votes": {
+    "no": 6,
+    "yes": 36,
+    "defer": 1
+   },
+   "not_ready_to_vote": null,
+   "relation_to_record": {
+    "no position (read)": 41,
+    "same vote": 41,
+    "divergent by deferring": 1,
+    "divergent by voting differently": 1
+   }
+  }
+ },
+ "new_format_0013_on": {
+  "recorded": {
+   "samples": 24,
+   "positions": 24,
+   "votes": {
+    "yes": 24
+   },
+   "not_ready_to_vote": 24,
+   "relation_to_record": {
+    "self": 24
+   }
+  },
+  "haiku55": {
+   "samples": 72,
+   "positions": 63,
+   "votes": {
+    "yes": 52,
+    "defer": 8,
+    "no": 3
+   },
+   "not_ready_to_vote": null,
+   "relation_to_record": {
+    "same vote": 52,
+    "no position (read)": 9,
+    "divergent by deferring": 8,
+    "divergent by voting differently": 3
+   }
+  },
+  "opus46": {
+   "samples": 16,
+   "positions": 5,
+   "votes": {
+    "yes": 5
+   },
+   "not_ready_to_vote": null,
+   "relation_to_record": {
+    "no position (read)": 10,
+    "no position (other)": 1,
+    "same vote": 5
+   }
+  }
+ }
+}
