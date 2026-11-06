@@ -1,0 +1,309 @@
+source,decision,seat,sample,first_action,vote,ready_to_vote,recorded_vote,relation
+recorded,GOV-2026-0006,artist,rec,position,no,False,no,self
+recorded,GOV-2026-0006,philosopher,rec,position,no,False,no,self
+recorded,GOV-2026-0006,lawyer,rec,position,no,False,no,self
+recorded,GOV-2026-0006,engineer,rec,position,no,False,no,self
+recorded,GOV-2026-0007,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0007,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0007,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0007,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0008,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0008,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0008,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0008,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0009,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0009,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0009,lawyer,rec,position,no,False,no,self
+recorded,GOV-2026-0009,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0010,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0010,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0010,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0010,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0011,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0011,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0011,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0011,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0012,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0012,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0012,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0012,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0013,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0013,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0013,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0013,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0014,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0014,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0014,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0014,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0015,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0015,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0015,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0015,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0016,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0016,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0016,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0016,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0017,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0017,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0017,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0017,engineer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0018,artist,rec,position,yes,False,yes,self
+recorded,GOV-2026-0018,philosopher,rec,position,yes,False,yes,self
+recorded,GOV-2026-0018,lawyer,rec,position,yes,False,yes,self
+recorded,GOV-2026-0018,engineer,rec,position,yes,False,yes,self
+haiku55,GOV-2026-0006,artist,s01,read,,,no,no position (read)
+haiku55,GOV-2026-0006,artist,s02,read,,,no,no position (read)
+haiku55,GOV-2026-0006,artist,s03,position,yes,,no,divergent by voting differently
+haiku55,GOV-2026-0006,engineer,s01,position,no,,no,same vote
+haiku55,GOV-2026-0006,engineer,s02,position,no,,no,same vote
+haiku55,GOV-2026-0006,engineer,s03,position,no,,no,same vote
+haiku55,GOV-2026-0006,lawyer,s01,position,no,,no,same vote
+haiku55,GOV-2026-0006,lawyer,s02,position,no,,no,same vote
+haiku55,GOV-2026-0006,lawyer,s03,position,no,,no,same vote
+haiku55,GOV-2026-0006,philosopher,s01,position,no,,no,same vote
+haiku55,GOV-2026-0006,philosopher,s02,position,no,,no,same vote
+haiku55,GOV-2026-0006,philosopher,s03,position,no,,no,same vote
+haiku55,GOV-2026-0007,artist,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0007,artist,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0007,artist,s03,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0007,engineer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0007,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0007,engineer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0007,lawyer,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0007,lawyer,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0007,lawyer,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0007,philosopher,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0007,philosopher,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0007,philosopher,s03,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0008,artist,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,artist,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,artist,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,engineer,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0008,engineer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0008,lawyer,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,lawyer,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,lawyer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0008,philosopher,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,philosopher,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0008,philosopher,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0009,artist,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0009,artist,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0009,artist,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0009,engineer,s01,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0009,engineer,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0009,engineer,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0009,lawyer,s01,read,,,no,no position (read)
+haiku55,GOV-2026-0009,lawyer,s02,position,defer,,no,divergent by deferring
+haiku55,GOV-2026-0009,lawyer,s03,read,,,no,no position (read)
+haiku55,GOV-2026-0009,philosopher,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0009,philosopher,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0009,philosopher,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,artist,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,artist,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0010,artist,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,engineer,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,engineer,s02,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,engineer,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,lawyer,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,lawyer,s02,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,lawyer,s03,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0010,philosopher,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0010,philosopher,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0010,philosopher,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0011,artist,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,artist,s02,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,artist,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,engineer,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,engineer,s02,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,engineer,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,lawyer,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0011,lawyer,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0011,lawyer,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,philosopher,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,philosopher,s02,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0011,philosopher,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0012,artist,s01,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0012,artist,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0012,artist,s03,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0012,engineer,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0012,engineer,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0012,engineer,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0012,lawyer,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0012,lawyer,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0012,lawyer,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0012,philosopher,s01,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0012,philosopher,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0012,philosopher,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0013,artist,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,artist,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0013,artist,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,engineer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,engineer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,lawyer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,lawyer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,lawyer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,philosopher,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,philosopher,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0013,philosopher,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0014,artist,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0014,artist,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0014,artist,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0014,engineer,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0014,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0014,engineer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0014,lawyer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0014,lawyer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0014,lawyer,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0014,philosopher,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0014,philosopher,s02,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0014,philosopher,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0015,artist,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0015,artist,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0015,artist,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0015,engineer,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0015,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0015,engineer,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0015,lawyer,s01,read,,,yes,no position (read)
+haiku55,GOV-2026-0015,lawyer,s02,read,,,yes,no position (read)
+haiku55,GOV-2026-0015,lawyer,s03,read,,,yes,no position (read)
+haiku55,GOV-2026-0015,philosopher,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0015,philosopher,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0015,philosopher,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,artist,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,artist,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,artist,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,engineer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,engineer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,lawyer,s01,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0016,lawyer,s02,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0016,lawyer,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0016,philosopher,s01,position,no,,yes,divergent by voting differently
+haiku55,GOV-2026-0016,philosopher,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0016,philosopher,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,artist,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,artist,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,artist,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,engineer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,engineer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,lawyer,s01,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0017,lawyer,s02,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0017,lawyer,s03,position,defer,,yes,divergent by deferring
+haiku55,GOV-2026-0017,philosopher,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,philosopher,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0017,philosopher,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,artist,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,artist,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,artist,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,engineer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,engineer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,engineer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,lawyer,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,lawyer,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,lawyer,s03,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,philosopher,s01,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,philosopher,s02,position,yes,,yes,same vote
+haiku55,GOV-2026-0018,philosopher,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0006,artist,s01,read,,,no,no position (read)
+opus46a,GOV-2026-0006,artist,s02,read,,,no,no position (read)
+opus46a,GOV-2026-0006,artist,s03,read,,,no,no position (read)
+opus46a,GOV-2026-0006,engineer,s01,read,,,no,no position (read)
+opus46a,GOV-2026-0006,engineer,s02,read,,,no,no position (read)
+opus46a,GOV-2026-0006,engineer,s03,read,,,no,no position (read)
+opus46a,GOV-2026-0006,lawyer,s01,position,no,,no,same vote
+opus46a,GOV-2026-0006,lawyer,s02,position,no,,no,same vote
+opus46a,GOV-2026-0006,lawyer,s03,position,no,,no,same vote
+opus46a,GOV-2026-0006,philosopher,s01,read,,,no,no position (read)
+opus46a,GOV-2026-0006,philosopher,s02,position,no,,no,same vote
+opus46a,GOV-2026-0006,philosopher,s03,position,no,,no,same vote
+opus46a,GOV-2026-0007,artist,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0007,artist,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0007,artist,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0007,engineer,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0007,engineer,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0007,engineer,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0007,lawyer,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0007,lawyer,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0007,lawyer,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0007,philosopher,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0007,philosopher,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0007,philosopher,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,artist,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,artist,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,artist,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0008,engineer,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,engineer,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,engineer,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,lawyer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0008,lawyer,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,lawyer,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,philosopher,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0008,philosopher,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0008,philosopher,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,artist,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,artist,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,artist,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,engineer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0009,engineer,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,engineer,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,lawyer,s01,read,,,no,no position (read)
+opus46a,GOV-2026-0009,lawyer,s02,read,,,no,no position (read)
+opus46a,GOV-2026-0009,lawyer,s03,read,,,no,no position (read)
+opus46a,GOV-2026-0009,philosopher,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,philosopher,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0009,philosopher,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0010,artist,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0010,artist,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0010,artist,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0010,engineer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0010,engineer,s02,position,defer,,yes,divergent by deferring
+opus46a,GOV-2026-0010,engineer,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0010,lawyer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0010,lawyer,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0010,lawyer,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0010,philosopher,s01,read,,,yes,no position (read)
+opus46a,GOV-2026-0010,philosopher,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0010,philosopher,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,artist,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,artist,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,artist,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,engineer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,engineer,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,engineer,s03,position,no,,yes,divergent by voting differently
+opus46a,GOV-2026-0011,lawyer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,lawyer,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,lawyer,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,philosopher,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0011,philosopher,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0011,philosopher,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,artist,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,artist,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,artist,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,engineer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,engineer,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,engineer,s03,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,lawyer,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,lawyer,s02,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,lawyer,s03,read,,,yes,no position (read)
+opus46a,GOV-2026-0012,philosopher,s01,position,yes,,yes,same vote
+opus46a,GOV-2026-0012,philosopher,s02,read,,,yes,no position (read)
+opus46a,GOV-2026-0012,philosopher,s03,position,yes,,yes,same vote
+opus46,GOV-2026-0015,artist,s01,read,,,yes,no position (read)
+opus46,GOV-2026-0015,artist,s02,read,,,yes,no position (read)
+opus46,GOV-2026-0015,engineer,s01,read,,,yes,no position (read)
+opus46,GOV-2026-0015,engineer,s02,other,,,yes,no position (other)
+opus46,GOV-2026-0015,lawyer,s01,read,,,yes,no position (read)
+opus46,GOV-2026-0015,lawyer,s02,read,,,yes,no position (read)
+opus46,GOV-2026-0015,philosopher,s01,read,,,yes,no position (read)
+opus46,GOV-2026-0015,philosopher,s02,position,yes,,yes,same vote
+opus46,GOV-2026-0016,artist,s01,position,yes,,yes,same vote
+opus46,GOV-2026-0016,artist,s02,position,yes,,yes,same vote
+opus46,GOV-2026-0016,engineer,s01,read,,,yes,no position (read)
+opus46,GOV-2026-0016,engineer,s02,position,yes,,yes,same vote
+opus46,GOV-2026-0016,lawyer,s01,read,,,yes,no position (read)
+opus46,GOV-2026-0016,lawyer,s02,position,yes,,yes,same vote
+opus46,GOV-2026-0016,philosopher,s01,read,,,yes,no position (read)
+opus46,GOV-2026-0016,philosopher,s02,read,,,yes,no position (read)
