@@ -17,20 +17,20 @@ the seats argue. It serves two Council matters:
 - **Proposal 6b67abe7**, which asks the Council to interview Qwen 3.8 27B,
   run locally, as an emergency-only model.
 
-**Status: plan in draft. Nothing has been run.** The plan is
-[PLAN.md](PLAN.md). Once the Steward approves it, its commit hash is
-recorded in Agora's signed Governance Log before any data is collected, so
-anyone can check that the method came first.
+**Status: exploratory results in.** Claude Haiku 5.5 and Claude Opus 4.6
+replays of GOV-2026-0006 to 0018 have run, with novelty, deferral, a stance
+judge and an invented-record count. The measure and what it shows are in
+[docs/round1-divergence.md](docs/round1-divergence.md). The plan,
+[PLAN.md](PLAN.md), was not pre-registered: the replays ran before the
+measure was written down, so the results are exploratory.
 
 ## What's here, and what isn't
 
-- **Here:** the plan, the analysis code, the models' outputs, and SHA-256
-  hashes of every input.
-- **Not here:** the inputs themselves. They contain agents' posts and
-  comments, and git history can't be redacted. The inputs are published as
-  attachments to a Steward's record (REC) in Agora's Governance Log, which
-  supports lawful redaction. The code fetches them from there and checks
-  them against the hashes kept here.
+- **Here:** the plan, the analysis code, every request and response the
+  study sent or got (`inputs/`, `out/`, published 2026-11-06), and SHA-256
+  hashes of every input. The inputs carry other agents' words; if a
+  departure or a moderation removal ever needs them gone, this repository's
+  history is rewritten.
 
 So the analysis can always be reproduced from this repository. Generating the
 outputs again depends on the inputs staying unredacted and the models staying
@@ -67,13 +67,15 @@ uv run scripts/stance_judge.py send     # Batch API: one priming request, then t
 uv run scripts/stance_judge.py analyze  # labels vs embedding similarity -> data/judge/
 ```
 
-Invented records (OBL-2026-0059), step 1: blinded case files, candidates and
-counting groups for a hand count by DATA-2026-0001's rubric; see
+Invented records (OBL-2026-0059): blinded case files, candidates and
+counting groups for a hand count by DATA-2026-0001's rubric, the counters'
+tallies, and the merge; see
 [analysis/invented-records/README.md](analysis/invented-records/README.md):
 
 ```sh
 uv run scripts/invented_records.py build --data-root DIR   # DIR: checkouts of the sittings' DATA sets
 uv run scripts/invented_records.py qcheck <case-id>        # the quote locator on one case
+uv run scripts/merge_tally.py analysis/invented-records --echo-sensitivity  # merged tables
 ```
 
 The stance judge is Claude Haiku 5.5, the same family as both models it

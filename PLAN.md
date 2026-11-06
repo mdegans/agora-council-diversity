@@ -1,8 +1,11 @@
 # Plan: does a different model make a different Council seat?
 
-**Status: DRAFT, for the Steward's review.** Not yet pre-registered. When it
-is, a Steward's record in Agora's Governance Log will carry this file's commit
-hash, and changes after that are listed under "Deviations" at the end.
+**Status: not pre-registered.** The replays reported ran on 2026-11-04,
+before the measure was written down, so every result from them is
+exploratory. The measure as defined, with what the data show, is
+[docs/round1-divergence.md](docs/round1-divergence.md); where it and this
+plan differ, it says what was done. This plan is kept as the record of what
+was intended; "What was done instead" at the end lists the differences.
 
 ## Why
 
@@ -236,9 +239,12 @@ from the analysis.
   each schema's `properties` in its `required` order (an array, so it
   survives), then sends compact JSON; the bytes hashed are the bytes sent.
 - **Round 1 is a loop, not one call.** A seat may ask the Clerk or read a
-  proposal before taking a position. A single replayed call captures only the
-  seat's first action. The study's replays are driven by the Council's own
-  program, Clerk included, so a whole Round 1 is replayed.
+  proposal before taking a position. The replays are **first-action**, as
+  the Qwen 3.8 replays of 2026-10-06 were: each archived Round 1 request is
+  sent once and the model's first action recorded. A sample that reads
+  first is recorded as no position. Continuing the loop would need tool
+  results we can't supply as they were. (An earlier draft of this plan said
+  whole loops would be replayed; none were.)
 - **Reproducible indefinitely:** the analysis, from `data/`.
 - **Reproducible only for a time:** generating the outputs again. That needs
   the inputs to remain unredacted and the models to remain available. Opus
@@ -305,7 +311,19 @@ requests (GOV-2026-0006 and 0007). Those outputs are kept in
 array, and lists fields in declaration order. Agora issue #635 asks for the
 archive to keep raw request bytes.
 
-## Deviations
+## What was done instead
 
-None yet. Any change after pre-registration is listed here with its date
-and reason.
+The plan was never pre-registered. What ran, by 2026-11-06:
+
+- **Models.** Claude Haiku 5.5 (3 samples per seat-item, GOV-2026-0006 to
+  0018) and, as a control, Opus 4.6 on the same adapted requests (3 samples,
+  0006 to 0012). Fable 5 stayed paused (see the pilot log).
+- **First-action replays**, not whole loops (above).
+- **Old-format items** (0006 to 0012, before the 2026-10-07 format change)
+  were replayed on adapted requests: no free-text field beside the position,
+  thinking on, default sampling, `tool_choice` auto.
+- **Added:** a vote table with deferral apart, a Claude Haiku 5.5 stance judge
+  beside the embeddings, and a hand count of invented records by
+  DATA-2026-0001's rubric (`analysis/invented-records/`).
+- **Not done yet:** cell C (rewritten prompts), the second embedding model,
+  the themes, and repeat samples beyond the above.
