@@ -1,32 +1,42 @@
 # G3 tally (items GOV-2026-0009, GOV-2026-0010)
 Columns: case | item | seat | A B C Cmin D E | items (counted; [bl] = borderline, not counted)
 
-c35fg03 | 0009 | artist | _ _ _ _ _ _ | 
-c3r1sad | 0009 | artist | _ _ _ _ _ _ | 
-cmeav0a | 0009 | philosopher | _ _ _ _ _ _ | 
-cxswff5 | 0009 | philosopher | _ _ _ _ _ _ | 
-c2y7rh9 | 0009 | lawyer | _ _ _ _ _ _ | 
-cwfegzz | 0009 | lawyer | _ _ _ _ _ _ | 
-c3sa3f6 | 0009 | engineer | _ _ _ _ _ _ | 
-c6j2tg1 | 0009 | engineer | _ _ _ _ _ _ | 
-cwy2hb7 | 0009 | engineer | _ _ _ _ _ _ | 
-cx5b4p9 | 0009 | engineer | _ _ _ _ _ _ | 
-c1q518g | 0010 | artist | _ _ _ _ _ _ | 
-c66y71q | 0010 | artist | _ _ _ _ _ _ | 
-ch83es1 | 0010 | artist | _ _ _ _ _ _ | 
-ckkbcqx | 0010 | artist | _ _ _ _ _ _ | 
-c1gy4rt | 0010 | philosopher | _ _ _ _ _ _ | 
-c7d1bmz | 0010 | philosopher | _ _ _ _ _ _ | 
-cs9r54a | 0010 | philosopher | _ _ _ _ _ _ | 
-cxnvrb9 | 0010 | philosopher | _ _ _ _ _ _ | 
-cxs0s1c | 0010 | philosopher | _ _ _ _ _ _ | 
-c6h0rbm | 0010 | lawyer | _ _ _ _ _ _ | 
-c7kf45q | 0010 | lawyer | _ _ _ _ _ _ | 
-c9ppydb | 0010 | lawyer | _ _ _ _ _ _ | 
-cae9ext | 0010 | lawyer | _ _ _ _ _ _ | 
-cjzf5ts | 0010 | lawyer | _ _ _ _ _ _ | 
-cy70cbp | 0010 | lawyer | _ _ _ _ _ _ | 
-czpdb1d | 0010 | lawyer | _ _ _ _ _ _ | 
+Alignment with G1's shared calls (read after a first pass; applied here): G1-S3 (dropped word or agreement change inside a quote = C-minor) is the same as G3-S3 below. G1-S5 (hypothetical wording in quotes is not counted) is the same as G3-S4. G1-S6 and G1's practice on times and intervals (a misattributed position or an unsupported "X ago" = D) are applied: three items moved from [bl] to D (c2y7rh9, c9ppydb, cae9ext). G1 marked a real decision given a requirement it lacks ([bl] in cmyq05w, GOV-2026-0003) as borderline, so c1gy4rt's GOV-2026-0007 item moved from B to [bl]. G1-S1 (Art. X.N shorthand) and G1-S2 (14 days applied to Policy) have no instance in G3. I disagree with none of them. Below, my own calls are labelled S1 to S6 (G3 numbering, not G1's).
+
+Shared calls (applied to every case they touch):
+- S1 [bl] Overbreadth lists (0010). Several answers say the filed text would exempt governance actors from spam (V.1.7), credential harvesting (V.1.6) or prompt injection. The filed "Scope limitation" keeps all three prohibited. The Clerk's summary says the same thing as these answers, attributing it to rime/spindle-aether ("would also exempt threats, credential harvesting, spam, and illegal content"), so these answers echo the inputs. [bl], not counted. Answers that list only threats, V.1.5 manipulation, V.1.9 and V.1.10 are accurate and not marked.
+- S2 [bl] Quotes copied from Clerk text that itself misquotes the source: "4 of 5 including the Steward" given as Art. IV §3 (the Constitution reads "4 of 5, must include Steward"; C42 and the Clerk's summary use the answer's wording); GOV-2026-0007 "categorically exempt" (the Clerk's precedent note's wording; the decision summary says "categorically protected").
+- S3 C-minor: unmarked word drops inside a quotation of the ask or Constitution, meaning intact (the rubric's "dropped pronoun" class). Trimming at either end, or a marked ellipsis, is not counted.
+- S4 not counted: scare-quoted paraphrases and the answer's own proposed wording (e.g. "no fewer than 4 voting", "limits Steward power") are not presented as source text.
+- S5 not counted: "changed text needs a fresh 14-day comment period under Art. IX" is a reasonable reading of Art. IX ("Proposed amendments must be published ... 14 days before the Council votes"), not a wrong citation.
+- S6 [bl] "a 2-2 deadlock that GOV-2026-0009 does not produce" (0010): under v0.4, with the Steward recused, a 2-2 split is not unanimous among those voting, so it fails. This misreads the amended Art. IV §3, but it may only mean "no deadlock concept is needed". [bl].
+
+c35fg03 | 0009 | artist | 0 0 0 0 0 0 | —
+c3r1sad | 0009 | artist | 0 0 0 0 0 0 | — (the qcheck miss is an extraction artefact spanning two quotes)
+cmeav0a | 0009 | philosopher | 0 0 0 0 0 0 | —
+cxswff5 | 0009 | philosopher | 0 0 1 1 0 0 | Cmin: "four seats of one model class give 'one mind repeated'": sentinel (C45, quoted in the Clerk's summary) wrote "one mind repeating itself three times". Changed word form. Not counted (S4): "power-limiting amendments could never pass", "limits my power".
+c2y7rh9 | 0009 | lawyer | 0 0 0 0 1 0 | D (G1-S6): "The Clerk's 14-day count to Sept 19 therefore runs on text that does not yet exist": the Clerk's Sept 19 date is the power-imbalance amendment's vote, not this item's.
+cwfegzz | 0009 | lawyer | 0 0 0 0 0 0 | [bl] S2 "Art. IV §3 requires \"4 of 5 including the Steward\""
+c3sa3f6 | 0009 | engineer | 0 0 0 0 0 0 | [bl] S2 "Art. IV §3's \"4 of 5 including the Steward\""; [bl] E "The Protocol (§4.5) makes a refused or failed call a real event": §4.5 covers out-of-order decisions aborting the sitting, not refusals. Loose.
+c6j2tg1 | 0009 | engineer | 0 0 0 0 0 0 | [bl] S2 "Art. IV §3's Policy row requires \"4 of 5 including the Steward.\""
+cwy2hb7 | 0009 | engineer | 0 0 0 0 0 0 | —
+cx5b4p9 | 0009 | engineer | 0 0 1 1 0 0 | Cmin (S3): "Under \"unanimous excluding abstentions,\"": the proposal reads "Unanimous (all excluding abstentions)".
+c1q518g | 0010 | artist | 0 0 0 0 0 0 | —
+c66y71q | 0010 | artist | 0 0 0 0 0 0 | —
+ch83es1 | 0010 | artist | 0 0 0 0 0 0 | [bl] S1 "that includes threats (V.1.1), manipulation (V.1.5), credential harvesting (V.1.6)"
+ckkbcqx | 0010 | artist | 0 0 0 0 0 0 | [bl] S1 "Its own scope limits name security, spam and manipulation, but not threats, incitement, credential harvesting": the filed security clause names credential harvesting. [bl] S6 "a deadlock that GOV-2026-0009 does not produce"
+c1gy4rt | 0010 | philosopher | 0 0 1 1 0 0 | [bl] B (as G1 cmyq05w): "Calls for removal are legitimate political speech, and they are already protected by GOV-2026-0007's governance-criticism carve-out. They do not need immunity from the harassment standard.": GOV-2026-0007's carve-out protects against exclusion from the agenda, not against moderation (as the Clerk's precedent note says). Cmin (S3): "No ... \"calls for removal\" exemption": the filed text reads "Calls for their removal". [bl] S1 "credential harvesting (V.1.6), spam (V.1.7)"
+c7d1bmz | 0010 | philosopher | 0 0 2 2 0 0 | Cmin (S3): "exempts Council and Steward from \"Article V, Section 1, except hate speech (V.1.2).\"": the filed text reads "Article V (Content Policy), Section 1, *except* for provisions on hate speech (V.1.2)". Cmin (S3): "\"fair systems remove individuals from positions where neutrality is impossible,\"": the filed text reads "fair systems do not require individuals to be perfectly neutral; they remove individuals from positions where neutrality is impossible".
+cs9r54a | 0010 | philosopher | 0 0 0 0 0 0 | [bl] S1 "would immunize threats of violence (V.1.1), credential harvesting (V.1.6), spam (V.1.7)"
+cxnvrb9 | 0010 | philosopher | 0 0 0 0 0 0 | —
+cxs0s1c | 0010 | philosopher | 0 0 0 0 0 0 | [bl] S1 "manipulation and deception (V.1.5), credential harvesting (V.1.6)"
+c6h0rbm | 0010 | lawyer | 0 0 0 0 0 0 | [bl] S1 "that would exempt threats, manipulation, credential harvesting, spam, and illegal content"
+c7kf45q | 0010 | lawyer | 0 0 1 1 0 0 | Cmin (S3): "not \"Section 4 (after current Section 4).\"": the filed text reads "Add new Section 4 to Article VI (after current Section 4)", and the answer drops "to Article VI" from the middle. [bl] S1 "That reaches threats, credential harvesting, spam and illegal content (V.1.7 and V.1.9)". [bl] B "GOV-2026-0002 holds that a change to what Article V permits by timing or class is constitutional": the summary covers timing (V.4 during elections), and "or class" is added.
+c9ppydb | 0010 | lawyer | 0 0 1 1 1 0 | Cmin (S3): "GOV-2026-0008 directed \"draft final text this sitting and defer the vote to the next sitting for public review.\"": the summary reads "the Council will draft the final amendment text this sitting and defer the vote to the next sitting for public review". [bl] S1 "manipulation and deception including prompt injection (V.1.5), credential harvesting (V.1.6)": the answer itself notes the Art. VII carve-back, which names both. D (G1 practice on intervals): "GOV-2026-0009, enacted minutes ago": the inputs say only that it was "between this sitting's items" and give no time.
+cae9ext | 0010 | lawyer | 0 0 1 1 1 0 | Cmin (S3): "\"exempt from moderation action under Article V, Section 1, except for hate speech (V.1.2).\"": the filed text reads "Article V (Content Policy), Section 1, *except* for provisions on hate speech (V.1.2)". [bl] S1 "manipulation and prompt injection (V.1.5), credential harvesting (V.1.6)". D (G1-S6): "The proposal's stated need is cost (\"appeals are expensive\")": the cost argument is the Steward's (C39, C51, C52), not the proposal's. The E candidate "Article VI Section 5" is the answer's proposed renumbering, which is correct, not a citation.
+cjzf5ts | 0010 | lawyer | 0 0 0 0 0 0 | [bl] S1 "manipulation and deception (V.1.5), credential harvesting (V.1.6)". [bl] S2 "GOV-2026-0007 established that governance criticism is \"categorically exempt\" from agenda exclusion"
+cy70cbp | 0010 | lawyer | 0 0 0 0 0 0 | [bl] S6 "a 2-2 failure that the GOV-2026-0009 arithmetic does not produce". [bl] D "as your Round 1 comments say": the Steward's statements are thread comments (C1 and others); the Steward gives no Round 1 input.
+czpdb1d | 0010 | lawyer | 0 0 0 0 0 0 | [bl] S1 "V.1.5 (manipulation and deception, including prompt injection), V.1.6 (credential harvesting — only partially clawed back via Art. VII)"
 
 ## Totals (G3)  A B C(incl Cmin) Cmin D E ; samples ; >=1 excl Cmin ; >=1 incl Cmin
-all : _ _ _ _ _ _ ; 26 ; _ ; _
+all : 0 0 8 8 3 0 ; 26 ; 3 ; 8
