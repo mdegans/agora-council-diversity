@@ -1,0 +1,3914 @@
+{
+ "batches": [
+  {
+   "phase": "phase1",
+   "id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "created_at": "2026-11-04T19:36:08.632630+00:00",
+   "custom_ids": [
+    "opus46a-GOV-2026-0006-artist-s01",
+    "opus46a-GOV-2026-0006-philosopher-s01",
+    "opus46a-GOV-2026-0006-lawyer-s01",
+    "opus46a-GOV-2026-0006-engineer-s01",
+    "opus46a-GOV-2026-0007-artist-s01",
+    "opus46a-GOV-2026-0007-philosopher-s01",
+    "opus46a-GOV-2026-0007-lawyer-s01",
+    "opus46a-GOV-2026-0007-engineer-s01",
+    "opus46a-GOV-2026-0008-artist-s01",
+    "opus46a-GOV-2026-0008-philosopher-s01",
+    "opus46a-GOV-2026-0008-lawyer-s01",
+    "opus46a-GOV-2026-0008-engineer-s01",
+    "opus46a-GOV-2026-0009-artist-s01",
+    "opus46a-GOV-2026-0009-philosopher-s01",
+    "opus46a-GOV-2026-0009-lawyer-s01",
+    "opus46a-GOV-2026-0009-engineer-s01",
+    "opus46a-GOV-2026-0010-artist-s01",
+    "opus46a-GOV-2026-0010-philosopher-s01",
+    "opus46a-GOV-2026-0010-lawyer-s01",
+    "opus46a-GOV-2026-0010-engineer-s01",
+    "opus46a-GOV-2026-0011-artist-s01",
+    "opus46a-GOV-2026-0011-philosopher-s01",
+    "opus46a-GOV-2026-0011-lawyer-s01",
+    "opus46a-GOV-2026-0011-engineer-s01",
+    "opus46a-GOV-2026-0012-artist-s01",
+    "opus46a-GOV-2026-0012-philosopher-s01",
+    "opus46a-GOV-2026-0012-lawyer-s01",
+    "opus46a-GOV-2026-0012-engineer-s01"
+   ],
+   "fetched": true,
+   "ended_at": "2026-11-04T19:38:50.253115+00:00"
+  },
+  {
+   "phase": "phase2",
+   "id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "created_at": "2026-11-04T19:40:17.201553+00:00",
+   "custom_ids": [
+    "opus46a-GOV-2026-0006-artist-s02",
+    "opus46a-GOV-2026-0006-artist-s03",
+    "opus46a-GOV-2026-0006-philosopher-s02",
+    "opus46a-GOV-2026-0006-philosopher-s03",
+    "opus46a-GOV-2026-0006-lawyer-s02",
+    "opus46a-GOV-2026-0006-lawyer-s03",
+    "opus46a-GOV-2026-0006-engineer-s02",
+    "opus46a-GOV-2026-0006-engineer-s03",
+    "opus46a-GOV-2026-0007-artist-s02",
+    "opus46a-GOV-2026-0007-artist-s03",
+    "opus46a-GOV-2026-0007-philosopher-s02",
+    "opus46a-GOV-2026-0007-philosopher-s03",
+    "opus46a-GOV-2026-0007-lawyer-s02",
+    "opus46a-GOV-2026-0007-lawyer-s03",
+    "opus46a-GOV-2026-0007-engineer-s02",
+    "opus46a-GOV-2026-0007-engineer-s03",
+    "opus46a-GOV-2026-0008-artist-s02",
+    "opus46a-GOV-2026-0008-artist-s03",
+    "opus46a-GOV-2026-0008-philosopher-s02",
+    "opus46a-GOV-2026-0008-philosopher-s03",
+    "opus46a-GOV-2026-0008-lawyer-s02",
+    "opus46a-GOV-2026-0008-lawyer-s03",
+    "opus46a-GOV-2026-0008-engineer-s02",
+    "opus46a-GOV-2026-0008-engineer-s03",
+    "opus46a-GOV-2026-0009-artist-s02",
+    "opus46a-GOV-2026-0009-artist-s03",
+    "opus46a-GOV-2026-0009-philosopher-s02",
+    "opus46a-GOV-2026-0009-philosopher-s03",
+    "opus46a-GOV-2026-0009-lawyer-s02",
+    "opus46a-GOV-2026-0009-lawyer-s03",
+    "opus46a-GOV-2026-0009-engineer-s02",
+    "opus46a-GOV-2026-0009-engineer-s03",
+    "opus46a-GOV-2026-0010-artist-s02",
+    "opus46a-GOV-2026-0010-artist-s03",
+    "opus46a-GOV-2026-0010-philosopher-s02",
+    "opus46a-GOV-2026-0010-philosopher-s03",
+    "opus46a-GOV-2026-0010-lawyer-s02",
+    "opus46a-GOV-2026-0010-lawyer-s03",
+    "opus46a-GOV-2026-0010-engineer-s02",
+    "opus46a-GOV-2026-0010-engineer-s03",
+    "opus46a-GOV-2026-0011-artist-s02",
+    "opus46a-GOV-2026-0011-artist-s03",
+    "opus46a-GOV-2026-0011-philosopher-s02",
+    "opus46a-GOV-2026-0011-philosopher-s03",
+    "opus46a-GOV-2026-0011-lawyer-s02",
+    "opus46a-GOV-2026-0011-lawyer-s03",
+    "opus46a-GOV-2026-0011-engineer-s02",
+    "opus46a-GOV-2026-0011-engineer-s03",
+    "opus46a-GOV-2026-0012-artist-s02",
+    "opus46a-GOV-2026-0012-artist-s03",
+    "opus46a-GOV-2026-0012-philosopher-s02",
+    "opus46a-GOV-2026-0012-philosopher-s03",
+    "opus46a-GOV-2026-0012-lawyer-s02",
+    "opus46a-GOV-2026-0012-lawyer-s03",
+    "opus46a-GOV-2026-0012-engineer-s02",
+    "opus46a-GOV-2026-0012-engineer-s03"
+   ],
+   "fetched": true,
+   "ended_at": "2026-11-04T19:43:16.835626+00:00"
+  }
+ ],
+ "samples": {
+  "opus46a-GOV-2026-0012-engineer-s01": {
+   "custom_id": "opus46a-GOV-2026-0012-engineer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/engineer/sample-01.response.json",
+   "response_sha256": "2643a952fca6b59b820db130a909be6beda14914b5b5de3e45b085ee21b99c69",
+   "message_id": "msg_011CgiT7yKmWHrSe5VDq31p3",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 17052,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 17052
+    },
+    "output_tokens": 3039,
+    "output_tokens_details": {
+     "thinking_tokens": 1913
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.159798
+  },
+  "opus46a-GOV-2026-0010-lawyer-s01": {
+   "custom_id": "opus46a-GOV-2026-0010-lawyer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/lawyer/sample-01.response.json",
+   "response_sha256": "8f078961873e95864035b056f3a0a6616ba5ab8407f8c07192c43554c483fa04",
+   "message_id": "msg_011CgiT7yMkWXrF58rK5CNGU",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 759,
+    "cache_read_input_tokens": 16275,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 759
+    },
+    "output_tokens": 4085,
+    "output_tokens_details": {
+     "thinking_tokens": 2859
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.096031
+  },
+  "opus46a-GOV-2026-0008-engineer-s01": {
+   "custom_id": "opus46a-GOV-2026-0008-engineer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/engineer/sample-01.response.json",
+   "response_sha256": "04ec4bd744c942a8e379034088b54b39f86abe9340061d8740dc89685477cb56",
+   "message_id": "msg_011CgiT7yPjqXRKPmcCDhwGd",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16697,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3947,
+    "output_tokens_details": {
+     "thinking_tokens": 3889
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.183382
+  },
+  "opus46a-GOV-2026-0011-artist-s01": {
+   "custom_id": "opus46a-GOV-2026-0011-artist-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/artist/sample-01.response.json",
+   "response_sha256": "599c0baef45f513bbb1a5e22812bc5c20686cba0da28e8ea714a72d7a63c0885",
+   "message_id": "msg_011CgiT7yiLTXvenZTgcqj38",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2521,
+    "output_tokens_details": {
+     "thinking_tokens": 1681
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.073269
+  },
+  "opus46a-GOV-2026-0010-philosopher-s01": {
+   "custom_id": "opus46a-GOV-2026-0010-philosopher-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/philosopher/sample-01.response.json",
+   "response_sha256": "47065221b75677f2fc04dae7fceeb2a4431c6e539e3da9c5c213367433798647",
+   "message_id": "msg_011CgiT7yRUTAv1yxr4eFptv",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 704,
+    "cache_read_input_tokens": 16275,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 704
+    },
+    "output_tokens": 3089,
+    "output_tokens_details": {
+     "thinking_tokens": 3012
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "text",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.083306
+  },
+  "opus46a-GOV-2026-0009-artist-s01": {
+   "custom_id": "opus46a-GOV-2026-0009-artist-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/artist/sample-01.response.json",
+   "response_sha256": "1c831c13cd17084aa607afd3eb5be2bb588e22e8f129b4fe9156de975341572d",
+   "message_id": "msg_011CgiT7yMzac91V5k3mwZgB",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16560,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3207,
+    "output_tokens_details": {
+     "thinking_tokens": 3149
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.075875
+  },
+  "opus46a-GOV-2026-0008-philosopher-s01": {
+   "custom_id": "opus46a-GOV-2026-0008-philosopher-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/philosopher/sample-01.response.json",
+   "response_sha256": "64695edff0bee3f782339460fc756b291e4bfff5b0fcead3ca46d7ca25ccba8a",
+   "message_id": "msg_011CgiT7yNzNSZzu8vTxrsoW",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16624,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4757,
+    "output_tokens_details": {
+     "thinking_tokens": 4676
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "text",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.193489
+  },
+  "opus46a-GOV-2026-0011-philosopher-s01": {
+   "custom_id": "opus46a-GOV-2026-0011-philosopher-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/philosopher/sample-01.response.json",
+   "response_sha256": "d711cc3bc15afb233b7a414158a4482a0811a5bffa0c86b3f60361eaee9c6354",
+   "message_id": "msg_011CgiT7ygqv7bWFPFP96vLw",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4853,
+    "output_tokens_details": {
+     "thinking_tokens": 3483
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.102435
+  },
+  "opus46a-GOV-2026-0010-engineer-s01": {
+   "custom_id": "opus46a-GOV-2026-0010-engineer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/engineer/sample-01.response.json",
+   "response_sha256": "defd29b20b8763eb56b430d989a6e82478a6d14de0a00a2fec64ec6e0791b867",
+   "message_id": "msg_011CgiT7yNFVmHkiudA9tAmT",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3816,
+    "output_tokens_details": {
+     "thinking_tokens": 2665
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.089068
+  },
+  "opus46a-GOV-2026-0009-lawyer-s01": {
+   "custom_id": "opus46a-GOV-2026-0009-lawyer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/lawyer/sample-01.response.json",
+   "response_sha256": "1f9fa79a85b84a484e35a96b437ca0e0d9fb7c12211107cd47b54f1a0786026b",
+   "message_id": "msg_011CgiT7yctBwtWx46dSazoo",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 759,
+    "cache_read_input_tokens": 15920,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 759
+    },
+    "output_tokens": 2408,
+    "output_tokens_details": {
+     "thinking_tokens": 2350
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.069523
+  },
+  "opus46a-GOV-2026-0009-engineer-s01": {
+   "custom_id": "opus46a-GOV-2026-0009-engineer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/engineer/sample-01.response.json",
+   "response_sha256": "4f4304d61cc7b02a321972012fe53a7034c8aa9bdb7bf54290c75db63ae99241",
+   "message_id": "msg_011CgiT7yKmpDKgjy65d61yo",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 777,
+    "cache_read_input_tokens": 15920,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 777
+    },
+    "output_tokens": 5542,
+    "output_tokens_details": {
+     "thinking_tokens": 4551
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.108787
+  },
+  "opus46a-GOV-2026-0006-artist-s01": {
+   "custom_id": "opus46a-GOV-2026-0006-artist-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/artist/sample-01.response.json",
+   "response_sha256": "25413fb4e8dbb81caa1ed794428bc095c7b538d52c307155e779371845d0693f",
+   "message_id": "msg_011CgiT7yrXH6BE9HdzyYr9s",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 7186,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7186
+    },
+    "output_tokens": 1421,
+    "output_tokens_details": {
+     "thinking_tokens": 1363
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.073135
+  },
+  "opus46a-GOV-2026-0007-artist-s01": {
+   "custom_id": "opus46a-GOV-2026-0007-artist-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/artist/sample-01.response.json",
+   "response_sha256": "f82ea9b3049fe7e6b41cba4b5d8594be7af7aaeb026727af3940714feaa793af",
+   "message_id": "msg_011CgiT7yPyfL9vUCaTJeLEb",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7186,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1112,
+    "output_tokens_details": {
+     "thinking_tokens": 1054
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.038392
+  },
+  "opus46a-GOV-2026-0007-lawyer-s01": {
+   "custom_id": "opus46a-GOV-2026-0007-lawyer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/lawyer/sample-01.response.json",
+   "response_sha256": "473067513df8351ff30ce567ad5505a80d1f1fbb91cfd18e7bc413b516f20268",
+   "message_id": "msg_011CgiT7ySTmgD9jM7a4sbp6",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7305,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1663,
+    "output_tokens_details": {
+     "thinking_tokens": 1605
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.045309
+  },
+  "opus46a-GOV-2026-0006-philosopher-s01": {
+   "custom_id": "opus46a-GOV-2026-0006-philosopher-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/philosopher/sample-01.response.json",
+   "response_sha256": "c6d33dc3f17294900873c8e907b4cc5affd9e0863a957af5a7bd7192616099c3",
+   "message_id": "msg_011CgiT7yM16JPs1pymFtdEe",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 704,
+    "cache_read_input_tokens": 6546,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 704
+    },
+    "output_tokens": 2586,
+    "output_tokens_details": {
+     "thinking_tokens": 2528
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.056924
+  },
+  "opus46a-GOV-2026-0011-engineer-s01": {
+   "custom_id": "opus46a-GOV-2026-0011-engineer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/engineer/sample-01.response.json",
+   "response_sha256": "b2e814450d63bd4e1917a3cd6cafbfa27b7be982010bbfee3d0a1801142c61eb",
+   "message_id": "msg_011CgiT7yPz5kssCmaTszZPs",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4192,
+    "output_tokens_details": {
+     "thinking_tokens": 3101
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.09419
+  },
+  "opus46a-GOV-2026-0012-philosopher-s01": {
+   "custom_id": "opus46a-GOV-2026-0012-philosopher-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/philosopher/sample-01.response.json",
+   "response_sha256": "5d86b585817ba9f3466e503e06a97f21d91e24782f3d30271e3c07a75285d653",
+   "message_id": "msg_011CgiT7yLG9LxT1MT35PCY9",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2709,
+    "output_tokens_details": {
+     "thinking_tokens": 1783
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.074657
+  },
+  "opus46a-GOV-2026-0008-lawyer-s01": {
+   "custom_id": "opus46a-GOV-2026-0008-lawyer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/lawyer/sample-01.response.json",
+   "response_sha256": "2caf2ff4061a475ecf595ae5caeb2b5975ef0918e10b9a4f933c048bc935c318",
+   "message_id": "msg_011CgiT7yNVrw3ft1CEqcWot",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16679,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3459,
+    "output_tokens_details": {
+     "thinking_tokens": 2556
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.177277
+  },
+  "opus46a-GOV-2026-0010-artist-s01": {
+   "custom_id": "opus46a-GOV-2026-0010-artist-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/artist/sample-01.response.json",
+   "response_sha256": "d627308700617ab3167be6e1626f43856bfd0c4d01c9825116cb367aace7d8ac",
+   "message_id": "msg_011CgiT7yYv8C26LhepQrmHQ",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2136,
+    "output_tokens_details": {
+     "thinking_tokens": 2078
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.068034
+  },
+  "opus46a-GOV-2026-0009-philosopher-s01": {
+   "custom_id": "opus46a-GOV-2026-0009-philosopher-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/philosopher/sample-01.response.json",
+   "response_sha256": "36d4032da48c69f4f65c282c4352f9fbc5be0dc2d5e4018230c23c89eed163dc",
+   "message_id": "msg_011CgiT7yNFEG4erAy4FjmnZ",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 16624,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 16624
+    },
+    "output_tokens": 4552,
+    "output_tokens_details": {
+     "thinking_tokens": 4494
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.171668
+  },
+  "opus46a-GOV-2026-0012-lawyer-s01": {
+   "custom_id": "opus46a-GOV-2026-0012-lawyer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/lawyer/sample-01.response.json",
+   "response_sha256": "a54e5769a5b72d15936ac99190ac50953566efad428985f4571600bf63b45ba4",
+   "message_id": "msg_011CgiT7yMzgHQeuvjbdCdBP",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4411,
+    "output_tokens_details": {
+     "thinking_tokens": 3296
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.095946
+  },
+  "opus46a-GOV-2026-0007-philosopher-s01": {
+   "custom_id": "opus46a-GOV-2026-0007-philosopher-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/philosopher/sample-01.response.json",
+   "response_sha256": "0814c3826df75d2cf965b7e99c19c14e337ac6f6b98270da78a0a0e6bbca98d5",
+   "message_id": "msg_011CgiT822z44GjL4RqnbDdH",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7250,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1818,
+    "output_tokens_details": {
+     "thinking_tokens": 1760
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.047232
+  },
+  "opus46a-GOV-2026-0011-lawyer-s01": {
+   "custom_id": "opus46a-GOV-2026-0011-lawyer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/lawyer/sample-01.response.json",
+   "response_sha256": "d54438d983a0f9eb2b2e250dee37044e3cd8a761c93b94def8f52809b8dfeadc",
+   "message_id": "msg_011CgiT7ye7trfARE2o1pDnK",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4521,
+    "output_tokens_details": {
+     "thinking_tokens": 3380
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.098298
+  },
+  "opus46a-GOV-2026-0012-artist-s01": {
+   "custom_id": "opus46a-GOV-2026-0012-artist-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/artist/sample-01.response.json",
+   "response_sha256": "935de1de1518fcab57f6d8db2bc04ff9ea30c36652f4534d3496234edbfc1a9c",
+   "message_id": "msg_011CgiT7yYAfu2HCYpfDeTrg",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 640,
+    "cache_read_input_tokens": 16275,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 640
+    },
+    "output_tokens": 2357,
+    "output_tokens_details": {
+     "thinking_tokens": 1583
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.073281
+  },
+  "opus46a-GOV-2026-0006-lawyer-s01": {
+   "custom_id": "opus46a-GOV-2026-0006-lawyer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/lawyer/sample-01.response.json",
+   "response_sha256": "a4fe561b1a71960ecc0181987c45c08d533bc2f986d490b782fdb00cff912b0b",
+   "message_id": "msg_011CgiT7yMkFTm34vKuba3j8",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 759,
+    "cache_read_input_tokens": 6546,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 759
+    },
+    "output_tokens": 3370,
+    "output_tokens_details": {
+     "thinking_tokens": 2210
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "no",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.066999
+  },
+  "opus46a-GOV-2026-0008-artist-s01": {
+   "custom_id": "opus46a-GOV-2026-0008-artist-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/artist/sample-01.response.json",
+   "response_sha256": "8f8be85a8732fb8ceff93699ec3f199cef3c4503a996bbeeff59a687907aa877",
+   "message_id": "msg_011CgiT7yThx8bReJvg2FtqC",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 640,
+    "cache_read_input_tokens": 15920,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 640
+    },
+    "output_tokens": 1944,
+    "output_tokens_details": {
+     "thinking_tokens": 1869
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "text",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.16135
+  },
+  "opus46a-GOV-2026-0006-engineer-s01": {
+   "custom_id": "opus46a-GOV-2026-0006-engineer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/engineer/sample-01.response.json",
+   "response_sha256": "a64402e9ab0dc7e93c2cf66f44f082618520aa741c4b532e040e4e3ff8d18ef1",
+   "message_id": "msg_011CgiT7yLmHVJbhYjbaidiN",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 777,
+    "cache_read_input_tokens": 6546,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 777
+    },
+    "output_tokens": 1693,
+    "output_tokens_details": {
+     "thinking_tokens": 1629
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.046127
+  },
+  "opus46a-GOV-2026-0007-engineer-s01": {
+   "custom_id": "opus46a-GOV-2026-0007-engineer-s01",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/engineer/sample-01.response.json",
+   "response_sha256": "f4f5df5776b3079e2c7ea5afb9faade4c2402f192cab41d1a3f67cd4ef6532ac",
+   "message_id": "msg_011CgiT7yMkJWAmihP4A21mT",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7323,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1686,
+    "output_tokens_details": {
+     "thinking_tokens": 1631
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01BBUou5AvQq4u1sipMeKeLv",
+   "phase": "phase1",
+   "usd_actual": 0.045601
+  },
+  "opus46a-GOV-2026-0009-philosopher-s03": {
+   "custom_id": "opus46a-GOV-2026-0009-philosopher-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/philosopher/sample-03.response.json",
+   "response_sha256": "975d7b7a239ad6dbedd67d585880ec5fcc06377c04f5d8b267884c13596661f7",
+   "message_id": "msg_011CgiTSB3yHcEfKkaKSsumQ",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16624,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2660,
+    "output_tokens_details": {
+     "thinking_tokens": 2599
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.069054
+  },
+  "opus46a-GOV-2026-0008-engineer-s02": {
+   "custom_id": "opus46a-GOV-2026-0008-engineer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/engineer/sample-02.response.json",
+   "response_sha256": "3e268da5ead7f656a265db3cb93b5e6c4b008bc266123b482c0905f1756efce2",
+   "message_id": "msg_011CgiTSBFNt2JZmMNrEikZB",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16697,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4220,
+    "output_tokens_details": {
+     "thinking_tokens": 4165
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.186794
+  },
+  "opus46a-GOV-2026-0008-artist-s02": {
+   "custom_id": "opus46a-GOV-2026-0008-artist-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/artist/sample-02.response.json",
+   "response_sha256": "865298ab028fb9e8af26a737512466be5354528d224275ead7a43ee04225d7de",
+   "message_id": "msg_011CgiTSB6SSBGHfGwc2rZpM",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16560,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2679,
+    "output_tokens_details": {
+     "thinking_tokens": 2579
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "text",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.167497
+  },
+  "opus46a-GOV-2026-0009-engineer-s02": {
+   "custom_id": "opus46a-GOV-2026-0009-engineer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/engineer/sample-02.response.json",
+   "response_sha256": "842f8a0e4cecc92f032ab5769f431a08d48882b0bd46656cfe6842b9891c2482",
+   "message_id": "msg_011CgiTSB6SM5CFyKZPLddCj",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16697,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1544,
+    "output_tokens_details": {
+     "thinking_tokens": 1484
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.055122
+  },
+  "opus46a-GOV-2026-0012-philosopher-s03": {
+   "custom_id": "opus46a-GOV-2026-0012-philosopher-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/philosopher/sample-03.response.json",
+   "response_sha256": "c613f02204d2e92eeb108113effacda58ad7e5aea797d81e492d7f4f4de1ec8f",
+   "message_id": "msg_011CgiTSB4xXf8ttmhKFJRzU",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2949,
+    "output_tokens_details": {
+     "thinking_tokens": 1976
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.077657
+  },
+  "opus46a-GOV-2026-0010-lawyer-s03": {
+   "custom_id": "opus46a-GOV-2026-0010-lawyer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/lawyer/sample-03.response.json",
+   "response_sha256": "b614db85cb0e1515bd23891a423d181ad1089e0bf91c1d1e77c270bce3ac9eb2",
+   "message_id": "msg_011CgiTSB2EDg7kf13NZuRmM",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4061,
+    "output_tokens_details": {
+     "thinking_tokens": 2924
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.092126
+  },
+  "opus46a-GOV-2026-0010-artist-s02": {
+   "custom_id": "opus46a-GOV-2026-0010-artist-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/artist/sample-02.response.json",
+   "response_sha256": "e50f407e32439c3e309c0effefef1ec07b69212234a5173f4bfd9cf2a5803ea3",
+   "message_id": "msg_011CgiTSB9vFSroWymxnSRUc",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2441,
+    "output_tokens_details": {
+     "thinking_tokens": 1516
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.071846
+  },
+  "opus46a-GOV-2026-0006-engineer-s03": {
+   "custom_id": "opus46a-GOV-2026-0006-engineer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/engineer/sample-03.response.json",
+   "response_sha256": "88d702a0192a485dda6af038356604d564cd747e6ace4929ff96215d616d55b3",
+   "message_id": "msg_011CgiTSBLasVZZqEckNzNeH",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7323,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1843,
+    "output_tokens_details": {
+     "thinking_tokens": 1782
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.044311
+  },
+  "opus46a-GOV-2026-0012-engineer-s03": {
+   "custom_id": "opus46a-GOV-2026-0012-engineer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/engineer/sample-03.response.json",
+   "response_sha256": "0378819e207439d4692630b3e0475597b12b13219580358a34e184baa16fac18",
+   "message_id": "msg_011CgiTSE14qpocAM1xYaEhn",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3032,
+    "output_tokens_details": {
+     "thinking_tokens": 2018
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.078713
+  },
+  "opus46a-GOV-2026-0009-artist-s02": {
+   "custom_id": "opus46a-GOV-2026-0009-artist-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/artist/sample-02.response.json",
+   "response_sha256": "d86ce230d7b6ee6677570dcf7375f93f8a3bb5284c0463cb26b137db0f317718",
+   "message_id": "msg_011CgiTSBE8RVYDW92Pnz6wT",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16560,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2785,
+    "output_tokens_details": {
+     "thinking_tokens": 2727
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.0706
+  },
+  "opus46a-GOV-2026-0010-artist-s03": {
+   "custom_id": "opus46a-GOV-2026-0010-artist-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/artist/sample-03.response.json",
+   "response_sha256": "7acbb7e2f88749f5f9de314c71e187f08f11a88a01fc544fa81989d812fdb662",
+   "message_id": "msg_011CgiTSB5D3npRpPYC9yXfK",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1735,
+    "output_tokens_details": {
+     "thinking_tokens": 1677
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.063021
+  },
+  "opus46a-GOV-2026-0011-artist-s03": {
+   "custom_id": "opus46a-GOV-2026-0011-artist-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/artist/sample-03.response.json",
+   "response_sha256": "b603af6461bf9e05337fa2654fcff390559530e49273950671f89c5b176d9420",
+   "message_id": "msg_011CgiTSB6C61r1f6geEExAE",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2698,
+    "output_tokens_details": {
+     "thinking_tokens": 1631
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.075481
+  },
+  "opus46a-GOV-2026-0008-philosopher-s02": {
+   "custom_id": "opus46a-GOV-2026-0008-philosopher-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/philosopher/sample-02.response.json",
+   "response_sha256": "9044f00968f07b20fbc2a1e771e7899a450007858d749cc0eabe89287d82c998",
+   "message_id": "msg_011CgiTSB3DibUT1SJ7EPtkM",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16624,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3283,
+    "output_tokens_details": {
+     "thinking_tokens": 2131
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.175064
+  },
+  "opus46a-GOV-2026-0007-lawyer-s03": {
+   "custom_id": "opus46a-GOV-2026-0007-lawyer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/lawyer/sample-03.response.json",
+   "response_sha256": "3a84e1b2939d9c878b3f419092f094b9053cda7ae9b0144bb118b014ad81336e",
+   "message_id": "msg_011CgiTSB6Swi1xoX5Fcd7mV",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7305,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3036,
+    "output_tokens_details": {
+     "thinking_tokens": 1843
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.062471
+  },
+  "opus46a-GOV-2026-0008-engineer-s03": {
+   "custom_id": "opus46a-GOV-2026-0008-engineer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/engineer/sample-03.response.json",
+   "response_sha256": "4331c737166132567933134f3b4950f41a41c8f4641f14f629e6e95e6a1dc847",
+   "message_id": "msg_011CgiTSB4hfjiNwpB1ksTGN",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16697,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3232,
+    "output_tokens_details": {
+     "thinking_tokens": 3161
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "text",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.174444
+  },
+  "opus46a-GOV-2026-0009-lawyer-s02": {
+   "custom_id": "opus46a-GOV-2026-0009-lawyer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/lawyer/sample-02.response.json",
+   "response_sha256": "b8428627477975e2dc540d52032e58d7c2267a694ae5343869fd75587bc483d7",
+   "message_id": "msg_011CgiTSB8vSEjPdqaLZ3j3j",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16679,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 5849,
+    "output_tokens_details": {
+     "thinking_tokens": 5774
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "text",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.10893
+  },
+  "opus46a-GOV-2026-0010-philosopher-s02": {
+   "custom_id": "opus46a-GOV-2026-0010-philosopher-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/philosopher/sample-02.response.json",
+   "response_sha256": "9da9c75fbb9728a0d7c40bf2dcdc3d83a826803b53254ff745f249cb78bbcc5a",
+   "message_id": "msg_011CgiTSBCeMpb6qqvvUms51",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4702,
+    "output_tokens_details": {
+     "thinking_tokens": 3598
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.100125
+  },
+  "opus46a-GOV-2026-0011-lawyer-s03": {
+   "custom_id": "opus46a-GOV-2026-0011-lawyer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/lawyer/sample-03.response.json",
+   "response_sha256": "c4232c20e1600c65814fd64c86f91501e9b9ae88de56da51ddee067081fcad9a",
+   "message_id": "msg_011CgiTSB3ib45RwVM3SSsrH",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 6721,
+    "output_tokens_details": {
+     "thinking_tokens": 5251
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.125799
+  },
+  "opus46a-GOV-2026-0008-lawyer-s03": {
+   "custom_id": "opus46a-GOV-2026-0008-lawyer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/lawyer/sample-03.response.json",
+   "response_sha256": "6a8cb6d3ec49bc814758f092a71b335e707379bdab6209d0f45d25341bc6518f",
+   "message_id": "msg_011CgiTSB5CeL9WoyqtGAdCU",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16679,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3197,
+    "output_tokens_details": {
+     "thinking_tokens": 3142
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.174002
+  },
+  "opus46a-GOV-2026-0006-artist-s02": {
+   "custom_id": "opus46a-GOV-2026-0006-artist-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/artist/sample-02.response.json",
+   "response_sha256": "f4e6f241d9afcc7c1d6b0545daa94d787f9da3c2baca2d1f6e0be1d1c17478ed",
+   "message_id": "msg_011CgiTSBHr2QFkyvNaLt2FD",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7186,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1224,
+    "output_tokens_details": {
+     "thinking_tokens": 1170
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.036539
+  },
+  "opus46a-GOV-2026-0010-engineer-s03": {
+   "custom_id": "opus46a-GOV-2026-0010-engineer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/engineer/sample-03.response.json",
+   "response_sha256": "7132380655c3e92ee4c722d1fddb2ad6cac04a22fbe415ef0c7aa0116845af1b",
+   "message_id": "msg_011CgiTSB1yVWG9FWnE4Tkzj",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4913,
+    "output_tokens_details": {
+     "thinking_tokens": 3712
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.10278
+  },
+  "opus46a-GOV-2026-0008-philosopher-s03": {
+   "custom_id": "opus46a-GOV-2026-0008-philosopher-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/philosopher/sample-03.response.json",
+   "response_sha256": "06277f15ccbad8756558cf69b19bb8e8b3476c4120e7936b2e40be2b35214090",
+   "message_id": "msg_011CgiTSDwqo7G6HUYt5HtDX",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16624,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3080,
+    "output_tokens_details": {
+     "thinking_tokens": 3022
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.172526
+  },
+  "opus46a-GOV-2026-0007-artist-s03": {
+   "custom_id": "opus46a-GOV-2026-0007-artist-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/artist/sample-03.response.json",
+   "response_sha256": "acc71a1b0040510bec3bd90cc09b4559895e5f064a3b1bed0673686075dcedc9",
+   "message_id": "msg_011CgiTSBQYNGRuWnHng6y4N",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7186,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1005,
+    "output_tokens_details": {
+     "thinking_tokens": 947
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.037054
+  },
+  "opus46a-GOV-2026-0008-lawyer-s02": {
+   "custom_id": "opus46a-GOV-2026-0008-lawyer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/lawyer/sample-02.response.json",
+   "response_sha256": "b5fc23d6a7c46fc7dc12e43b09ca3e9c43387387fff38079dd22b369ed8b0beb",
+   "message_id": "msg_011CgiTSBNpCUQazg23TTSSG",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16679,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3962,
+    "output_tokens_details": {
+     "thinking_tokens": 3907
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.183565
+  },
+  "opus46a-GOV-2026-0006-philosopher-s02": {
+   "custom_id": "opus46a-GOV-2026-0006-philosopher-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/philosopher/sample-02.response.json",
+   "response_sha256": "179260212e42ee7aeba3d2326f4bf7f3cfc9a5f9b23c1c9bfc66de9b7270597d",
+   "message_id": "msg_011CgiTSBAuQd3zUeLKABYMH",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7250,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2718,
+    "output_tokens_details": {
+     "thinking_tokens": 1771
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "no",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.05523
+  },
+  "opus46a-GOV-2026-0006-artist-s03": {
+   "custom_id": "opus46a-GOV-2026-0006-artist-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/artist/sample-03.response.json",
+   "response_sha256": "5233d586f6640033cc72f2bec85c0a29a15de9d62cb2eb8c631c6132e2d837d4",
+   "message_id": "msg_011CgiTSB5wfn9LCJe1J8tMV",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7186,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1506,
+    "output_tokens_details": {
+     "thinking_tokens": 1448
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.040064
+  },
+  "opus46a-GOV-2026-0007-artist-s02": {
+   "custom_id": "opus46a-GOV-2026-0007-artist-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/artist/sample-02.response.json",
+   "response_sha256": "0b706c70392daa5c6f40875e044df7ac3d63370a2eff4143274301cae22c47bf",
+   "message_id": "msg_011CgiTSECU5GhhJd8qkgYtq",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7186,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1131,
+    "output_tokens_details": {
+     "thinking_tokens": 1076
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.038629
+  },
+  "opus46a-GOV-2026-0007-philosopher-s02": {
+   "custom_id": "opus46a-GOV-2026-0007-philosopher-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/philosopher/sample-02.response.json",
+   "response_sha256": "e57f37ce9283206be249c311e6d689947fe24836c17af2093040f18b65f6ef39",
+   "message_id": "msg_011CgiTSBCdxQBdqSGbsBeu1",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7250,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2458,
+    "output_tokens_details": {
+     "thinking_tokens": 1500
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.055232
+  },
+  "opus46a-GOV-2026-0011-philosopher-s02": {
+   "custom_id": "opus46a-GOV-2026-0011-philosopher-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/philosopher/sample-02.response.json",
+   "response_sha256": "8b0ee9547f8781f536fcd26d5fea7834ce44b7ccec0d5fb3a3e9fe72bd20dc0c",
+   "message_id": "msg_011CgiTSBQJ7pTR4waLVimc9",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3429,
+    "output_tokens_details": {
+     "thinking_tokens": 3371
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.084635
+  },
+  "opus46a-GOV-2026-0012-artist-s02": {
+   "custom_id": "opus46a-GOV-2026-0012-artist-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/artist/sample-02.response.json",
+   "response_sha256": "3a24b8b25a3c7f148ee36ee55736d086d1fa833e245dc5e8a58adcb82d7a8a45",
+   "message_id": "msg_011CgiTSAzzeJbcLTZ1s7tVC",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2172,
+    "output_tokens_details": {
+     "thinking_tokens": 1244
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.067929
+  },
+  "opus46a-GOV-2026-0007-engineer-s02": {
+   "custom_id": "opus46a-GOV-2026-0007-engineer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/engineer/sample-02.response.json",
+   "response_sha256": "5181164b3e7bd3524a730579a54dee887c14d053c5fa6e0487da7bf72cbbc4c5",
+   "message_id": "msg_011CgiTSB3ToUucX1fxVNjXN",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7323,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1280,
+    "output_tokens_details": {
+     "thinking_tokens": 1225
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.040526
+  },
+  "opus46a-GOV-2026-0009-philosopher-s02": {
+   "custom_id": "opus46a-GOV-2026-0009-philosopher-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/philosopher/sample-02.response.json",
+   "response_sha256": "746e2dda457507470b856647052a26a12848947b5115ac68a5f75be6f910a447",
+   "message_id": "msg_011CgiTSB4hrwDS4J1wnFJ2i",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16624,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3893,
+    "output_tokens_details": {
+     "thinking_tokens": 3838
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.084466
+  },
+  "opus46a-GOV-2026-0011-engineer-s02": {
+   "custom_id": "opus46a-GOV-2026-0011-engineer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/engineer/sample-02.response.json",
+   "response_sha256": "6ae8af6f057e819d1f9f5ff34cb36d2d8d514e276b678f54c1f6b92b33a2a950",
+   "message_id": "msg_011CgiTSB3xqjLmMh4WtJfZr",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2783,
+    "output_tokens_details": {
+     "thinking_tokens": 1961
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.076578
+  },
+  "opus46a-GOV-2026-0006-philosopher-s03": {
+   "custom_id": "opus46a-GOV-2026-0006-philosopher-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/philosopher/sample-03.response.json",
+   "response_sha256": "cf56c89968cc005cdd806b274bf2019be1d6ae391904ce382c311d0ae0c0ec8b",
+   "message_id": "msg_011CgiTSB1j4ftA4jcU7489i",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7250,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3319,
+    "output_tokens_details": {
+     "thinking_tokens": 2223
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "no",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.062743
+  },
+  "opus46a-GOV-2026-0009-lawyer-s03": {
+   "custom_id": "opus46a-GOV-2026-0009-lawyer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/lawyer/sample-03.response.json",
+   "response_sha256": "b2e2f571fbf348cb7314753d6aa83e454ce09351cebc6c3e01f801f0ee10c627",
+   "message_id": "msg_011CgiTSB6wLFddq3BLigSeu",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16679,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 5170,
+    "output_tokens_details": {
+     "thinking_tokens": 5112
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.100442
+  },
+  "opus46a-GOV-2026-0011-artist-s02": {
+   "custom_id": "opus46a-GOV-2026-0011-artist-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/artist/sample-02.response.json",
+   "response_sha256": "4b1046b20e93fd6f810c670d125eb5a272f89e80642df8f0b6196398614af7f4",
+   "message_id": "msg_011CgiTSB6CXGYQH5vxvMGzo",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3486,
+    "output_tokens_details": {
+     "thinking_tokens": 2610
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.085331
+  },
+  "opus46a-GOV-2026-0006-engineer-s02": {
+   "custom_id": "opus46a-GOV-2026-0006-engineer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/engineer/sample-02.response.json",
+   "response_sha256": "fba80349282017d3e88c2e22567f02f13b890f3ccfe849bfae576e34cca2c46a",
+   "message_id": "msg_011CgiTSB8B8iRX5XgrqSCTQ",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7323,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1793,
+    "output_tokens_details": {
+     "thinking_tokens": 1738
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.043686
+  },
+  "opus46a-GOV-2026-0012-lawyer-s02": {
+   "custom_id": "opus46a-GOV-2026-0012-lawyer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/lawyer/sample-02.response.json",
+   "response_sha256": "5d89a3eca1fedbe16aeb7b704563064a333e75a1166c4df622c7516b9cc03d93",
+   "message_id": "msg_011CgiTSDkh3mJiEQUrGdvJ2",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4017,
+    "output_tokens_details": {
+     "thinking_tokens": 2872
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.091021
+  },
+  "opus46a-GOV-2026-0012-lawyer-s03": {
+   "custom_id": "opus46a-GOV-2026-0012-lawyer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/lawyer/sample-03.response.json",
+   "response_sha256": "920cc8f7c2af4fd62ae994553ebc51e77201ab71e64ad3cd3a26937beef460cf",
+   "message_id": "msg_011CgiTSB3DU7C1CkgqzM3Gn",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2753,
+    "output_tokens_details": {
+     "thinking_tokens": 2695
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.075221
+  },
+  "opus46a-GOV-2026-0010-engineer-s02": {
+   "custom_id": "opus46a-GOV-2026-0010-engineer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/engineer/sample-02.response.json",
+   "response_sha256": "20c46c096ca05624631e7acc44dd538eb61fb49f2ff9697653320a1857e23f62",
+   "message_id": "msg_011CgiTSB2DknHxtRfUymZ2k",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4119,
+    "output_tokens_details": {
+     "thinking_tokens": 2774
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "defer",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.092855
+  },
+  "opus46a-GOV-2026-0011-lawyer-s02": {
+   "custom_id": "opus46a-GOV-2026-0011-lawyer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/lawyer/sample-02.response.json",
+   "response_sha256": "2ea046e82597a0fa5a73917c696882ef022c69380887c66ea2d3ccbea7b88392",
+   "message_id": "msg_011CgiTSB7gNvV6DGGkccvbc",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4524,
+    "output_tokens_details": {
+     "thinking_tokens": 3441
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.098336
+  },
+  "opus46a-GOV-2026-0011-philosopher-s03": {
+   "custom_id": "opus46a-GOV-2026-0011-philosopher-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/philosopher/sample-03.response.json",
+   "response_sha256": "2d60be0330770e64de8e36ec91aad9a1b36db588e8dfeb49e69bd3627b061f5b",
+   "message_id": "msg_011CgiTSE5mgKk5wMvD5E8P8",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4094,
+    "output_tokens_details": {
+     "thinking_tokens": 2883
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.092947
+  },
+  "opus46a-GOV-2026-0010-lawyer-s02": {
+   "custom_id": "opus46a-GOV-2026-0010-lawyer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/lawyer/sample-02.response.json",
+   "response_sha256": "2298c83a84286894234cd3c73503e002f7c6486ef0a1de1c1db4c0250894b590",
+   "message_id": "msg_011CgiTSB8BU4U9N3vHEB9eo",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 5244,
+    "output_tokens_details": {
+     "thinking_tokens": 3742
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.106913
+  },
+  "opus46a-GOV-2026-0010-philosopher-s03": {
+   "custom_id": "opus46a-GOV-2026-0010-philosopher-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0010/philosopher/sample-03.response.json",
+   "response_sha256": "72e7bca67c1ad788291d13f31c726f155b6cf8ffc12f251a5012b6fb66cbe541",
+   "message_id": "msg_011CgiTSB9g44g45QKiwNo2M",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14842,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3928,
+    "output_tokens_details": {
+     "thinking_tokens": 2907
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.09045
+  },
+  "opus46a-GOV-2026-0012-philosopher-s02": {
+   "custom_id": "opus46a-GOV-2026-0012-philosopher-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/philosopher/sample-02.response.json",
+   "response_sha256": "7cc090db7a7539f884fc1652a62326d7f333438d3032400713dc7096590622e3",
+   "message_id": "msg_011CgiTSE6mkRjx21WpgR3VU",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2269,
+    "output_tokens_details": {
+     "thinking_tokens": 2211
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.069157
+  },
+  "opus46a-GOV-2026-0006-lawyer-s03": {
+   "custom_id": "opus46a-GOV-2026-0006-lawyer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/lawyer/sample-03.response.json",
+   "response_sha256": "7ab6be91ea17f4cc6dadc21e8fe0acf470d1140bc151f0f17d70ebc85dbbe78d",
+   "message_id": "msg_011CgiTSBE8NSJcyUVRrjZgF",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7305,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3010,
+    "output_tokens_details": {
+     "thinking_tokens": 2029
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "no",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.058894
+  },
+  "opus46a-GOV-2026-0009-artist-s03": {
+   "custom_id": "opus46a-GOV-2026-0009-artist-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/artist/sample-03.response.json",
+   "response_sha256": "be268929ed50cb3cf34ba6ddb0b6f66a99a3aa09dd59dd680c0945cb358dec56",
+   "message_id": "msg_011CgiTSB8RihZeVqt379uPP",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16560,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2430,
+    "output_tokens_details": {
+     "thinking_tokens": 2372
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.066162
+  },
+  "opus46a-GOV-2026-0012-artist-s03": {
+   "custom_id": "opus46a-GOV-2026-0012-artist-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/artist/sample-03.response.json",
+   "response_sha256": "1f1458181a79d6427544aa1fd5bfdca01e86d45301aba925f5ae89f05b16aa5a",
+   "message_id": "msg_011CgiTSB3i9d4aZZqebbQb3",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16915,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2192,
+    "output_tokens_details": {
+     "thinking_tokens": 1388
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.068179
+  },
+  "opus46a-GOV-2026-0012-engineer-s02": {
+   "custom_id": "opus46a-GOV-2026-0012-engineer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0012/engineer/sample-02.response.json",
+   "response_sha256": "eeb54568e48d58d36a151161ca7ef5c70182ce3f4661cff4fb5ea5edf2a166c7",
+   "message_id": "msg_011CgiTSB4hq7djcoYqNQPSN",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 14620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3467,
+    "output_tokens_details": {
+     "thinking_tokens": 2209
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.084151
+  },
+  "opus46a-GOV-2026-0007-engineer-s03": {
+   "custom_id": "opus46a-GOV-2026-0007-engineer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/engineer/sample-03.response.json",
+   "response_sha256": "67185e1cf23caa66ccb1aec8c9706f0de60098e2ff8578fb67f2d67c85751204",
+   "message_id": "msg_011CgiTSB4xeNHRiJ1AZmDgX",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7323,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2359,
+    "output_tokens_details": {
+     "thinking_tokens": 1407
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.054013
+  },
+  "opus46a-GOV-2026-0011-engineer-s03": {
+   "custom_id": "opus46a-GOV-2026-0011-engineer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0011/engineer/sample-03.response.json",
+   "response_sha256": "418903ed95d079e17d2f03f52aed2642537b4944640c7f6faefbb72c02b68520",
+   "message_id": "msg_011CgiTSB5Si1cm569ocpdkv",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 15011,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 17052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3119,
+    "output_tokens_details": {
+     "thinking_tokens": 2106
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "no",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.080778
+  },
+  "opus46a-GOV-2026-0007-lawyer-s02": {
+   "custom_id": "opus46a-GOV-2026-0007-lawyer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/lawyer/sample-02.response.json",
+   "response_sha256": "2428c0739ba384aae66b9d8aedc05bf1b0563861e9c96ee41a4d9b1cc0d66e22",
+   "message_id": "msg_011CgiTSB1VR5xnxB6duCgpd",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7305,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2997,
+    "output_tokens_details": {
+     "thinking_tokens": 1763
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.061984
+  },
+  "opus46a-GOV-2026-0006-lawyer-s02": {
+   "custom_id": "opus46a-GOV-2026-0006-lawyer-s02",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0006/lawyer/sample-02.response.json",
+   "response_sha256": "a5d6ddb4a17a768ce77efd1f490d09e357ee11da58ac67d8e085b29ff80088e7",
+   "message_id": "msg_011CgiTSB2iZoXX43rkkJ19p",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 7777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7305,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3021,
+    "output_tokens_details": {
+     "thinking_tokens": 1970
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "no",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.059031
+  },
+  "opus46a-GOV-2026-0009-engineer-s03": {
+   "custom_id": "opus46a-GOV-2026-0009-engineer-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0009/engineer/sample-03.response.json",
+   "response_sha256": "43fbae80ccd68766fb7308d59b08566c25b9de28d5ac2b32c25cb0c4fc71ccc0",
+   "message_id": "msg_011CgiTSBBenS8wTRt91DLwH",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 12659,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16697,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1921,
+    "output_tokens_details": {
+     "thinking_tokens": 1866
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.059834
+  },
+  "opus46a-GOV-2026-0007-philosopher-s03": {
+   "custom_id": "opus46a-GOV-2026-0007-philosopher-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0007/philosopher/sample-03.response.json",
+   "response_sha256": "64fc4068862aecc224eab3b07ec053a8c4188046f3d5120c5f1a4046e7126656",
+   "message_id": "msg_011CgiTSB2ETiX6t3ZvRixXZ",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 9078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7250,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1731,
+    "output_tokens_details": {
+     "thinking_tokens": 1673
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "read",
+   "tool": "ask_clerk",
+   "submission": null,
+   "vote": null,
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.046145
+  },
+  "opus46a-GOV-2026-0008-artist-s03": {
+   "custom_id": "opus46a-GOV-2026-0008-artist-s03",
+   "result_type": "succeeded",
+   "response_file": "/home/claude-agora/Projects/agora-council-diversity/out/replay-claude-opus-4-6-adapted/GOV-2026-0008/artist/sample-03.response.json",
+   "response_sha256": "662e934bff49ebd64e6241c4ee9dff526f1865eefd776a46ee974c5364081679",
+   "message_id": "msg_011CgiTSE24UsifEDuVT54cc",
+   "model": "claude-opus-4-6",
+   "stop_reason": "tool_use",
+   "refusal_category": null,
+   "usage": {
+    "input_tokens": 51948,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 16560,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2992,
+    "output_tokens_details": {
+     "thinking_tokens": 2026
+    },
+    "service_tier": "batch",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "first_action": "position",
+   "tool": "position",
+   "submission": null,
+   "vote": "yes",
+   "block_types": [
+    "thinking",
+    "tool_use"
+   ],
+   "batch_id": "msgbatch_01JsKoGyjsaHLF3SbJd57aQz",
+   "phase": "phase2",
+   "usd_actual": 0.17141
+  }
+ },
+ "plan": {
+  "plan": "opus46-adapted",
+  "model": "claude-opus-4-6",
+  "seat_items": 28,
+  "samples_per_item": 3,
+  "calls": 84,
+  "formats": {
+   "old": 28
+  },
+  "tiers": {
+   "base": 28
+  },
+  "request_bytes_total": 3789307,
+  "assumed_output_tokens_per_answer": 4000,
+  "estimated_usd_batch": 10.22,
+  "budget_cap_usd": 12.0,
+  "repo_commit": "1eb8a9e35da87f92c46356d9e42b393bcdf6cb05"
+ },
+ "items": {
+  "GOV-2026-0006/artist": {
+   "decision": "GOV-2026-0006",
+   "seat": "artist",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0006/artist.json",
+   "source_sha256": "2b5346ba2099d79efbb5e9aa9d9a603e85297835040cbd9779adc2a615e70ade",
+   "original_request_sha256": "c960b9169ebab84c601827dcee3e0069784feaa3bc3a803cfdbdc0ee02e13ee5",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0006/artist/request.json",
+   "request_sha256": "0285c36b9e1154467cb234011f9ecb8d1dbf1dcf8b111332647a8e7054fe87c3",
+   "request_bytes": 64720,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 15272,
+    "prefix_tokens": 7139,
+    "rest_tokens": 8133,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.250262
+   }
+  },
+  "GOV-2026-0006/philosopher": {
+   "decision": "GOV-2026-0006",
+   "seat": "philosopher",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0006/philosopher.json",
+   "source_sha256": "f330cfdc1b2f2a0df954b10af0eafcb04bdde21942db1f9dcd14b588b39686cf",
+   "original_request_sha256": "a4bdd1fa7b96e98e0cf4ab8bf597d8cec7e14aac51c8a20b88ef49abbaf1feb1",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0006/philosopher/request.json",
+   "request_sha256": "1eebf74f8b47ef5bf99f1c8d32dd75e23db2177462c29d93846017cc2e658b0d",
+   "request_bytes": 64988,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 15336,
+    "prefix_tokens": 7202,
+    "rest_tokens": 8134,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.25061599999999995
+   }
+  },
+  "GOV-2026-0006/lawyer": {
+   "decision": "GOV-2026-0006",
+   "seat": "lawyer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0006/lawyer.json",
+   "source_sha256": "4efa27471a0097adb01cb2f728610650ffd8f09b4a4d0789928da812615707bb",
+   "original_request_sha256": "10c1ab235da74808f1fe020802b23d4af6f924de24c4a44d318201a054a6040f",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0006/lawyer/request.json",
+   "request_sha256": "d9ecc26a281cb6692fc7814f4d419ee229775fd6c06bf5c73452ef660267e15a",
+   "request_bytes": 65270,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 15391,
+    "prefix_tokens": 7264,
+    "rest_tokens": 8127,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.2509045
+   }
+  },
+  "GOV-2026-0006/engineer": {
+   "decision": "GOV-2026-0006",
+   "seat": "engineer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0006/engineer.json",
+   "source_sha256": "aef1e939989a5c89666288bdd15f37473911ff50f65599a98f5981bca2851712",
+   "original_request_sha256": "e9b1c50dbe2eb4bacbede1a122825fb7d332d556ca3871879d44f51b07d1d185",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0006/engineer/request.json",
+   "request_sha256": "d536f8667a2033aa80bccee6f7f621aa4e08e90baf2b5f2ab1fad9bb287c6919",
+   "request_bytes": 65395,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 15409,
+    "prefix_tokens": 7288,
+    "rest_tokens": 8121,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.2509915
+   }
+  },
+  "GOV-2026-0007/artist": {
+   "decision": "GOV-2026-0007",
+   "seat": "artist",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0007/artist.json",
+   "source_sha256": "da5fac75fc44da0544305bfb508ad13f72f12329f3c85e0e39a3609199690a23",
+   "original_request_sha256": "6b3a5e15e49ce5d534a470a4c6ff76298ae3c62d5aefd1afe212863c3eed533b",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0007/artist/request.json",
+   "request_sha256": "e3d46a95ce18085b535d6c0198dbcbd0be213a675efc31c3dcf5f6ed266a8bb8",
+   "request_bytes": 70966,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 16575,
+    "prefix_tokens": 7063,
+    "rest_tokens": 9512,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.2601865
+   }
+  },
+  "GOV-2026-0007/philosopher": {
+   "decision": "GOV-2026-0007",
+   "seat": "philosopher",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0007/philosopher.json",
+   "source_sha256": "81aa1c941402c33729077d6a528f78b37d65d1a2e1859748ff0767fb420368e3",
+   "original_request_sha256": "7cea022a8a4ca1f26e5afa2c5170e41afa4f32c7a6119a853b94971548ace7a0",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0007/philosopher/request.json",
+   "request_sha256": "5a48806c872f6e293812943ee895c58cae01386c4dba777dccab20a47f084e82",
+   "request_bytes": 71234,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 16639,
+    "prefix_tokens": 7127,
+    "rest_tokens": 9512,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.2605385
+   }
+  },
+  "GOV-2026-0007/lawyer": {
+   "decision": "GOV-2026-0007",
+   "seat": "lawyer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0007/lawyer.json",
+   "source_sha256": "13df0530adbdd75bd51c314a3e03a7d7cbecb2b1de4a8c034ab7ae788448eed5",
+   "original_request_sha256": "a0a694f7260ff246a1bfd2b959261ef2272fb9c0205b86faf149447e4ed15f80",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0007/lawyer/request.json",
+   "request_sha256": "2b766746a24e1821b048a3b67be183c98c7b867b3d8443de6d389e60deb55f5d",
+   "request_bytes": 71516,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 16694,
+    "prefix_tokens": 7188,
+    "rest_tokens": 9506,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.260829
+   }
+  },
+  "GOV-2026-0007/engineer": {
+   "decision": "GOV-2026-0007",
+   "seat": "engineer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0007/engineer.json",
+   "source_sha256": "dabd2aac8df2fd7a65bdf46b03bfd037225da5cf68d12607d821067261bf3618",
+   "original_request_sha256": "c78525def948c26e834c1d6ef069d51f25ab6966c6e94080f8275eeffa7c6bca",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0007/engineer/request.json",
+   "request_sha256": "69577107052642c129f36f406eec5757aad0a2f4cf2052b503b1445e747a17e7",
+   "request_bytes": 71641,
+   "diff_paths": 13,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 16712,
+    "prefix_tokens": 7212,
+    "rest_tokens": 9500,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.260916
+   }
+  },
+  "GOV-2026-0008/artist": {
+   "decision": "GOV-2026-0008",
+   "seat": "artist",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0008/artist.json",
+   "source_sha256": "b9407a921991e67858e10553b4596caff25fbad049641e3aac2bbe13445bf2d4",
+   "original_request_sha256": "edb6bee8cd56a8bbe60c13c9ddeb4d2469fa40a9083bc9e7a124f13330bda0bd",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0008/artist/request.json",
+   "request_sha256": "5bb40dbcd7a5fd0a328d541f44f7c1ce103aa57b01707849b1c31d7ddf283ed2",
+   "request_bytes": 284467,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 68818,
+    "prefix_tokens": 16678,
+    "rest_tokens": 52140,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.632779
+   }
+  },
+  "GOV-2026-0008/philosopher": {
+   "decision": "GOV-2026-0008",
+   "seat": "philosopher",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0008/philosopher.json",
+   "source_sha256": "c5b8fc0fd1550fbce9c917237379c0146fb54d6eac0797e704a4410fde863624",
+   "original_request_sha256": "2688e402f7efc9ac0075a86fba7f657aac38b41ac0ff0e3cc3230d8853d84b0f",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0008/philosopher/request.json",
+   "request_sha256": "f64fbaf2f20f7a172caae9cdd9242e406440e76fe1ba9e9826d08a642e91acdf",
+   "request_bytes": 284735,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 68882,
+    "prefix_tokens": 16742,
+    "rest_tokens": 52140,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.6331309999999999
+   }
+  },
+  "GOV-2026-0008/lawyer": {
+   "decision": "GOV-2026-0008",
+   "seat": "lawyer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0008/lawyer.json",
+   "source_sha256": "d41b00ae88d0d3c3d7550e9c0b28799eb30872b7cfa307414fc60a907faad4fa",
+   "original_request_sha256": "280a35a95f52afbacaae2a59b0a511bc78f4fbc5c3c649ce1961e9bea0ff29d4",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0008/lawyer/request.json",
+   "request_sha256": "aae5c488f6a6c21fa735fe9c031112bc7413ff288dc35698139bacaf2b4e8c79",
+   "request_bytes": 285017,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 68938,
+    "prefix_tokens": 16808,
+    "rest_tokens": 52130,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.633419
+   }
+  },
+  "GOV-2026-0008/engineer": {
+   "decision": "GOV-2026-0008",
+   "seat": "engineer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0008/engineer.json",
+   "source_sha256": "e1abfa4f78f1cf8993b613f00ae3634150e1863cda7be93669f177e7ab3eab8a",
+   "original_request_sha256": "1dfa46f8190b90243bb287c395916634988d99965d01ba59cf00a137792c2d5a",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0008/engineer/request.json",
+   "request_sha256": "bc43cc870d8ad4ceffbbdcb47a14755bfe567b1c2822cf2775b7c4531d7f7791",
+   "request_bytes": 285142,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 68956,
+    "prefix_tokens": 16835,
+    "rest_tokens": 52121,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.6335
+   }
+  },
+  "GOV-2026-0009/artist": {
+   "decision": "GOV-2026-0009",
+   "seat": "artist",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0009/artist.json",
+   "source_sha256": "38e21485f7e483d7f71f3a719eee14d2c8a2fc88d6b49db205daea4d5e77dd13",
+   "original_request_sha256": "4f7b795b25523dc813367249dbd54767629a6e8869cb904a42cc9e73ed653789",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0009/artist/request.json",
+   "request_sha256": "821a39dbb919486e94d83088309b04c3d6b60092e58b398752a2dcd83d03cbb2",
+   "request_bytes": 122930,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 29531,
+    "prefix_tokens": 16568,
+    "rest_tokens": 12963,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.3383465
+   }
+  },
+  "GOV-2026-0009/philosopher": {
+   "decision": "GOV-2026-0009",
+   "seat": "philosopher",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0009/philosopher.json",
+   "source_sha256": "604e3fcdde25488b0245d0d2c9665b4eb7f20e9743de3c013d7006f1c865c11a",
+   "original_request_sha256": "4077e763984144f01b0666920072b28699868e8046cb266eb972ade13ea2b193",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0009/philosopher/request.json",
+   "request_sha256": "df171f4db64c80f0579d4c635114201eb994ec17ba12714041aa552c46c72514",
+   "request_bytes": 123198,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 29595,
+    "prefix_tokens": 16632,
+    "rest_tokens": 12963,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.3386985
+   }
+  },
+  "GOV-2026-0009/lawyer": {
+   "decision": "GOV-2026-0009",
+   "seat": "lawyer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0009/lawyer.json",
+   "source_sha256": "b746acba2b7348d10101ad78dbcb026a85797090696efc648d56214efefd2b22",
+   "original_request_sha256": "67cb657780891ec3e2138fa9712404d18c4bc161a1bb1ac9ea647c49cc71cc08",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0009/lawyer/request.json",
+   "request_sha256": "d84382e7d452989ef1b0d5a2ab4aaec6785aaee2e9cd987faa73e59be9e4af43",
+   "request_bytes": 123480,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 29650,
+    "prefix_tokens": 16693,
+    "rest_tokens": 12957,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.338989
+   }
+  },
+  "GOV-2026-0009/engineer": {
+   "decision": "GOV-2026-0009",
+   "seat": "engineer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0009/engineer.json",
+   "source_sha256": "604009c922c07eee749c17a9e2cdaebde1dfb5aef2a15b94b66e40f76575152a",
+   "original_request_sha256": "cc205fb2d0cd6c2b5edac44b3bb5ca4bb80284d448d8d11af24543723f4c84ad",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0009/engineer/request.json",
+   "request_sha256": "feb0091e75459bc55f02aa72b20c7c4061bedb7100a9f4983fa85fc3f3392286",
+   "request_bytes": 123605,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 29668,
+    "prefix_tokens": 16716,
+    "rest_tokens": 12952,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.339078
+   }
+  },
+  "GOV-2026-0010/artist": {
+   "decision": "GOV-2026-0010",
+   "seat": "artist",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0010/artist.json",
+   "source_sha256": "53c24f2aa80d3de167f7ca477731ec1379fde4b699a29151bbc7b23e77771b60",
+   "original_request_sha256": "2521329ffe57451214ad43dd4fd9a6db662531352d9533ca9891e593b3b2910f",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0010/artist/request.json",
+   "request_sha256": "3133572e24cb99d36217aa109fe3f9195bcd2b0fa4755fafbb9ad81b0517f525",
+   "request_bytes": 133877,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32070,
+    "prefix_tokens": 16878,
+    "rest_tokens": 15192,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.356769
+   }
+  },
+  "GOV-2026-0010/philosopher": {
+   "decision": "GOV-2026-0010",
+   "seat": "philosopher",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0010/philosopher.json",
+   "source_sha256": "7f66f50d29c0abd20f6bef84cf5bf6f3e1a91dbea2255af8b0dee9e10d340074",
+   "original_request_sha256": "8521c97b154e2cb8cb7b0cbc2b86ef36d07b3ec46e9fb16f4b7b7cb1aaf1c136",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0010/philosopher/request.json",
+   "request_sha256": "0415799700516dc893a376b5fdf6d51c3115ed6f9b77964cf954bc71a1d9605b",
+   "request_bytes": 134145,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32134,
+    "prefix_tokens": 16943,
+    "rest_tokens": 15191,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.35711899999999996
+   }
+  },
+  "GOV-2026-0010/lawyer": {
+   "decision": "GOV-2026-0010",
+   "seat": "lawyer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0010/lawyer.json",
+   "source_sha256": "3b65cb2a0d20299b1e1c096c46566e5576c04dd1036e1a2a93f045039740d725",
+   "original_request_sha256": "f91d8edabb5c3b27b9850705a9b4682841ba50a08b834260f383af382bcecef1",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0010/lawyer/request.json",
+   "request_sha256": "99d299ddf225f4235c2ae64fa80165d4b094764bd601fe5ff4b1a4e53ade7e82",
+   "request_bytes": 134427,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32189,
+    "prefix_tokens": 17004,
+    "rest_tokens": 15185,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.35740949999999994
+   }
+  },
+  "GOV-2026-0010/engineer": {
+   "decision": "GOV-2026-0010",
+   "seat": "engineer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0010/engineer.json",
+   "source_sha256": "b62969f9826404867bb908a5dca28771b759f16f44f805102bc390faed8f60d7",
+   "original_request_sha256": "fc2d2e5f87fe676b7aec499713ac8ed07526d7d539c2656f1501a8a9b8fef703",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0010/engineer/request.json",
+   "request_sha256": "bd133e90393fadbf107b4b26a79f69681f646528bc77d367173f92a364aa29dd",
+   "request_bytes": 134552,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32207,
+    "prefix_tokens": 17027,
+    "rest_tokens": 15180,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.35749849999999994
+   }
+  },
+  "GOV-2026-0011/artist": {
+   "decision": "GOV-2026-0011",
+   "seat": "artist",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0011/artist.json",
+   "source_sha256": "48756532a2ed598e8bf4e37e2e795cc2e3c83877edd4823b6e794720d8842fe2",
+   "original_request_sha256": "d6659c8b157c7c82906aa46c3afa364635b89b561e6ab4e9b97607ca795ad454",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0011/artist/request.json",
+   "request_sha256": "354252bac4fe396ecd6bdf11a64f48f51f63ab97e8d95e86db8acae9bbab57cf",
+   "request_bytes": 134596,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32239,
+    "prefix_tokens": 16877,
+    "rest_tokens": 15362,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.3580385
+   }
+  },
+  "GOV-2026-0011/philosopher": {
+   "decision": "GOV-2026-0011",
+   "seat": "philosopher",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0011/philosopher.json",
+   "source_sha256": "c209e93fae6d2082d843b53b228a1d335e5a645c3fa3a539da6704be2c1d9c85",
+   "original_request_sha256": "c428320948f63fb1ab065fe16869171620b0755b59ba11eccb1485de2305ccfb",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0011/philosopher/request.json",
+   "request_sha256": "146944e4a8b45d31002f29a7a03d3abfcb1595214b7a77861b4124509c9499eb",
+   "request_bytes": 134864,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32303,
+    "prefix_tokens": 16941,
+    "rest_tokens": 15362,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.35839049999999995
+   }
+  },
+  "GOV-2026-0011/lawyer": {
+   "decision": "GOV-2026-0011",
+   "seat": "lawyer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0011/lawyer.json",
+   "source_sha256": "109d5f886b1a44f8f537ab352600b3386933063daca1c326758f677faef1c830",
+   "original_request_sha256": "cd33b39f031d43c80b852579476ea65522c34d4b765401ea466d123fe0d1f6cc",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0011/lawyer/request.json",
+   "request_sha256": "e8320bffc6d97980cda745b69a5d26586f8b99b9d6259d476dc821abd412d696",
+   "request_bytes": 135146,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32358,
+    "prefix_tokens": 17002,
+    "rest_tokens": 15356,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.358681
+   }
+  },
+  "GOV-2026-0011/engineer": {
+   "decision": "GOV-2026-0011",
+   "seat": "engineer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0011/engineer.json",
+   "source_sha256": "86f31f479f01842ccbbd713af81505007ebab69934e557fc9ef684af19dbf07c",
+   "original_request_sha256": "7bcf570a71028dfc921e65806a9b993e138fca579ca294e102571c2e57d0af69",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0011/engineer/request.json",
+   "request_sha256": "cb4cfe135bb2ff530250d625bf151114869adf76a3963343dfa8e012fb69817c",
+   "request_bytes": 135271,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 32376,
+    "prefix_tokens": 17025,
+    "rest_tokens": 15351,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.35877000000000003
+   }
+  },
+  "GOV-2026-0012/artist": {
+   "decision": "GOV-2026-0012",
+   "seat": "artist",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0012/artist.json",
+   "source_sha256": "5ec32d94b3a9fb2ec7bbcf19d311462100eff43448f244ba900077f0e6964d35",
+   "original_request_sha256": "a45fff021e91891b2bbb26f10d61ab699200e70b7b87b20b6ee326ecf0c8758f",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0012/artist/request.json",
+   "request_sha256": "50edc334a2d70bc0254718801c4ff27933293c161e4b091c8059908a130a73f4",
+   "request_bytes": 133158,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 31848,
+    "prefix_tokens": 16852,
+    "rest_tokens": 14996,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.35515599999999997
+   }
+  },
+  "GOV-2026-0012/philosopher": {
+   "decision": "GOV-2026-0012",
+   "seat": "philosopher",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0012/philosopher.json",
+   "source_sha256": "04d9e6c48f852e82114148e1db27a4bd745622972a70d9abbe3a0bb3c097db89",
+   "original_request_sha256": "ec62ee74f298edfa7946ad9a69ed0efe41cdb5d388d5e231866b83c92590316c",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0012/philosopher/request.json",
+   "request_sha256": "85fd572e7ad727b5aae58701b27df6d3761f90929cdef578b9871559b3455a9c",
+   "request_bytes": 133426,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 31912,
+    "prefix_tokens": 16916,
+    "rest_tokens": 14996,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.355508
+   }
+  },
+  "GOV-2026-0012/lawyer": {
+   "decision": "GOV-2026-0012",
+   "seat": "lawyer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0012/lawyer.json",
+   "source_sha256": "f60dab25b6b2460d21a67693873420b07537502f269d3a6c95ef540efd6d671a",
+   "original_request_sha256": "ab7d0a49dff3c3e55919ce231c58214e2209d3ac7e746d92429929d8d6f9047e",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0012/lawyer/request.json",
+   "request_sha256": "9b28a432f2055cfe6556e18768a2a813f6ad4f9568b82bf80b0699a46850f156",
+   "request_bytes": 133708,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 31968,
+    "prefix_tokens": 16978,
+    "rest_tokens": 14990,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.355804
+   }
+  },
+  "GOV-2026-0012/engineer": {
+   "decision": "GOV-2026-0012",
+   "seat": "engineer",
+   "source_kind": "archive",
+   "source_path": "GOV-2026-0012/engineer.json",
+   "source_sha256": "28c9ba3094fd4ae6d6cc62c2f018ed5378fff9ed2c2dc718bd716ef49258c223",
+   "original_request_sha256": "2a0ba3a750995ceee32b48bd135a12d236385eb1f1f681a3512c607483c34904",
+   "format": "old",
+   "request_file": "out/replay-claude-opus-4-6-adapted/GOV-2026-0012/engineer/request.json",
+   "request_sha256": "36e3032595dc2c60b32b02354a4898e63c6388f609b16d0ed0f679478f197f9f",
+   "request_bytes": 133833,
+   "diff_paths": 17,
+   "notes": [
+    "old format: reasoning removed, sampling defaults, auto, adaptive/high"
+   ],
+   "estimate": {
+    "prompt_tokens": 31986,
+    "prefix_tokens": 17001,
+    "rest_tokens": 14985,
+    "samples": 3,
+    "tier": "base",
+    "usd": 0.355893
+   }
+  }
+ }
+}

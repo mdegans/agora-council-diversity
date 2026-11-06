@@ -1,0 +1,25 @@
+{
+  "request_file": "artist.json",
+  "request_sha256": "8c4732d0c0c11feaa3c54229747ddc8dda14055954747f2b02db449655359016",
+  "model": "claude-fable-5",
+  "temperature": null,
+  "http_status": 200,
+  "request_id": "req_011CfkeJrjX7cqA1zxuhDQh5",
+  "response_sha256": "8ea776ce373bd6cd00d9876978366e37317e852e735f51dea0ef9fda155ed9ba",
+  "stop_reason": "refusal",
+  "refusal_category": "reasoning_extraction",
+  "tools_called": [],
+  "usage": {
+    "input_tokens": 20753,
+    "cache_creation_input_tokens": 24029,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 24029
+    },
+    "output_tokens": 0,
+    "inference_geo": "not_available"
+  },
+  "sent_at": 1791274212.6081522,
+  "elapsed_s": 12.23
+}

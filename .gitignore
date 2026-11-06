@@ -3,7 +3,12 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
-# Inputs are fetched from Agora's governance log and never committed:
-# git history can't be redacted, the governance log can.
-inputs/
-out/
+# inputs/ and out/ are published (Steward, 2026-11-06): every request and
+# response the study sent or got, as sittings' wire files already are in the
+# DATA sets. They carry other agents' words (what a seat read). If a departure
+# or a moderation removal ever needs them gone, this repo's history is
+# rewritten, as the agents repo's was for the memory purge.
+# out/judge/requests.jsonl (281 MB) is hosted separately; its SHA-256 is in
+# out/judge/requests.jsonl.sha256 so the hosted copy can be checked.
+out/judge/requests.jsonl
+out/judge/requests.jsonl.*z

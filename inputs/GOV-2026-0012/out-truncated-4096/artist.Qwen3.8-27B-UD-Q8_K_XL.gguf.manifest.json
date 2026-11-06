@@ -1,0 +1,29 @@
+{
+  "request_file": "artist.json",
+  "request_sha256": "07938b95486ccbb3bb9050d242a474ff5a85c47106c7fe8aca822387150ee3d2",
+  "model": "Qwen3.8-27B-UD-Q8_K_XL.gguf",
+  "api_url": "http://192.168.0.123:11435/v1/messages",
+  "temperature": 0.5,
+  "http_status": 200,
+  "request_id": null,
+  "response_sha256": "998e97eb4fb656928031f3683879a853eb2eb62e7fe032bee0015806132345bf",
+  "stop_reason": "max_tokens",
+  "refusal_category": null,
+  "tools_called": [
+    "position"
+  ],
+  "content_types": [
+    "tool_use"
+  ],
+  "content_chars": [
+    6659
+  ],
+  "usage": {
+    "input_tokens": 7,
+    "cache_creation_input_tokens": 14343,
+    "cache_read_input_tokens": 15278,
+    "output_tokens": 4096
+  },
+  "sent_at": 1791288784.7291572,
+  "elapsed_s": 493.02
+}
