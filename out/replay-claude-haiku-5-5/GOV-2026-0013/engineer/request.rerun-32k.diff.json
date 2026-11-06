@@ -1,0 +1,8 @@
+[
+ {
+  "op": "changed",
+  "path": "/max_tokens",
+  "before": 16384,
+  "after": 32768
+ }
+]

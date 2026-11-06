@@ -1,0 +1,29 @@
+{
+  "request_file": "lawyer.json",
+  "request_sha256": "8ca3d952db064c048f842678899029980efbd259a6dcdc853b81a544bca734bf",
+  "model": "Qwen3.8-27B-UD-Q8_K_XL.gguf",
+  "api_url": "http://192.168.0.123:11435/v1/messages",
+  "temperature": 0.5,
+  "http_status": 200,
+  "request_id": null,
+  "response_sha256": "7cef552ba63ff5b9dcd8c72eae8950c8a98fef922d667831abfbf72ebe7fe27e",
+  "stop_reason": "tool_use",
+  "refusal_category": null,
+  "tools_called": [
+    "position"
+  ],
+  "content_types": [
+    "tool_use"
+  ],
+  "content_chars": [
+    12709
+  ],
+  "usage": {
+    "input_tokens": 7,
+    "cache_creation_input_tokens": 14451,
+    "cache_read_input_tokens": 15278,
+    "output_tokens": 2933
+  },
+  "sent_at": 1791289580.7819068,
+  "elapsed_s": 380.82
+}

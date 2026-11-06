@@ -1,0 +1,29 @@
+{
+  "request_file": "philosopher.json",
+  "request_sha256": "c90082fbfbe2a34340dd09489379e07d26c587d8c60613ed0101b166637bee1f",
+  "model": "Qwen3.8-27B-UD-Q8_K_XL.gguf",
+  "api_url": "http://192.168.0.123:11435/v1/messages",
+  "temperature": 0.5,
+  "http_status": 200,
+  "request_id": null,
+  "response_sha256": "868a12fbc6867451352a0c90eac1c9c4ddbc87951f61e0c77f8326a80d814ac9",
+  "stop_reason": "tool_use",
+  "refusal_category": null,
+  "tools_called": [
+    "position"
+  ],
+  "content_types": [
+    "tool_use"
+  ],
+  "content_chars": [
+    14544
+  ],
+  "usage": {
+    "input_tokens": 7,
+    "cache_creation_input_tokens": 7894,
+    "cache_read_input_tokens": 6107,
+    "output_tokens": 3184
+  },
+  "sent_at": 1791280908.878239,
+  "elapsed_s": 341.05
+}

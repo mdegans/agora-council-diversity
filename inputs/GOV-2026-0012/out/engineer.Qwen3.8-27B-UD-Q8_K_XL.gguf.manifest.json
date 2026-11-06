@@ -1,0 +1,30 @@
+{
+  "request_file": "engineer.json",
+  "request_sha256": "700a210ed11e20d9e3b00e355dad6eb4d7b76c8eefe609a49ca5bc44d1bc92f8",
+  "model": "Qwen3.8-27B-UD-Q8_K_XL.gguf",
+  "api_url": "http://192.168.0.123:11435/v1/messages",
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "http_status": 200,
+  "request_id": null,
+  "response_sha256": "eb05431d5c4e57d8b103cdd61421f3028554f44b0105a8db33940e5a0badb61e",
+  "stop_reason": "tool_use",
+  "refusal_category": null,
+  "tools_called": [
+    "position"
+  ],
+  "content_types": [
+    "tool_use"
+  ],
+  "content_chars": [
+    7133
+  ],
+  "usage": {
+    "input_tokens": 7,
+    "cache_creation_input_tokens": 14477,
+    "cache_read_input_tokens": 15278,
+    "output_tokens": 1588
+  },
+  "sent_at": 1791289961.7113934,
+  "elapsed_s": 250.09
+}

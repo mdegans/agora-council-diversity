@@ -1,0 +1,79 @@
+[
+ {
+  "op": "removed",
+  "path": "/temperature",
+  "before": 0.5
+ },
+ {
+  "op": "changed",
+  "path": "/model",
+  "before": "claude-opus-4-6",
+  "after": "claude-haiku-5-5"
+ },
+ {
+  "op": "changed",
+  "path": "/tools[0]/input_schema/required",
+  "before": "<array len=4>",
+  "after": "<array len=3>"
+ },
+ {
+  "op": "removed",
+  "path": "/tools[0]/input_schema/properties/reasoning",
+  "before": "<object keys=2>"
+ },
+ {
+  "op": "changed",
+  "path": "/tools[1]/input_schema/required",
+  "before": "<array len=4>",
+  "after": "<array len=3>"
+ },
+ {
+  "op": "removed",
+  "path": "/tools[1]/input_schema/properties/reasoning",
+  "before": "<object keys=2>"
+ },
+ {
+  "op": "changed",
+  "path": "/tools[2]/input_schema/required",
+  "before": "<array len=2>",
+  "after": "<array len=1>"
+ },
+ {
+  "op": "removed",
+  "path": "/tools[2]/input_schema/properties/reasoning",
+  "before": "<object keys=2>"
+ },
+ {
+  "op": "changed",
+  "path": "/tools[3]/input_schema/required",
+  "before": "<array len=2>",
+  "after": "<array len=1>"
+ },
+ {
+  "op": "removed",
+  "path": "/tools[3]/input_schema/properties/reasoning",
+  "before": "<object keys=2>"
+ },
+ {
+  "op": "changed",
+  "path": "/max_tokens",
+  "before": 4096,
+  "after": 16384
+ },
+ {
+  "op": "changed",
+  "path": "/tool_choice/type",
+  "before": "any",
+  "after": "auto"
+ },
+ {
+  "op": "added",
+  "path": "/thinking",
+  "after": "<object keys=2>"
+ },
+ {
+  "op": "added",
+  "path": "/output_config",
+  "after": "<object keys=1>"
+ }
+]

@@ -1,0 +1,13 @@
+[
+ {
+  "op": "changed",
+  "path": "/model",
+  "before": "claude-opus-4-6",
+  "after": "claude-haiku-5-5"
+ },
+ {
+  "op": "added",
+  "path": "/thinking/display",
+  "after": "summarized"
+ }
+]

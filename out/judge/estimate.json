@@ -1,0 +1,16 @@
+{
+ "pairs": 2891,
+ "by_comparison": {
+  "haiku55_vs_haiku55": 1026,
+  "haiku55_vs_rec_same": 1209,
+  "opus46a_vs_opus46a": 270,
+  "opus46a_vs_rec_same": 386
+ },
+ "prefix_tokens": 31820,
+ "request0_tokens": 32131,
+ "pair_tokens_mean": 381.9014181943964,
+ "assumed_output_tokens": 1500,
+ "estimated_usd_batch": 1.602,
+ "estimated_usd_batch_at_3000_out": 2.686,
+ "requests_sha256_file": "ccaaa75e94c5bf88d69cbf613827b6049aaba9b118cbe0fa9938c72580317e58"
+}
