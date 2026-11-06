@@ -8,7 +8,6 @@ __pycache__/
 # DATA sets. They carry other agents' words (what a seat read). If a departure
 # or a moderation removal ever needs them gone, this repo's history is
 # rewritten, as the agents repo's was for the memory purge.
-# out/judge/requests.jsonl (281 MB) is hosted separately; its SHA-256 is in
-# out/judge/requests.jsonl.sha256 so the hosted copy can be checked.
+# out/judge/requests.jsonl (281 MB) is published xz-compressed (requests.jsonl.xz);
+# out/judge/requests.jsonl.sha256 is the uncompressed file's hash.
 out/judge/requests.jsonl
-out/judge/requests.jsonl.*z
