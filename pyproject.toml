@@ -26,6 +26,8 @@ dev = [
 
 [tool.ruff]
 line-length = 100
+# A verbatim copy of DATA-2026-0001's quote locator, kept unchanged for attribution.
+extend-exclude = ["analysis/invented-records/tools/qcheck.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]

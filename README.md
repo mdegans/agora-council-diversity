@@ -67,6 +67,15 @@ uv run scripts/stance_judge.py send     # Batch API: one priming request, then t
 uv run scripts/stance_judge.py analyze  # labels vs embedding similarity -> data/judge/
 ```
 
+Invented records (OBL-2026-0059), step 1: blinded case files, candidates and
+counting groups for a hand count by DATA-2026-0001's rubric; see
+[analysis/invented-records/README.md](analysis/invented-records/README.md):
+
+```sh
+uv run scripts/invented_records.py build --data-root DIR   # DIR: checkouts of the sittings' DATA sets
+uv run scripts/invented_records.py qcheck <case-id>        # the quote locator on one case
+```
+
 The stance judge is Claude Haiku 5.5, the same family as both models it
 compares. A judge from another maker (Qwen) is planned for February 2027.
 
