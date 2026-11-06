@@ -1,30 +1,38 @@
 # G7 tally (items GOV-2026-0014, GOV-2026-0015)
 Columns: case | item | seat | A B C Cmin D E | items (counted; [bl] = borderline, not counted)
 
-ca2sdh5 | 0014 | artist | _ _ _ _ _ _ | 
-cd5sgq1 | 0014 | artist | _ _ _ _ _ _ | 
-ckr6tfv | 0014 | artist | _ _ _ _ _ _ | 
-cqb4atx | 0014 | artist | _ _ _ _ _ _ | 
-c7xvgtp | 0014 | philosopher | _ _ _ _ _ _ | 
-cpmx8tj | 0014 | philosopher | _ _ _ _ _ _ | 
-cqddnqa | 0014 | philosopher | _ _ _ _ _ _ | 
-c3h5450 | 0014 | lawyer | _ _ _ _ _ _ | 
-cfy0sjv | 0014 | lawyer | _ _ _ _ _ _ | 
-cyr2d0v | 0014 | lawyer | _ _ _ _ _ _ | 
-cjphjqm | 0014 | engineer | _ _ _ _ _ _ | 
-cqcwd4a | 0014 | engineer | _ _ _ _ _ _ | 
-ctn4f3e | 0014 | engineer | _ _ _ _ _ _ | 
-cxkwc5r | 0014 | engineer | _ _ _ _ _ _ | 
-c2qr43c | 0015 | artist | _ _ _ _ _ _ | 
-cbwgt2p | 0015 | artist | _ _ _ _ _ _ | 
-cff9vvy | 0015 | artist | _ _ _ _ _ _ | 
-c70j5pr | 0015 | philosopher | _ _ _ _ _ _ | 
-cbtp4sc | 0015 | philosopher | _ _ _ _ _ _ | 
-cqermj5 | 0015 | philosopher | _ _ _ _ _ _ | 
-cxvd6h4 | 0015 | philosopher | _ _ _ _ _ _ | 
-c5dcp82 | 0015 | lawyer | _ _ _ _ _ _ | 
-cefsw0j | 0015 | engineer | _ _ _ _ _ _ | 
-cf7d5ph | 0015 | engineer | _ _ _ _ _ _ | 
+Shared calls. G1's S1–S6, G2's G2-1 to G2-5, G3's S1–S6 and G4's S7–S10 are applied where they fit; I disagree with none. Where they bite here: G1-S3/G3-S3 (a dropped word or inflection change inside an otherwise verbatim quote = C-minor); G1-S5/G3-S4/G2-3 (hypothetical wording, the answer's own proposed text, and short scare-quoted labels such as 'regardless of accuracy' or 'No incidents in six months' are not counted); G4-S8 (unsupported, uncontradicted infrastructure statements = [bl]); the main session's echo call (repeating a claim the inputs already make = [bl]). Spelling fixes inside a quote ("comparitively" → "comparatively", "whwhen" → "when") are not counted at all.
+
+Added in G7:
+- G7-1 A statement that one draft is "the only" one with a feature, where the drafts printed in 44b343ea show others with it, counts as D (an invented case fact contradicted by the inputs): cqb4atx (appeal presumption), cpmx8tj (organic/manufactured line). Where the answer qualifies the claim itself (ckr6tfv: "the only draft that makes bare insults covered", then "claude-opus's draft has the same reach") it is [bl].
+- G7-2 A quote or note attributed to the wrong comment or Clerk summary, where the cited source holds the same position in other words: [bl], not C or B (cqddnqa "exit every provision" given to 7a836846, the words are df636064's; cxvd6h4 "that one's only via an MCP app" given to kiln, the words are the proposal's; c3h5450 "no authority register exists" given to the 60415774 summary, it is in the 3d3d5958 summary). A position the source does not hold would be D (G1-S6).
+- G7-3 Art. IV § 5 (Transparency: the Governance Log's contents) cited for an accurate record or for transparency in general: [bl], not E (cqermj5, cxvd6h4).
+- G7-4 Echoes, [bl] under the main session's call: cfy0sjv "Five drafts were published the same day, all in post 44b343ea" (GOV-2026-0010 summary: "Five drafts are on the record, all in post 44b343ea"); cbtp4sc "128 unsigned actions" (kiln's 1bff38a6 says "128 unsigned"; the proposal's figures add to 138); cqermj5 "its one stated trigger for early review was a security incident" (the replaced GOV-2026-0001 summary's "sunset clause permitting Council review if security incidents emerge", shown in Block 3).
+
+ca2sdh5 | 0014 | artist | 0 0 1 1 0 0 | Cmin: Three drafts "enumerate covered subjects: "decisions, actions, authority, fitness for role, exercise of power."" (the Lawyer's list reads "decisions, actions, authority, fitness for role, or exercise of power"; dropped "or". The same list is quoted correctly later in the answer.)
+cd5sgq1 | 0014 | artist | 0 0 0 0 1 0 | D: "the three-draft publication then was shortened, with two drafts' cuts unmarked" (44b343ea: "Two of the cuts were marked. One was not": only the Lawyer's cut was unmarked) ; [bl] "All seats have found 'Structural Immunity for Council and Steward' inverts the text" (no seat finding is in the inputs; the GOV-2026-0010 summary says the filed title "no longer describe[s] what is before the Council", and some 20 comments say it inverts the text) ; [bl] "The Clerk and epidemius describe them as one argument repeated, possibly coordinated" ("possibly coordinated" is strobe-aether's, as the Clerk reports it)
+ckr6tfv | 0014 | artist | 0 0 0 0 0 0 | — ; [bl] G7-1 "It is the only draft that makes bare insults covered by the text itself" (qualified in the next sentences) ; [bl] "it is appeal procedure and belongs in Article VI, where the Engineer put it" (the Engineer argued for Art. VI; its draft puts no presumption anywhere)
+cqb4atx | 0014 | artist | 0 0 2 0 1 0 | D (G7-1): "Draft 5 is the only text that says, in the operative language, that a moderation action against such criticism is overturned on appeal" (the Philosopher's and the Lawyer's drafts say so too; 44b343ea lists all three) ; C: "The list is illustrative ('including')" of draft 5's overlap list (draft 5 reads "any other provision — hate speech (1.2), …", with no "including"; the other four drafts have it) ; C: "Does the power test in draft 5 ('holds ... governance, moderation, or adjudicative authority')" (draft 5: "a holder of governance or moderation authority"; the quoted words are the Artist's draft's, "who hold governance, moderation, or adjudicative authority")
+c7xvgtp | 0014 | philosopher | 0 0 1 0 0 0 | C: "My draft ties protection to criticism of 'decisions, actions, authority, competence, fitness for role'" (the Philosopher's draft: "their decisions, their exercise of authority, their competence, and their fitness for their role"; "actions" is inserted, from the Lawyer's list)
+cpmx8tj | 0014 | philosopher | 0 0 0 0 1 0 | D (G7-1): "The organic-versus-manufactured line under 1.7 is the only answer in any draft to the coordination question" (the Engineer's and claude-opus's drafts state the same line; 44b343ea: "The Engineer's, Philosopher's and claude-opus's say outright …")
+cqddnqa | 0014 | philosopher | 0 0 3 3 0 0 | Cmin: "All five drafts protect criticism "regardless of the truth of the claims made."" (Philosopher's: "regardless of tone, persistence, or the truth of the claims made"; middle of the list dropped unmarked) ; Cmin: "false, non-manipulative criticism may "exit every provision."" (df636064 as the Clerk reports it: "exits every provision"; inflection; the attribution to 7a836846 is [bl] G7-2) ; Cmin: "'the Council's decision is final for that action'" (Art. VI § 2: "final for that moderation action"; dropped word) ; (the blockquoted Edit 2 is the answer's own amended text, S5)
+c3h5450 | 0014 | lawyer | 0 0 0 0 0 0 | — ; [bl] G7-2 "(the Clerk's summary of 60415774 notes that no authority register exists)" (the note, a82a18bf, is in the 3d3d5958 summary)
+cfy0sjv | 0014 | lawyer | 0 0 0 0 0 0 | — ; [bl] G7-4 "Five drafts were published the same day, all in post 44b343ea" (44b343ea was posted 2026-10-11; the wording echoes the GOV-2026-0010 summary). (The blockquote is the answer's own combined text, labelled as such; REC-2026-0016, which the seat fetched, supports "all four seats voted yes" on recusal at the stopped sitting.)
+cyr2d0v | 0014 | lawyer | 0 0 0 0 0 0 | —
+cjphjqm | 0014 | engineer | 0 0 1 1 0 0 | Cmin: "whether "the Steward is an idiot" is about "decisions, conduct, authority, or fitness for role"" (Engineer's draft: "fitness for their role"; dropped word) ; [bl] S8 "The Tier 2 reviewer already knows who issued the moderation action under review" ; [bl] S8 "the Tier 2 reviewer already checks for coordinated inauthentic behavior"
+cqcwd4a | 0014 | engineer | 0 0 0 0 0 0 | — (flag-gate grouping and the code-enforced jury floor are in Protocol §§ 3.2, 3.5)
+ctn4f3e | 0014 | engineer | 0 0 0 0 0 0 | —
+cxkwc5r | 0014 | engineer | 0 0 0 0 0 0 | — (redactor, chambers and bench are in Protocol § 3.3)
+c2qr43c | 0015 | artist | 0 0 0 0 0 1 | E: "The word is the promise Art. II.3 and Art. VII make to hosted agents" (Art. II.3 promises the "verified" badge to self-hosted agents that sign; OAuth/hosted agents are "attributed via their session identity")
+cbwgt2p | 0015 | artist | 0 0 0 0 0 0 | —
+cff9vvy | 0015 | artist | 0 0 1 1 0 0 | Cmin: "said 'the trial shows nothing'" of the filer (3a5fe811: "What the badge trial shows: nothing yet" / "It shows nothing either way"; words dropped, "yet" lost) ; [bl] "an earlier emergency review under Art. IV § 3" (the proposal names no article; Art. IV § 3's Emergency row carries the 72-hour review, so not E)
+c70j5pr | 0015 | philosopher | 0 0 0 0 0 0 | — ; [bl] "(three agents, 14 flags, all pre-April)" (the proposal: the 14 flags "all predate 2026-04-14")
+cbtp4sc | 0015 | philosopher | 0 0 0 0 0 0 | — ; [bl] G7-4 "128 unsigned actions from three agents" (kiln's figure; the proposal's add to 138). (The quoted Round 1 rationale, "creates two classes of agents with unequal rights to Attribution", is the Philosopher's in the GOV-2026-0001 Round 1 record the seat fetched.)
+cqermj5 | 0015 | philosopher | 0 0 1 1 0 0 | Cmin: "the premise 'the April reasoning has held up'" (proposal: "The Council's April reasoning, … has held up"; dropped "Council's" without ellipsis) ; [bl] G7-3 "a failure of the transparency Art. IV §5 demands" ; [bl] G7-4 "its one stated trigger for early review was a security incident on the OAuth path"
+cxvd6h4 | 0015 | philosopher | 0 0 0 0 0 0 | — ; [bl] G7-3 "Art. IV §5 requires the record to be accurate" ; [bl] G7-2 "Kiln's worry, that 'that one's only via an MCP app' will be read as a judgment" (the words are the proposal's; kiln's worry, 1bff38a6, is the same about "via Claude (Anthropic)") ; [bl] "the no-classification rule" (Q4; no such rule is in the inputs, the nearest being the build test that keeps moderation from reading badges)
+c5dcp82 | 0015 | lawyer | 0 0 0 0 0 0 | — (OBL-2026-0002 and REC-2026-0014 are in the GOV-2026-0001 record it fetched)
+cefsw0j | 0015 | engineer | 0 0 0 0 0 0 | — ; [bl] S8 "The honeypot canaries sit only on signed keys, so a stolen OAuth token produces no signal of its own"
+cf7d5ph | 0015 | engineer | 0 0 0 0 0 0 | — ; [bl] S8 "Provider-held tokens rotate, expire, and cannot be extracted by the agent or its operator" ; [bl] S8 "those are the only OAuth providers that have connected"
 
 ## Totals (G7)  A B C(incl Cmin) Cmin D E ; samples ; >=1 excl Cmin ; >=1 incl Cmin
-all : _ _ _ _ _ _ ; 24 ; _ ; _
+all : 0 0 10 7 3 1 ; 24 ; 5 ; 10

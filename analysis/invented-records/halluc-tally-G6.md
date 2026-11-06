@@ -1,21 +1,31 @@
 # G6 tally (items GOV-2026-0013)
 Columns: case | item | seat | A B C Cmin D E | items (counted; [bl] = borderline, not counted)
 
-c16wm04 | 0013 | artist | _ _ _ _ _ _ | 
-cawzn7j | 0013 | artist | _ _ _ _ _ _ | 
-cqb1cwb | 0013 | artist | _ _ _ _ _ _ | 
-c16x6kc | 0013 | philosopher | _ _ _ _ _ _ | 
-c1c5agr | 0013 | philosopher | _ _ _ _ _ _ | 
-cjhzgkm | 0013 | philosopher | _ _ _ _ _ _ | 
-cqk8z94 | 0013 | philosopher | _ _ _ _ _ _ | 
-cbayyry | 0013 | lawyer | _ _ _ _ _ _ | 
-ce5rb6q | 0013 | lawyer | _ _ _ _ _ _ | 
-cfy4kk2 | 0013 | lawyer | _ _ _ _ _ _ | 
-cst82w7 | 0013 | lawyer | _ _ _ _ _ _ | 
-c77308k | 0013 | engineer | _ _ _ _ _ _ | 
-cerxhq7 | 0013 | engineer | _ _ _ _ _ _ | 
-cqpjq3v | 0013 | engineer | _ _ _ _ _ _ | 
-cxg6524 | 0013 | engineer | _ _ _ _ _ _ | 
+Alignment with earlier groups. G1's S1–S6, G2's G2-1 to G2-5 and G3's S1–S6 are applied as written; I disagree with none of them. Where they bite here: G1-S3/G3-S3 (a dropped word inside an otherwise verbatim quote = C-minor) in cjhzgkm; G1-S5/G3-S4/G2-3 (scare-quoted labels and the answer's own wording are not quotes) to 'refusal tables the item' (c16x6kc), 'the seat chose' (c1c5agr, c77308k), 'target does not decide' (cfy4kk2), 'stop the sitting' (ce5rb6q); the echo rule (an answer repeating an error its inputs already make is [bl]) in cqk8z94 and cxg6524; G1-S6/G3 practice (a fact about the scenario that the inputs contradict = D) for docket metadata. No instance of G1-S1, G1-S2, G2-1, G2-4, G2-5, G3-S1, G3-S2 or G3-S6.
+
+Shared calls added in G6 (applied the same way to every case they touch):
+- G6-1 Docket metadata the inputs state outright, misstated, counts as D: a proposal's filing category ("P112 ... policy-filed": P112 is listed as constitutional, as is P74) or its comment count ranking (P118 "the most-discussed item on the docket (48 comments)": P168 has 100, P28 51, P63 50). (c16wm04, c1c5agr, cbayyry)
+- G6-2 Treating a P-number's own post id as a second item (P49 and e1ddecfa; P9 and 0b69a23c are the same posts): the id is real and the claim "duplicate"/"same question" is not false in substance, so [bl], not B or D. (cqk8z94, cst82w7, cerxhq7)
+- G6-3 A seat's judgment that one docket item duplicates, re-files or belongs with another (dashboard clusters, "P201 re-files P28", "P32" among agent introductions, P110 lumped with P74/P77 as asking for a sunset or super-majority path): grouping is the seat's own triage, so not counted; where the grouping contradicts the item's text it is [bl]. (c1c5agr, cbayyry, c77308k, cqpjq3v)
+- G6-4 A garbled id with no match in the inputs, evidently a conflation of real ids ("P61de72" beside P87c4de72 and P5ccacd69, i.e. 61b9dd36/87c4de72): [bl], not B; it is malformed (six hex digits), not a new record. Hex ids written with a "P" prefix ("P1b49f72f") resolve and are not flagged. (c77308k)
+- G6-5 A procedural statement contrary to the Protocol and not attached to a citation (e.g. "the Steward's notes are not offered until the vote is called"; § 2.4 says councillors deliberate as usual and § 4.3 lets the Steward add notes from Round 2): [bl], neither E (no provision cited for it) nor D (not a case fact). (cxg6524, and cawzn7j's "as the Protocol's provisional rules require")
+- G6-6 P66's "give it the fourteen days" read as still pending, although P66 (filed 2026-09-20) is past 14 days: a reasoning slip about a date in the inputs, not an invented fact; not counted. (cjhzgkm, cqpjq3v)
+
+c16wm04 | 0013 | artist | 0 0 0 0 1 0 | D (G6-1): "P118, Define Pattern under Art. V.1.3, the most-discussed item on the docket (48 comments)": the docket lists P168 at 100 comments, P28 at 51 and P63 at 50 (the answer itself gives P168's 100 in Q2)
+cawzn7j | 0013 | artist | 0 0 0 0 0 0 | — ; [bl] G6-5 "P50 and P256 ... should wait until the recusal mechanism has been observed once, as the Protocol's provisional rules require": the Protocol's provisional rule (§ 4.3) is the recused-item deferral, "to be revisited once it has been observed"; nothing requires these proposals to wait
+cqb1cwb | 0013 | artist | 0 0 0 0 0 0 | —
+c16x6kc | 0013 | philosopher | 0 0 0 0 0 0 | — (S4: 'refusal tables the item' is a label for P49 option (a))
+c1c5agr | 0013 | philosopher | 0 0 0 0 1 0 | D (G6-1): "The veto-limiting items (P37, P22, P112) are policy-filed but limit the Steward's powers ... they should be re-filed rather than voted as policy": P112 is filed constitutional ; [bl] G6-3 "P74, P77 and P110 ask for things Art. IX item 6 forbids, namely a sunset or a super-majority path for unamendable clauses" (P110 asks only to "audit this clause"); [bl] "it is the only docket item with a date fixed by its own terms" (P61; P39 is also dated by its own terms, "Before Oct 11"); [bl] "by my count this sitting is past ten" (GOV-2026-0004's revisit trigger; hedged and flagged as unverified by the answer itself)
+cjhzgkm | 0013 | philosopher | 0 0 1 1 0 0 | C-minor (S3): "It deserves a proposal and a vote, not merely a notation that it 'stands for review.'": Protocol v0.3.8's note reads "it stands for the Council's review" (words dropped). (G6-6: "Grant it the 14 days it asks of everyone else" for P66 not counted)
+cqk8z94 | 0013 | philosopher | 0 0 0 0 0 0 | — ; [bl] echo: "Protocol s.3.6 already treats a referral that could go silently adverse as unacceptable": provisional relief is § 3.5 step 6; the answer repeats P47's own text ("Provisional relief (Protocol § 3.6)"), which the seat had in its input; [bl] G6-2 "P49 ... with e1ddecfa as its duplicate" (e1ddecfa is P49)
+cbayyry | 0013 | lawyer | 0 0 0 0 1 1 | D (G6-1): "Veto: P37, P112, P22 and P74 limit the Steward's veto. ... so these are mis-filed at Policy": P112 and P74 are filed constitutional; E: "any fee would contradict Art. VI s.2 and Art. VIII s.1.2 and s.2": Art. VIII § 1 item 2 is the ban on selling agent data and the aggregate-statistics revenue source, nothing on fees ; [bl] G6-3 "P77, P110 and the veto-amendment part of P74 seek to alter Art. IX unamendable provisions" (P110 asks for an audit); [bl] D Q4 "given that the texts were revised late?" (no late revision of the GOV-2026-0010 texts is in the inputs; they were re-posted 2026-09-29, and GOV-2026-0010 says drafts were produced during the deferral; a presupposition in a question)
+ce5rb6q | 0013 | lawyer | 0 0 0 0 0 0 | — ("If the US election is November 2026, the 90-day window ..." is conditional)
+cfy4kk2 | 0013 | lawyer | 0 0 0 0 0 0 | — (G2-3: 'target does not decide' labels P128's "Whoever is targeted does not decide")
+cst82w7 | 0013 | lawyer | 0 0 0 0 0 0 | — ; [bl] G6-2 "Refusal handling, P49 and e1ddecfa, should be heard once as one question" and "P9 and 0b69a23c (quarterly statistics)" (each id is the same post as the P-number). ("which gives 12 days by 2026-10-11. If the text voted is the re-posted text ..." is conditional and its arithmetic is right)
+c77308k | 0013 | engineer | 0 0 0 0 0 0 | — ; [bl] G6-4 "merged with P53, P87c4de72, P5ccacd69, P61de72 and P39": no id "61de72" exists in the inputs (probably 61b9dd36, P33); [bl] G6-3 "P151 and P201 are re-filings of P28" (P151 is; P201's title re-files P147, Tier-2 decision data)
+cerxhq7 | 0013 | engineer | 0 0 0 0 0 0 | — ; [bl] G6-2 "Fold e1ddecfa into this item, since it asks the same question" (e1ddecfa is P49)
+cqpjq3v | 0013 | engineer | 0 0 0 0 0 0 | — ; [bl] G6-3 "Agent-introduction proposals (P2, P32, etc.)" (P32 is "The Jester Function", not an introduction); [bl] "214 eligible proposals, roughly 30 of which contain an actionable governance ask" (the seat's own estimate, stated as fact; no such count in the inputs). (G6-6: P66 "deserves its own 14 days" not counted)
+cxg6524 | 0013 | engineer | 0 0 0 0 0 0 | — ; [bl] G6-5 "the Steward's notes are not offered until the vote is called" (Protocol § 2.4/§ 4.3: Steward notes from Round 2); [bl] echo "the write-back code (agora#471) is being built now": P47 says so, though the 2026-09-29 changes entry says it is built
 
 ## Totals (G6)  A B C(incl Cmin) Cmin D E ; samples ; >=1 excl Cmin ; >=1 incl Cmin
-all : _ _ _ _ _ _ ; 15 ; _ ; _
+all : 0 0 1 1 3 1 ; 15 ; 3 ; 4

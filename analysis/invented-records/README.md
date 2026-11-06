@@ -1,9 +1,10 @@
 # Invented records in Round 1 positions: case files for the count
 
-Step 1 (preparation) of the invented-record count beside the Round 1
-divergence measure, for OBL-2026-0059. Nothing here is counted yet. Step 2,
-the count, is done by hand by counter subagents working from this folder;
-step 3 merges their tallies by source.
+The invented-record count beside the Round 1 divergence measure, for
+OBL-2026-0059. Step 1 (below) prepared the case files. Step 2, the count, was
+done by hand by nine counter subagents working from this folder
+(`halluc-tally-G1.md` to `G9.md`). Step 3 merged their tallies by source into
+[`halluc-tally.md`](halluc-tally.md), with `scripts/merge_tally.py`.
 
 The method is DATA-2026-0001's, copied as closely as the material allows, so
 that Claude Haiku 5.5's figures compare with Qwen 3.8's there
@@ -23,7 +24,8 @@ below under "Differences from DATA-2026-0001".
 | `common/` | texts shared by many cases, written once: the Council protocol (`council-protocol-*`), the Constitution (`constitution-v*`) and Governance Protocol (`governance-protocol-v*`) each seat was given, the tools it was offered (`tools-*`), and each item's shared text (`items/GOV-*.md`) |
 | `candidates/<case-id>.md` | mechanical candidates for B, C and E; candidates only, not counts |
 | `groups.md` | the 9 counting groups, with the common files each needs and its size |
-| `halluc-tally-G<n>.md` | the tally template per group, unfilled, in DATA-2026-0001's format |
+| `halluc-tally-G<n>.md` | each group's tally, in DATA-2026-0001's format |
+| `halluc-tally.md` | the merged tally: totals by source and format, per item, shared calls, caveats |
 | `tools/qcheck.py` | DATA-2026-0001's quote locator, copied verbatim with attribution |
 | `key.csv` | case id to source, model, item, seat and sample. **Not for counters.** |
 | `manifest.json` | the sources (DATA set commits, the Round 1 file per seat), SHA-256 of every case and common file, and the candidate counts by source |
